@@ -420,3 +420,27 @@
     justify-content: center;
     align-items: center;
   }
+  .ad-gallery{
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(0, 161, 229);
+    margin-top: 60px;
+    color: white;
+    text-align: center;
+    border: 2px solid rebeccapurple;
+
+  }
+  .ag-one-content-container{
+    height: 170px;
+    width: 270px;
+    border: 2px solid rebeccapurple;
+    overflow: hidden;
+  }
+  .ag-one-content-container:hover .ag-one-content{
+    transform: translateY(-22px);
+    transition: all 500ms ease;
+  }
+  .ag-one-content img{
+    height: auto;
+    width: 100%;
+  }
