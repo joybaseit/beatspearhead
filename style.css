@@ -236,7 +236,7 @@ html {
 }
 
 .services-right-content img {
-  width: 20vw;
+  width: 17vw;
   height: 95%;
 }
 
@@ -305,10 +305,11 @@ html {
 #our-reach {
   height: 92vh;
   background-color: rgb(12, 114, 113);
-  display: flex;
+  
 }
-.our-reach-container{
-  width: 70vw;
+.reach-container{
+  display: flex;
+  transform: translateX(5.5%);
 }
 .reach-circle {
   width: 350px;
@@ -342,7 +343,7 @@ html {
   border-radius: 50%;
   border: 1px solid black;
   position: relative;
-  top: 153px;
+  top: 145px;
   left: 457px;
 }
 .reach-circle img {
