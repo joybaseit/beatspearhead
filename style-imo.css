@@ -1,3 +1,9 @@
+.navbar-imo{
+    background-color: rgb(53, 153, 238);
+}
+.navbar-imo img{
+    padding-left: 30px;
+}
 .targeting-capabilities{
     width: 100vw;
     height: 92vh;
