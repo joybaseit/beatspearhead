@@ -870,9 +870,9 @@ body {
 .hidden-x {
   overflow-x: hidden;
 }
-body.hidden-x {
+/* body.hidden-x {
   display: none;
-}
+} */
 .fix {
   position: fixed !important;
 }
@@ -1676,7 +1676,7 @@ a:-webkit-any-link {
   left: 139px;
 }
 
-/* --------------------------------------------- */
+/* ---------------------------------------------neeeeeeeeeeewwwwwwwwwwwwwww------------------ */
 .buying-opportunity{
   width: 100vw;
   height: 92vh;
