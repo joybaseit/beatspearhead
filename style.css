@@ -309,7 +309,7 @@ html {
 }
 .reach-container{
   display: flex;
-  transform: translateX(5.5%);
+  transform: translateX(4%);
 }
 .reach-circle {
   width: 350px;
