@@ -12,6 +12,7 @@
 body {
   padding-top: 55px;
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
 html {
