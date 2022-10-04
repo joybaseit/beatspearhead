@@ -493,6 +493,7 @@
     height: 170px;
     width: 270px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .gallery-card {
