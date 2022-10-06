@@ -5,7 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>Home</title>
@@ -67,7 +69,8 @@
   </div> -->
   <div id="welcome">
     <img src="asset/welcome-img.png" alt="Welcome">
-    <p data-aos="fade-up">Started journey in 2016, Bitspearhead Limited was focused to regulate it’s business in different approach other
+    <p data-aos="fade-up">Started journey in 2016, Bitspearhead Limited was focused to regulate it’s business in
+      different approach other
       than traditional digital happening in Bangladesh. Bitspearhead wanted to thrive it’s success in other effective
       digital platforms which will not only increase brand’s value in digital approach to end-consumers, but also to
       increase ROI of brand’s digital spending.<br><br>
@@ -107,18 +110,21 @@
     </div>
     <div class="services-right-content" data-aos="fade-left">
       <div class="services-swiper-div-center">
-        <div class="swiper2">
+        <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide"><img src="asset/test.png"></div>
             <div class="swiper-slide"><img src="asset/test.png"></div>
             <div class="swiper-slide"><img src="asset/test.png"></div>
+            
           </div>
         </div>
-        <div class="swiper-pagination2"></div>
+        
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
 
       </div>
-      <!-- <div class="swiper-button-prev2"></div>
-      <div class="swiper-button-next2"></div> -->
+
 
     </div>
 
@@ -144,9 +150,7 @@
       <div class="reach-circle2" data-aos="fade-left">
         <img class="reach-circle-right-img" src="asset/earth.png">
       </div>
-      <div class="reach-circle-logo" data-aos="flip-left"
-      data-aos-easing="ease-out-cubic"
-      data-aos-duration="1700">
+      <div class="reach-circle-logo" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1700">
         <img src="asset/logo.png">
       </div>
     </div>
@@ -184,12 +188,23 @@
 
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    const swiper = new Swiper('.swiper', {
+    // const swiper = new Swiper('.swiper', {
+    //   loop: true,
+    //   autoplay: {
+    //     delay: 2000,
+    //     disableOnInteraction: false,
+    //   },
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     cliclable: true,
+    //   },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    // });
+    const swiper2 = new Swiper('.swiper', {
       loop: true,
-      autoplay: {
-        delay: 2000,
-        disableOnInteraction: false,
-      },
       pagination: {
         el: '.swiper-pagination',
         cliclable: true,
@@ -199,25 +214,14 @@
         prevEl: '.swiper-button-prev',
       },
     });
-    const swiper2 = new Swiper('.swiper2', {
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination2',
-        cliclable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next2',
-        prevEl: '.swiper-button-prev2',
-      },
-    });
 
   </script>
-<script>
-  AOS.init({
-    offset:170,
-    duration: 500
-  });
-</script>
+  <script>
+    AOS.init({
+      offset: 170,
+      duration: 500
+    });
+  </script>
 </body>
 
 </html>
