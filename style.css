@@ -10,7 +10,7 @@
 }
 
 body {
-  padding-top: 55px;
+  padding-top: 60px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -29,7 +29,7 @@ html {
   position: fixed;
   top: 0;
   background-color: #f2f2f2;
-  z-index: 5;
+  z-index: 10;
 }
 
 .navbar-logo {
@@ -54,15 +54,32 @@ html {
 .navbar-links li {
   margin: 0 1rem;
   cursor: pointer;
-  
+  color: rgb(12, 114, 113);
+}
+.navbar-links li>a{
+  color: rgb(12, 114, 113);
 }
 
 .navbar-links li>a:hover {
   color: red;
 }
 
+.nav-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 940px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .nav-menu {
+    display: block;
+  }
+}
+
 /* For swipperjs welcome  */
-.swiper {
+/* .swiper {
   width: 98.9vw;
   height: 92vh;
 }
@@ -83,17 +100,17 @@ html {
   color: white;
 }
 
-/* Image content */
+
 .swiper-slide {
   position: relative;
-}
+} */
 
 /* .content-container-img1{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
 } */
-.left-content-img1 {
+/* .left-content-img1 {
   position: absolute;
   color: white;
   font-size: 30px;
@@ -161,14 +178,28 @@ html {
   padding: 12px;
   color: white;
   cursor: pointer;
-}
-
-#people {
-  height: 90vh;
-}
-
+} */
 #welcome {
-  height: 90vh;
+  height: 92vh;
+  width: 99vw;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+}
+
+#welcome img {
+  min-width: 100%;
+  max-height: 100%;
+  object-fit: fill;
+  display: block;
+}
+#welcome p{
+  position: absolute;
+  color: white;
+  width: 50%;
+  top: 20%;
+  left: 25%;
+  text-size-adjust:none;
 }
 
 #people {
@@ -183,7 +214,6 @@ html {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  margin-top: 13px;
   overflow: hidden;
 }
 
@@ -199,7 +229,8 @@ html {
   grid-template-columns: 70px auto;
   row-gap: 40px;
 }
-.service-details i{
+
+.service-details i {
   padding-top: 5px;
 }
 
@@ -212,7 +243,6 @@ html {
 .swiper2 .swiper-button-prev2,
 .swiper2 .swiper-button-next2 {
   color: white;
-  z-index: 10;
 }
 
 .swiper2 {
@@ -306,12 +336,14 @@ html {
 #our-reach {
   height: 92vh;
   background-color: rgb(12, 114, 113);
-  
+
 }
-.reach-container{
+
+.reach-container {
   display: flex;
   transform: translateX(4%);
 }
+
 .reach-circle {
   width: 350px;
   height: 350px;
@@ -322,7 +354,8 @@ html {
   position: relative;
 
 }
-.reach-circle-logo{
+
+.reach-circle-logo {
   width: 250px;
   height: 250px;
   border-radius: 50%;
@@ -331,14 +364,16 @@ html {
   justify-content: center;
   align-items: center;
   top: 149px;
-    left: -112px;
+  left: -112px;
   position: relative;
 }
-.reach-circle-logo img{
+
+.reach-circle-logo img {
   max-width: 90%;
-  
+
 }
-.reach-circle2{
+
+.reach-circle2 {
   width: 350px;
   height: 350px;
   border-radius: 50%;
@@ -347,6 +382,7 @@ html {
   top: 145px;
   left: 457px;
 }
+
 .reach-circle-left-img {
   width: 90%;
   object-fit: cover;
@@ -354,14 +390,16 @@ html {
   padding-left: 30px;
   transform: scale(1.1);
 }
-.reach-circle-right-img{
+
+.reach-circle-right-img {
   width: 90%;
   object-fit: cover;
   padding-top: 90px;
   padding-left: 30px;
-  transform:scale(1.1);
+  transform: scale(1.1);
 }
-.reach-circle a{
+
+.reach-circle a {
   height: 40px;
   width: 40px;
   background-color: rgb(18, 57, 89);
@@ -371,62 +409,82 @@ html {
   text-align: center;
   animation: glowing 1000ms infinite;
 }
+
 @keyframes glowing {
-  0% { background-color: rgb(18, 57, 89); box-shadow: 0 0 3px rgb(18, 57, 89); }
-  50% { background-color: rgb(40, 100, 148); box-shadow: 0 0 20px rgb(40, 100, 148); }
-  100% { background-color: rgb(18, 57, 89); box-shadow: 0 0 3px rgb(18, 57, 89); }
+  0% {
+    background-color: rgb(18, 57, 89);
+    box-shadow: 0 0 3px rgb(18, 57, 89);
+  }
+
+  50% {
+    background-color: rgb(40, 100, 148);
+    box-shadow: 0 0 20px rgb(40, 100, 148);
+  }
+
+  100% {
+    background-color: rgb(18, 57, 89);
+    box-shadow: 0 0 3px rgb(18, 57, 89);
+  }
 }
-.reach-circle a:hover{
+
+.reach-circle a:hover {
   background-color: white;
   color: rgb(18, 57, 89);
 }
-.reach-logos img{
+
+.reach-logos img {
   width: 60%;
   margin-top: 15%;
 }
-.reach-logo-1{
+
+.reach-logo-1 {
   left: 2px;
   top: 135px;
   transform: translateX(-50%);
 }
 
-.reach-logo-2{
+.reach-logo-2 {
   left: 21px;
   top: 69px;
   transform: translateX(-50%);
 }
-.reach-logo-3{
+
+.reach-logo-3 {
   left: 47px;
   top: 13px;
 }
-.reach-logo-4{
+
+.reach-logo-4 {
   left: 114px;
   top: -17px;
 }
-.reach-logo-5{
+
+.reach-logo-5 {
   left: 188px;
   top: -16px;
 }
-.reach-logo-6{
+
+.reach-logo-6 {
   left: -13px;
   top: 206px;
 }
-.reach-logo-7{
+
+.reach-logo-7 {
   left: 26px;
   top: 271px;
 }
-.reach-logo-8{
+
+.reach-logo-8 {
   left: 90px;
   top: 314px;
 }
-.reach-logo-9{
+
+.reach-logo-9 {
   left: 172px;
   top: 325px;
 }
-.reach-logo-10{
+
+.reach-logo-10 {
   left: 246px;
   top: 300px;
 }
-
-
-
