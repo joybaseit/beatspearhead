@@ -5,10 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-  integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-  crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <title>Home</title>
 </head>
 
@@ -76,7 +75,7 @@
   </div>
 
   <div id="services">
-    <div class="services-left-content">
+    <div class="services-left-content" data-aos="fade-right">
       <h2 class="services-header">Our Services</h2>
       <div class="service-details">
         <i class="fa-solid fa-chess-knight fa-2x"></i>
@@ -105,7 +104,7 @@
       </div>
 
     </div>
-    <div class="services-right-content">
+    <div class="services-right-content" data-aos="fade-left">
       <div class="services-swiper-div-center">
         <div class="swiper2">
           <div class="swiper-wrapper">
@@ -125,7 +124,7 @@
   </div>
   <div id="our-reach">
     <div class="reach-container">
-      <div class="reach-circle">
+      <div class="reach-circle" data-aos="fade-right">
         <img class="reach-circle-left-img" src="asset/mapbd.png">
         <div class="reach-logos">
           <a class="reach-logo-1" href="/beatspearhead/imo.html" target="_blank"><img src="asset/imologo.png"></a>
@@ -141,10 +140,12 @@
         </div>
       </div>
 
-      <div class="reach-circle2">
+      <div class="reach-circle2" data-aos="fade-left">
         <img class="reach-circle-right-img" src="asset/earth.png">
       </div>
-      <div class="reach-circle-logo">
+      <div class="reach-circle-logo" data-aos="flip-left"
+      data-aos-easing="ease-out-cubic"
+      data-aos-duration="1000">
         <img src="asset/logo.png">
       </div>
     </div>
@@ -152,14 +153,14 @@
   <div id="contact-us">
     <h1 class="contact-us-header">Connect with us <span style="color: grey;">↓</span></h1>
     <div class="contact-us-container">
-      <div class="contact-us-div">
+      <div class="contact-us-div" data-aos="fade-up-right">
         <a href="#">
           <img src="asset/motijheel.jpg" alt="img">
           <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, adipisci?</h3>
           <p>Contact Us</p>
         </a>
       </div>
-      <div class="contact-us-div">
+      <div class="contact-us-div" data-aos="fade-up">
         <a href="#">
           <img src="asset/gulshan.jpg" alt="img">
           <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate distinctio eius deserunt a vitae
@@ -167,7 +168,7 @@
           <p>Contact Us</p>
         </a>
       </div>
-      <div class="contact-us-div">
+      <div class="contact-us-div" data-aos="fade-up-left">
         <a href="#">
           <img src="asset/htjhl.jpg" alt="img">
           <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur blanditiis fugiat, ipsum optio quae
@@ -210,7 +211,11 @@
     });
 
   </script>
-
+<script>
+  AOS.init({
+    duration: 500
+  });
+</script>
 </body>
 
 </html>
