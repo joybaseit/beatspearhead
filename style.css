@@ -380,6 +380,7 @@ html {
 .contact-us-div {
   width: 30vw;
   height: 450px;
+  border-radius: 7px;
   cursor: pointer;
   position: relative;
   overflow: hidden;
