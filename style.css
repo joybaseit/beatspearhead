@@ -8,9 +8,8 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
 body {
-  padding-top: 60px;
+  margin-top: 60px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -202,9 +201,6 @@ html {
   text-size-adjust:none;
 }
 
-#people {
-  height: 90vh;
-}
 
 /*--------------Services------------- */
 #services {
@@ -216,6 +212,7 @@ html {
   gap: 1rem;
   overflow: hidden;
 }
+
 
 .services-left-content {
   display: flex;
@@ -230,6 +227,7 @@ html {
   row-gap: 40px;
 }
 
+
 .service-details i {
   padding-top: 5px;
 }
@@ -238,6 +236,7 @@ html {
   padding-bottom: 30px;
   padding-left: 35%;
 }
+
 
 /* services swiperjs */
 
@@ -248,6 +247,8 @@ html {
   text-align: center;
   margin-top: 80px;
 }
+
+
 
 .services-swiper-div-center {
   display: flex;
@@ -281,13 +282,61 @@ html {
   background-color: white;
 }
 
+.service-details i {
+  padding-top: 5px;
+}
+
+.services-header {
+  padding-bottom: 30px;
+  padding-left: 35%;
+}
+
+
+/* services swiperjs */
+
+.swiper {
+  width: 580px;
+  height: 500px;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 80px;
+}
+@media only screen and (max-width: 600px) {
+  #services {
+    height: auto;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .services-left-content {
+    padding-left: 20px;
+  }
+  .service-details {
+    grid-template-columns: 70px 75vw;
+  }
+  .services-header {
+    padding-bottom: 30px;
+    padding-left: 15%;
+  }
+  .swiper {
+    width: 100vw;
+    height: 95vh;
+    overflow: hidden;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .services-right-content img {
+    width: 60%;
+    height: 95%;
+  }
+}
+
 
 
 
 /* Contact-us */
 #contact-us {
   height: 92vh;
-  background-color: rgb(247, 236, 216);
+  background-color: #9edcc7;
 }
 
 .contact-us-header {
@@ -317,11 +366,13 @@ html {
   height: 450px;
   object-fit: cover;
   transition: 0.5s all ease-in-out;
-  filter: brightness(80%);
+  filter: brightness(90%);
 }
 
 .contact-us-container img:hover {
   transform: scale(1.1);
+  filter: brightness(100%);
+
 }
 
 .contact-us-div h3 {
