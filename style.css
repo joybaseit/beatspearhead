@@ -8,6 +8,7 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
 body {
   margin-top: 60px;
   font-family: 'Poppins', sans-serif;
@@ -55,7 +56,8 @@ html {
   cursor: pointer;
   color: rgb(12, 114, 113);
 }
-.navbar-links li>a{
+
+.navbar-links li>a {
   color: rgb(12, 114, 113);
 }
 
@@ -67,6 +69,20 @@ html {
   display: none;
 }
 
+#loginbtn {
+  background-color: #0c7271;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white; 
+  padding: 12px 20px;
+}
+#loginbtn:hover{
+  color: red;
+}
 @media only screen and (max-width: 940px) {
   .navbar-links {
     display: none;
@@ -192,13 +208,14 @@ html {
   object-fit: fill;
   display: block;
 }
-#welcome p{
+
+#welcome p {
   position: absolute;
   color: white;
   width: 50%;
   top: 20%;
   left: 25%;
-  text-size-adjust:none;
+  text-size-adjust: none;
 }
 
 
@@ -269,16 +286,17 @@ html {
 }
 
 .services-swiper-div-center .swiper-button-prev,
-.services-swiper-div-center .swiper-button-next{
+.services-swiper-div-center .swiper-button-next {
   color: white;
 }
 
-.services-swiper-div-center .swiper-pagination > .swiper-pagination-bullet {
+.services-swiper-div-center .swiper-pagination>.swiper-pagination-bullet {
   opacity: 1;
   border: white solid 1px;
   background-color: transparent;
 }
-.services-swiper-div-center .swiper-pagination > .swiper-pagination-bullet-active {
+
+.services-swiper-div-center .swiper-pagination>.swiper-pagination-bullet-active {
   background-color: white;
 }
 
@@ -301,22 +319,27 @@ html {
   text-align: center;
   margin-top: 80px;
 }
+
 @media only screen and (max-width: 600px) {
   #services {
     height: auto;
     grid-template-columns: 1fr;
     gap: 1rem;
   }
+
   .services-left-content {
     padding-left: 20px;
   }
+
   .service-details {
     grid-template-columns: 70px 75vw;
   }
+
   .services-header {
     padding-bottom: 30px;
     padding-left: 15%;
   }
+
   .swiper {
     width: 100vw;
     height: 95vh;
@@ -324,6 +347,7 @@ html {
     text-align: center;
     margin-top: 10px;
   }
+
   .services-right-content img {
     width: 60%;
     height: 95%;
