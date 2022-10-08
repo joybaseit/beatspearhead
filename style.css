@@ -94,6 +94,7 @@ html {
 
   .navbar {
     width: 100vw;
+    height: 7vh;
   }
 
   .navbar-links {
