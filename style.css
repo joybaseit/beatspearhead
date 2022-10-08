@@ -376,7 +376,7 @@ html {
   text-align: center;
 }
 
-@keyframes glowing {
+/* @keyframes glowing {
   0% {
     background-color: rgb(18, 57, 89);
     box-shadow: 0 0 3px rgb(18, 57, 89);
@@ -391,7 +391,7 @@ html {
     background-color: rgb(18, 57, 89);
     box-shadow: 0 0 3px rgb(18, 57, 89);
   }
-}
+} */
 
 .reach-circle a:hover {
   background-color: white;
@@ -404,15 +404,13 @@ html {
 }
 
 .reach-logo-1 {
-  left: 2px;
+  left: -19px;
   top: 135px;
-  transform: translateX(-50%);
 }
 
 .reach-logo-2 {
-  left: 21px;
+  left: 2px;
   top: 69px;
-  transform: translateX(-50%);
 }
 
 .reach-logo-3 {
@@ -470,6 +468,13 @@ html {
     top: 153px;
     position: relative;
     order: 1;
+  }
+  .reach-circle-left-img{
+    transform-origin: center;
+    transform: rotate(-90deg) translateX(-15%) scale(1.1);
+  }
+  .reach-circle a{
+    transform: rotate(-90deg);
   }
 
   .reach-circle-logo {
