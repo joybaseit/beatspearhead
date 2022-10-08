@@ -35,8 +35,9 @@ html {
 
 .navbar-logo {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
 }
 
 .navbar-logo img {
@@ -84,7 +85,7 @@ html {
 #loginbtn:hover{
   color: red;
 }
-@media only screen and (max-width: 940px) {
+@media only screen and (max-width: 600px) {
   .navbar-links {
     display: none;
   }
@@ -92,109 +93,10 @@ html {
   .nav-menu {
     display: block;
   }
+  .navbar-logo {
+    padding-right: 0px;
+  }
 }
-
-/* For swipperjs welcome  */
-/* .swiper {
-  width: 98.9vw;
-  height: 92vh;
-}
-
-.welcome-slider-img {
-  width: 100%;
-  height: 100%;
-  filter: brightness(80%);
-  position: relative;
-}
-
-.swiper .swiper-button-prev,
-.swiper .swiper-button-next {
-  color: white;
-}
-
-.swiper .swiper-pagination {
-  color: white;
-}
-
-
-.swiper-slide {
-  position: relative;
-} */
-
-/* .content-container-img1{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-} */
-/* .left-content-img1 {
-  position: absolute;
-  color: white;
-  font-size: 30px;
-  top: 45%;
-  left: 5%;
-  width: 40%;
-}
-
-.right-content-img1 {
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  top: 45%;
-  right: 4%;
-  width: 37%;
-
-}
-
-.button-img1 {
-  position: absolute;
-  font-size: 15px;
-  top: 55%;
-  right: 18%;
-  width: 15%;
-  border-radius: 12px;
-  background-color: rgb(23, 23, 78);
-  padding: 12px;
-  color: white;
-  cursor: pointer;
-}
-
-.button-img1:hover,
-.button-img2:hover {
-  background-color: transparent;
-  border: 2px solid rgb(23, 23, 78);
-}
-
-.left-content-img2 {
-  position: absolute;
-  color: white;
-  font-size: 30px;
-  top: 45%;
-  left: 5%;
-  width: 40%;
-}
-
-.right-content-img2 {
-  position: absolute;
-  color: white;
-  font-size: 20px;
-  top: 45%;
-  right: 6%;
-  width: 37%;
-
-}
-
-.button-img2 {
-  position: absolute;
-  font-size: 15px;
-  top: 69%;
-  right: 17%;
-  width: 15%;
-  border-radius: 12px;
-  background-color: rgb(23, 23, 78);
-  padding: 12px;
-  color: white;
-  cursor: pointer;
-} */
 #welcome {
   height: 92vh;
   width: 99vw;
@@ -217,6 +119,29 @@ html {
   top: 20%;
   left: 25%;
   text-size-adjust: none;
+}
+@media only screen and (max-width: 600px) {
+  #welcome {
+    height: 92vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+  }
+  #welcome img {
+    min-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+  }
+  
+  #welcome p {
+    position: absolute;
+    color: white;
+    width: 90%;
+    top: 20%;
+    left: 5%;
+    font-size: 0.8rem;
+  }
 }
 
 
@@ -322,6 +247,10 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
+  .services-header {
+    padding-bottom: 0px;
+    padding-left: 0px;
+  }
   #services {
     height: auto;
     grid-template-columns: 1fr;
@@ -353,66 +282,6 @@ html {
     width: 60%;
     height: 95%;
   }
-}
-
-
-
-
-/* Contact-us */
-#contact-us {
-  height: 92vh;
-  background-color: #9edcc7;
-}
-
-.contact-us-header {
-  padding-left: 50px;
-  padding-top: 40px;
-}
-
-.contact-us-container {
-  height: 80vh;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 30px;
-}
-
-.contact-us-div {
-  width: 30vw;
-  height: 450px;
-  border-radius: 7px;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-
-}
-
-.contact-us-container img {
-  width: 32vw;
-  height: 450px;
-  object-fit: cover;
-  transition: 0.5s all ease-in-out;
-  filter: brightness(90%);
-}
-
-.contact-us-container img:hover {
-  transform: scale(1.1);
-  filter: brightness(100%);
-
-}
-
-.contact-us-div h3 {
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  color: #f2f2f2;
-}
-
-.contact-us-div p {
-  position: absolute;
-  bottom: 20px;
-  left: 50px;
-  color: #f2f2f2;
 }
 
 
@@ -454,9 +323,10 @@ html {
 }
 
 .reach-circle-logo img {
-  max-width: 90%;
+  max-width: 99%;
 
 }
+
 
 .reach-circle2 {
   width: 350px;
@@ -466,6 +336,35 @@ html {
   position: relative;
   top: 145px;
   left: 457px;
+}
+@media only screen and (max-width: 600px) {
+  #our-reach {
+    height: 1300px;
+  
+  }
+  .reach-container {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(5%);
+  } 
+  .reach-circle {
+    left: 0;
+    top: 153px;
+    position: relative;
+    order: 1;
+  } 
+  .reach-circle-logo {
+    top: 149px;
+    left: 0px;
+    position: relative;
+    order: 2;
+  }
+  .reach-circle2 {
+    top: 145px;
+    left: 0px;
+    order: 3;
+  }
+
 }
 
 .reach-circle-left-img {
@@ -571,4 +470,99 @@ html {
 .reach-logo-10 {
   left: 246px;
   top: 300px;
+}
+
+
+
+/* Contact-us */
+#contact-us {
+  height: 92vh;
+  background-color: #9edcc7;
+}
+
+.contact-us-header {
+  padding-left: 50px;
+  padding-top: 40px;
+}
+
+.contact-us-container {
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+
+.contact-us-div {
+  width: 30vw;
+  height: 450px;
+  border-radius: 7px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.contact-us-container img {
+  width: 32vw;
+  height: 450px;
+  object-fit: cover;
+  transition: 0.5s all ease-in-out;
+  filter: brightness(90%);
+}
+
+.contact-us-container img:hover {
+  transform: scale(1.1);
+  filter: brightness(100%);
+
+}
+
+.contact-us-div h3 {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  color: #f2f2f2;
+}
+
+.contact-us-div p {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #f2f2f2;
+}
+@media only screen and (max-width: 600px) {
+  #contact-us {
+    height: auto;
+  }
+  
+  .contact-us-header {
+    padding-left: 0;
+    padding-top: 40px;
+  }
+  
+  .contact-us-container {
+    height: auto;
+    flex-direction: column;
+  }
+  .contact-us-div {
+    width: 95vw;
+    height: 450px;
+    margin-bottom: 35px;
+  }
+  .contact-us-container img {
+    width: 95vw;
+    height: 450px;
+    object-fit: cover;
+  }
+  .contact-us-header {
+    text-align: center;
+    padding: 20px 0;
+  }
+  .contact-us-div p {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    color: #f2f2f2;
+  }
 }
