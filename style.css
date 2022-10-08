@@ -79,13 +79,23 @@ html {
   margin: 4px 2px;
   cursor: pointer;
   border-radius: 25px;
-  color: white; 
+  color: white;
   padding: 10px 20px;
 }
-#loginbtn:hover{
+
+#loginbtn:hover {
   color: red;
 }
+
 @media only screen and (max-width: 600px) {
+  body {
+    margin-top: 50px;
+  }
+
+  .navbar {
+    width: 100vw;
+  }
+
   .navbar-links {
     display: none;
   }
@@ -93,10 +103,12 @@ html {
   .nav-menu {
     display: block;
   }
+
   .navbar-logo {
     padding-right: 0px;
   }
 }
+
 #welcome {
   height: 92vh;
   width: 99vw;
@@ -120,25 +132,23 @@ html {
   left: 25%;
   text-size-adjust: none;
 }
+
 @media only screen and (max-width: 600px) {
   #welcome {
-    height: 92vh;
+    height: 100vh;
     width: 100vw;
-    overflow: hidden;
     position: relative;
-    text-align: center;
   }
+
   #welcome img {
-    min-width: 100%;
-    max-height: 100%;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    object-fit: fill;
   }
-  
+
   #welcome p {
-    position: absolute;
-    color: white;
     width: 90%;
-    top: 20%;
+    top: 15%;
     left: 5%;
     font-size: 0.8rem;
   }
@@ -161,17 +171,20 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 220px;
+  padding-left: 210px;
 }
 
 .service-details {
   display: grid;
-  grid-template-columns: 70px auto;
+  grid-template-columns: 80px auto;
   row-gap: 40px;
 }
+.service-details ul{
+  padding-left: 15px;
+}
 
-
-.service-details i {
+.service-details img {
+  width: 38px;
   padding-top: 5px;
 }
 
@@ -231,8 +244,7 @@ html {
 }
 
 .services-header {
-  padding-bottom: 30px;
-  padding-left: 35%;
+  margin-bottom: 30px;
 }
 
 
@@ -247,10 +259,7 @@ html {
 }
 
 @media only screen and (max-width: 600px) {
-  .services-header {
-    padding-bottom: 0px;
-    padding-left: 0px;
-  }
+
   #services {
     height: auto;
     grid-template-columns: 1fr;
@@ -259,6 +268,7 @@ html {
 
   .services-left-content {
     padding-left: 20px;
+    padding-bottom: 80px;
   }
 
   .service-details {
@@ -266,13 +276,13 @@ html {
   }
 
   .services-header {
-    padding-bottom: 30px;
-    padding-left: 15%;
+    padding-top: 50px;
+    padding-left: 27%;
   }
 
   .swiper {
     width: 100vw;
-    height: 95vh;
+    height: 70vh;
     overflow: hidden;
     text-align: center;
     margin-top: 10px;
@@ -280,7 +290,7 @@ html {
 
   .services-right-content img {
     width: 60%;
-    height: 95%;
+    height: 90%;
   }
 }
 
@@ -295,7 +305,8 @@ html {
 
 .reach-container {
   display: flex;
-  transform: translateX(5%);
+  height: auto;
+  width: 80vw;
 }
 
 .reach-circle {
@@ -306,6 +317,7 @@ html {
   left: 270px;
   top: 153px;
   position: relative;
+  
 
 }
 
@@ -336,35 +348,6 @@ html {
   position: relative;
   top: 145px;
   left: 457px;
-}
-@media only screen and (max-width: 600px) {
-  #our-reach {
-    height: 1300px;
-  
-  }
-  .reach-container {
-    display: flex;
-    flex-direction: column;
-    transform: translateX(5%);
-  } 
-  .reach-circle {
-    left: 0;
-    top: 153px;
-    position: relative;
-    order: 1;
-  } 
-  .reach-circle-logo {
-    top: 149px;
-    left: 0px;
-    position: relative;
-    order: 2;
-  }
-  .reach-circle2 {
-    top: 145px;
-    left: 0px;
-    order: 3;
-  }
-
 }
 
 .reach-circle-left-img {
@@ -471,7 +454,38 @@ html {
   left: 246px;
   top: 300px;
 }
+@media only screen and (max-width: 600px) {
+  #our-reach {
+    height: 1100px;
+  }
 
+  .reach-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .reach-circle {
+    transform: rotate(90deg);
+    left: 6%;
+    top: 153px;
+    position: relative;
+    order: 1;
+  }
+
+  .reach-circle-logo {
+    top: 125px;
+    left: 22%;
+    position: relative;
+    order: 2;
+  }
+
+  .reach-circle2 {
+    top: 90px;
+    left: 6%;
+    order: 3;
+  }
+
+}
 
 
 /* Contact-us */
@@ -531,34 +545,39 @@ html {
   left: 20px;
   color: #f2f2f2;
 }
+
 @media only screen and (max-width: 600px) {
   #contact-us {
     height: auto;
   }
-  
+
   .contact-us-header {
     padding-left: 0;
     padding-top: 40px;
   }
-  
+
   .contact-us-container {
     height: auto;
     flex-direction: column;
   }
+
   .contact-us-div {
     width: 95vw;
-    height: 450px;
+    height: 400px;
     margin-bottom: 35px;
   }
+
   .contact-us-container img {
     width: 95vw;
-    height: 450px;
+    height: 400px;
     object-fit: cover;
   }
+
   .contact-us-header {
     text-align: center;
     padding: 20px 0;
   }
+
   .contact-us-div p {
     position: absolute;
     bottom: 5px;
