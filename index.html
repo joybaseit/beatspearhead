@@ -16,16 +16,19 @@
 <body>
   <!-- Navbar Start -->
   <nav class='navbar'>
-    <a class="nav-menu"><i class="fa-solid fa-bars fa-2x"></i></a>
-    <ul class='navbar-links'>
-      <li><a href='#welcome'>WELCOME</a></li>
-      <li><a href='#services'>OUR SERVICES</a></li>
-      <li><a href='#our-reach'>OUR REACH</a></li>
-      <li><a href='#contact-us'>CONTACT US</a></li>
-      <li><a id="loginbtn" style="
+    <div style="width: 13vw;"></div>
+    <a class="toggle-button-menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+    <div class='navbar-links'>
+      <ul>
+        <li><a href='#welcome'>WELCOME</a></li>
+        <li><a href='#services'>OUR SERVICES</a></li>
+        <li><a href='#our-reach'>OUR REACH</a></li>
+        <li><a href='#contact-us'>CONTACT US</a></li>
+        <li><a id="loginbtn" style="
         " href='https://www.bitsdashboard.com/'>LOGIN</a></li>
-      <li><i class="fa-solid fa-magnifying-glass fa-xl"></i></li>
-    </ul>
+        <li class="link-items"><i class="fa-solid fa-magnifying-glass fa-xl"></i></li>
+      </ul>
+    </div>
     <div class='navbar-logo'>
       <a href="https://joybaseit.github.io/beatspearhead/"><img src="asset/logo.png" alt="Logo"> </a>
     </div>
@@ -153,46 +156,52 @@
   </div>
 
 
-
+  <script>
+    const toogleButton = document.getElementsByClassName('toggle-button-menu')[0]
+    const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+    toogleButton.addEventListener('click', ()=>{
+      navbarLinks.classList.toggle('active')
+    })
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script>
-    // const swiper = new Swiper('.swiper', {
-    //   loop: true,
-    //   autoplay: {
-    //     delay: 2000,
-    //     disableOnInteraction: false,
-    //   },
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     cliclable: true,
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    // });
-    const swiper2 = new Swiper('.swiper', {
-      loop: true,
-      autoplay: {
-        delay: 2600,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        cliclable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+  // const swiper = new Swiper('.swiper', {
+  //   loop: true,
+  //   autoplay: {
+  //     delay: 2000,
+  //     disableOnInteraction: false,
+  //   },
+  //   pagination: {
+  //     el: '.swiper-pagination',
+  //     cliclable: true,
+  //   },
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
+  const swiper2 = new Swiper('.swiper', {
+    loop: true,
+    autoplay: {
+      delay: 2600,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      cliclable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
 
   </script>
   <script>
-    AOS.init({
-      offset: 170,
-      duration: 500
-    });
+  AOS.init({
+    offset: 170,
+    duration: 500
+  });
   </script>
 </body>
 

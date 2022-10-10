@@ -10,7 +10,7 @@
 }
 
 body {
-  margin-top: 60px;
+  margin-top: 50px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -21,12 +21,9 @@ html {
 
 .navbar {
   width: 100vw;
-  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1rem;
-  overflow: hidden;
   position: fixed;
   top: 0;
   background-color: white;
@@ -36,21 +33,21 @@ html {
 .navbar-logo {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   padding-right: 30px;
+  padding-top: 5px;
 }
 
 .navbar-logo img {
   width: 170px;
 }
 
-.navbar-links {
+.navbar-links ul {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin-left: 180px;
+  flex-wrap: wrap;
 }
 
 .navbar-links li {
@@ -66,9 +63,17 @@ html {
 .navbar-links li>a:hover {
   color: red;
 }
-
-.nav-menu {
+/* .navbar-links .link-items{
+  display: inline-block;
+  padding: 20px 10px;
+} */
+.toggle-button-menu{
+  position: absolute;
+  top: 8px;
+  left: 8px;
   display: none;
+  color: #0c7271;
+
 }
 
 #loginbtn {
@@ -91,27 +96,40 @@ html {
   body {
     margin-top: 50px;
   }
-
+  .toggle-button-menu{
+    display: flex;
+  }
   .navbar {
-    width: 100vw;
-    height: 7vh;
+    flex-direction: column;
+    align-items: flex-end;
   }
-
-  .navbar-links {
+  .navbar-links{
     display: none;
+    order: 2;
+    width: 100%;
   }
-
-  .nav-menu {
-    display: block;
+  .navbar-links ul{
+    width: 100%;
+    flex-direction: column;
+  }
+  .navbar-links li{
+    padding: 10px 0;
+  }
+  .navbar-links.active{
+    display: flex;
   }
 
   .navbar-logo {
-    padding-right: 0px;
+    order: 1;
+  }
+  .navbar-logo {
+    padding-right: 5px;
+    padding-top: 5px;
   }
 }
 
 #welcome {
-  height: 92vh;
+  height: 94vh;
   width: 99vw;
   overflow: hidden;
   position: relative;
@@ -158,7 +176,7 @@ html {
 
 /*--------------Services------------- */
 #services {
-  height: 92vh;
+  height: 94vh;
   background-color: rgb(65, 54, 130);
   color: white;
   display: grid;
@@ -299,7 +317,7 @@ html {
 /* reach----------------------- */
 /* Our Reach */
 #our-reach {
-  height: 92vh;
+  height: 94vh;
   background-color: rgb(12, 114, 113);
 
 }
@@ -308,6 +326,7 @@ html {
   display: flex;
   height: auto;
   width: 80vw;
+  transform: translateX(5%);
 }
 
 .reach-circle {
@@ -497,17 +516,17 @@ html {
 
 /* Contact-us */
 #contact-us {
-  height: 92vh;
+  height: 94vh;
   background-color: #9edcc7;
 }
 
 .contact-us-header {
   padding-left: 50px;
-  padding-top: 40px;
+  padding-top: 50px;
 }
 
 .contact-us-container {
-  height: 80vh;
+  height: 70vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
