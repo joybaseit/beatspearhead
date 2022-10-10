@@ -177,7 +177,7 @@ html {
 /*--------------Services------------- */
 #services {
   height: 94vh;
-  background-color: rgb(65, 54, 130);
+  background-color: rgb(12, 114, 113);
   color: white;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -318,7 +318,7 @@ html {
 /* Our Reach */
 #our-reach {
   height: 94vh;
-  background-color: rgb(12, 114, 113);
+  background-color: rgb(12, 90, 61);
 
 }
 
@@ -356,7 +356,6 @@ html {
 
 .reach-circle-logo img {
   max-width: 99%;
-
 }
 
 
@@ -371,11 +370,10 @@ html {
 }
 
 .reach-circle-left-img {
-  width: 90%;
+  width: 62%;
   object-fit: cover;
-  padding-top: 41px;
-  padding-left: 30px;
-  transform: scale(1.1);
+  transform: translateY(37px) translateX(60px);
+  filter: brightness(150%);
 }
 
 .reach-circle-right-img {
@@ -492,7 +490,7 @@ html {
   }
   .reach-circle-left-img{
     transform-origin: center;
-    transform: rotate(-90deg) translateX(-15%) scale(1.1);
+    transform: rotate(-90deg) translateX(-15%) translateY(65px);
   }
   .reach-circle a{
     transform: rotate(-90deg);
@@ -610,4 +608,22 @@ html {
     left: 5px;
     color: #f2f2f2;
   }
+}
+
+/* tooltip hover over icon our reach */
+
+.tooltip-wrap .tooltip-content {
+  display: none;
+  position: absolute;
+  top: 5rem;
+  left: 5%;
+  right: 5%;
+  padding: .5em;
+  min-width: 10rem;
+  border-radius:30px;
+  background-color: aliceblue;
+  z-index: 5;
+}
+.tooltip-wrap:hover .tooltip-content {
+  display: block;
 }
