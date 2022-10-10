@@ -81,11 +81,11 @@ html {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin: 4px 2px;
+  margin: 2px;
   cursor: pointer;
   border-radius: 25px;
   color: white;
-  padding: 10px 20px;
+  padding: 7px 15px;
 }
 
 #loginbtn:hover {
