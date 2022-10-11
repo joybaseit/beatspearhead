@@ -381,7 +381,9 @@ html {
   object-fit: cover;
   padding-top: 90px;
   padding-left: 30px;
-  transform: scale(1.1);
+  transform: scale(1.25);
+  filter: brightness(300%);
+
 }
 
 .reach-circle a {
@@ -412,8 +414,7 @@ html {
 } */
 
 .reach-circle a:hover {
-  background-color: white;
-  color: rgb(18, 57, 89);
+  color: black;
 }
 
 .reach-logos img {
@@ -610,20 +611,10 @@ html {
   }
 }
 
-/* tooltip hover over icon our reach */
-
-.tooltip-wrap .tooltip-content {
-  display: none;
-  position: absolute;
-  top: 5rem;
-  left: 5%;
-  right: 5%;
-  padding: .5em;
-  min-width: 10rem;
-  border-radius:30px;
-  background-color: aliceblue;
-  z-index: 5;
+.tippy-box[data-theme~='light'] {
+  background-color: white;
+  color: black;
 }
-.tooltip-wrap:hover .tooltip-content {
-  display: block;
+.tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
+  border-top-color: white;
 }
