@@ -1,72 +1,84 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 }
-nav img{
+
+nav img {
     width: 100vw;
     height: 100px;
 }
-.section-1{
+
+.section-1 {
     width: 100vw;
 }
-.section-1 img{
+
+.section-1 img {
     width: 100%;
 
 }
-.section-1 p{
+
+.section-1 p {
     font-size: 20px;
     margin-left: 3%;
     margin-top: 15px;
 }
-.s2-h1{
+
+.s2-h1 {
     margin-left: 3%;
     margin-bottom: 30px;
     margin-top: 50px;
     color: rgb(78, 173, 166);
 }
-.section-2{
+
+.section-2 {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
-.s2-d1{
+
+.s2-d1 {
     height: 400px;
     overflow: hidden;
 }
-.s2-d1 img{
+
+.s2-d1 img {
     height: 100%;
     width: 100%;
 }
-.s2-d2{
+
+.s2-d2 {
     border: 10px solid rgb(217, 217, 217);
     height: 350px;
     position: relative;
     padding: 40px;
 }
-.s2-d3{
+
+.s2-d3 {
     border: 10px solid rgb(217, 217, 217);
     height: 350px;
     position: relative;
     padding: 40px;
 
 }
-.s2-d4{
+
+.s2-d4 {
     border: 10px solid rgb(217, 217, 217);
     height: 350px;
     position: relative;
     padding: 40px;
 }
-.s2-d2-circle-1{
+
+.s2-d2-circle-1 {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -81,7 +93,7 @@ nav img{
     right: 125px
 }
 
-.s2-d2-circle-2{
+.s2-d2-circle-2 {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -95,7 +107,8 @@ nav img{
     top: -33px;
     right: 125px
 }
-.s2-d2-circle-3{
+
+.s2-d2-circle-3 {
     position: absolute;
     width: 60px;
     height: 60px;
@@ -109,44 +122,130 @@ nav img{
     top: -33px;
     right: 125px;
 }
-.mini-rect{
+
+.mini-rect {
     background-color: rgb(255, 192, 0);
     width: 30px;
     height: 15px;
     margin-bottom: 60px;
 }
-.section-2>h1{
+
+.section-2>h1 {
     color: rgb(91, 155, 213);
     grid-column: 3/span 2;
     transform: translateX(-30px);
 
 }
-.section-3{
+
+.section-3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
-.s3-left-img-container{
+
+.s3-left-img-container {
     width: 45vw;
 
 }
-.s3-right-container{
+
+.s3-right-container {
     font-weight: bold;
     font-size: 25px;
 }
-.section-4{
+
+.section-4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 50px;
 }
-.s4-left-img-container{
+
+.s4-left-img-container {
     width: 45vw;
 
 }
-.s4-right-container{
+
+.s4-right-container {
     font-weight: bold;
     font-size: 25px;
 }
-.s4-right-container ul{
+
+.s4-right-container ul {
     padding-left: 25px;
+}
+
+.section-5-header {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.s5-h1 {
+    margin-left: 3%;
+    color: rgb(78, 173, 166);
+    margin-bottom: 80px;
+}
+
+.section-5 {
+    display: grid;
+    grid-template-columns: 1fr .8fr 1fr;
+    height: 350px;
+}
+
+.s5-left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.s5-right-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.s5-content-div {
+    width: 450px;
+    height: 150px;
+    border-radius: 10px;
+    padding: 30px;
+    background-color: rgb(247, 166, 155);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s5-content-div img {
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+}
+
+
+.s5-middle-circle {
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    background-color: rgb(6, 11, 46);
+    border: 8px solid #fff;
+    box-shadow: 0 0 0 1px rgb(6, 11, 46);
+    padding: 4em;
+    display: flex;
+    align-items: center;
+    transform: translateX(18px);
+}
+.s5-middle-circle h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+.s5-content-last{
+    background-color: rgb(252, 239, 219);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding: 20px 45px;
+    margin: 30px;
+    border-radius: 10px;
+    text-align: center;
 }
