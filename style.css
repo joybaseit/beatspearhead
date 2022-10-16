@@ -323,6 +323,11 @@ html {
   background-color: rgb(91, 145, 121);
 
 }
+.our-reach-header{
+  color: white;
+  padding: 40px 0 0 60px;
+}
+
 
 .reach-container {
   display: flex;
@@ -523,8 +528,7 @@ html {
 }
 
 .contact-us-header {
-  padding-left: 50px;
-  padding-top: 50px;
+  padding: 50px 0 0 50px;
 }
 
 .contact-us-container {
@@ -562,9 +566,10 @@ html {
 
 .contact-us-div h3 {
   position: absolute;
-  top: 10px;
-  left: 15px;
+  top: 30px;
+  left: 30px;
   color: #f2f2f2;
+  font-weight: 400;
 }
 
 .contact-us-div p {
