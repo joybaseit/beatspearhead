@@ -235,12 +235,14 @@ nav img {
     align-items: center;
     transform: translateX(18px);
 }
-.s5-middle-circle h2{
+
+.s5-middle-circle h2 {
     color: white;
     font-size: 20px;
     text-align: center;
 }
-.s5-content-last{
+
+.s5-content-last {
     background-color: rgb(252, 239, 219);
     grid-column-start: 2;
     grid-column-end: 3;

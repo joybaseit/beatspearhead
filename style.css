@@ -10,7 +10,7 @@
 }
 
 body {
-  margin-top: 50px;
+  margin-top: 60px;
   font-family: 'Poppins', sans-serif;
   overflow-x: hidden;
 }
@@ -21,6 +21,7 @@ html {
 
 .navbar {
   width: 100vw;
+  height: 8vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -102,6 +103,7 @@ html {
   .navbar {
     flex-direction: column;
     align-items: flex-end;
+    height: auto;
   }
   .navbar-links{
     display: none;
@@ -147,7 +149,7 @@ html {
   position: absolute;
   color: white;
   width: 52%;
-  top: 20%;
+  top: 10%;
   left: 25%;
   text-size-adjust: none;
 }
@@ -318,7 +320,7 @@ html {
 /* Our Reach */
 #our-reach {
   height: 94vh;
-  background-color: rgb(12, 90, 61);
+  background-color: rgb(91, 145, 121);
 
 }
 
@@ -342,20 +344,20 @@ html {
 }
 
 .reach-circle-logo {
-  width: 250px;
-  height: 250px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   top: 149px;
-  left: -112px;
+  left: -105px;
   position: relative;
 }
 
 .reach-circle-logo img {
-  max-width: 99%;
+  max-width: 85%;
 }
 
 
@@ -370,19 +372,20 @@ html {
 }
 
 .reach-circle-left-img {
-  width: 62%;
-  object-fit: cover;
-  transform: translateY(37px) translateX(60px);
-  filter: brightness(150%);
-}
-
-.reach-circle-right-img {
   width: 90%;
   object-fit: cover;
   padding-top: 90px;
   padding-left: 30px;
   transform: scale(1.25);
   filter: brightness(300%);
+}
+
+.reach-circle-right-img {
+
+  width: 61%;
+  object-fit: cover;
+  transform: translateY(37px) translateX(60px);
+  filter: brightness(150%);
 
 }
 
@@ -418,8 +421,8 @@ html {
 }
 
 .reach-logos img {
-  width: 60%;
-  margin-top: 15%;
+  width: 65%;
+  margin-top: 18%;
 }
 
 .reach-logo-1 {
