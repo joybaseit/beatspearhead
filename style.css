@@ -6,13 +6,21 @@
   border: 0;
   outline: 0;
   box-sizing: border-box;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 body {
-  margin-top: 60px;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
   overflow-x: hidden;
+}
+body h1{
+  font-size: 32px;
+}
+body h2{
+  font-size: 24px;
+}
+body h3{
+  font-size: 18.72px;
 }
 
 html {
@@ -24,8 +32,8 @@ html {
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  position: fixed;
+  align-items: flex-start !important;
+  position: sticky !important;
   top: 0;
   background-color: white;
   z-index: 10;
@@ -33,22 +41,20 @@ html {
 
 .navbar-logo {
   display: flex;
-  justify-content: flex-end;
+  align-items: flex-start;
+  justify-content: center;
   padding-right: 30px;
-  padding-top: 5px;
 }
 
 .navbar-logo img {
   width: 170px;
 }
 
-.navbar-links ul {
-  flex: 1;
-  display: flex;
+.navbar-links>ul {
+  display: flex ;
   justify-content: center;
   align-items: center;
-  list-style: none;
-  flex-wrap: wrap;
+  list-style: none !important;
 }
 
 .navbar-links li {
@@ -92,7 +98,22 @@ html {
 #loginbtn:hover {
   color: red;
 }
-
+@media screen and (min-width: 993px)
+       {
+        
+          .dropdown .dropdown-menu.show
+          {
+             display: none !important;
+          }
+          .dropdown:hover .dropdown-menu
+          {
+            display: block !important;
+          }
+          .dropdown:focus .dropdown-menu
+          {
+            display: block !important;
+          }
+        }
 @media only screen and (max-width: 600px) {
   body {
     margin-top: 50px;
