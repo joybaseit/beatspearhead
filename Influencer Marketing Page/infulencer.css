@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* this is header  */
+
+
+.flex-container {
+    display: flex;
+    position: absolute;
+    margin: 5px 10px 5px 10px;
+    
+    
+}
+.flex-container > div {
+    margin-left: 9px;
+    margin-top: 12px;
+    font-size: 10px;
+}
+/* This is section 1 */
+.section1{
+    background-color: #FEB408;
+    display: flex;
+    top: 50px;
+    height: 600px;
+    
+}
+.img{
+    float: right;
+    margin-right: -210px;
+    padding: 30px;
+    
+
+    
+}
+.pm{
+    margin-left: -5px;
+}
+.pm2{
+    margin-left: 50px;
+}
+.part1{
+    float:right;
+    margin-right: -785px; 
+    margin-top: 170px;
+    font-style: italic;
+}
+.part2{
+    float:right;
+    margin-right: -760px; 
+    margin-top: 215px;
+    font-style: italic;
+}
+.part3{
+    float:right;
+    margin-right: -690px; 
+    margin-top: 250px;
+    font-style: italic;
+}
+.p1{
+    float:right;
+    margin-right: -790px; 
+    margin-top: 300px;
+    
+}
+.p2{
+    float:right;
+    margin-right: -835px; 
+    margin-top: 325px;
+    
+}
+.p3{
+    float:right;
+    margin-right: -595px; 
+    margin-top: 352px;
+}
+.flex-bt {
+    display: flex;
+    margin-left: -110px;
+    margin-top: 20px;
+  }
+  
+  .flex-bt > div {
+    position: relative;
+    background-color: #0a0a0a;
+    color: aliceblue;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 10px;
+    top: 370px;
+    height: fit-content;
+    right: -470px;
+    font-style: italic;
+    float: right;
+    padding: 13px 22px;
+  }
+  /* This is Section 2 */
+.section2 h1{
+    margin: 20px;
+}
+.section2 img{
+    margin-top: 80px;
+    margin-left: 110px;
+    width: 80%;
+    height: 80vh;
+}
+.wf h1{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/* This is Section 3 */
+.section3 {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 40px;
+    
+}
+  
+.section3 .s3-1 {
+    width: 45%;
+    height: 45vh;
+    margin-left: 200px;
+}
+.section3 .s3-2 {
+    width: 18%;
+    margin-left: 45px;
+    height: 50vh;
+}
+/* This is Section 4 */
+.section4 {
+    display: flex;
+    margin-top: 50px;
+    margin-left: 84px;
+    position: relative;
+
+}
+.srhlogoimg{
+    float: right;
+    margin-top: -40px;
+    margin-left: 350px;
+    height: 80vh;
+}
+.apl img{
+    width: 30%;
+    margin-top: 10px;
+}
+/* This is Section 5 */
+.section5 .apl2 img{
+    width: 30%;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+.divider {
+    border-left: 3px solid black;
+    height: 200px;
+    position: absolute;
+    left: 50%;
+    margin-left: -4px;
+    top: 2600px;
+}
+.apl3{
+    margin-top: -172px;
+    margin-left: -9px;
+}
+.section5 .apl3 h1{
+    margin-top: -140px;
+    margin-left: 785px;
+    border-radius: 8px;
+    background-color: #A9D18E;
+    width: fit-content;
+
+}
+.section5 .wtp{
+    margin-top: 25px;
+    margin-left: 785px;
+    width: fit-content
+}
+/* This is Section 6 */
+.section6 img{
+    margin-top: 80px;
+    margin-left: 180px;
+    width: 80%;
+    height: 100vh;
+    
+}
+/* This is Secton 7 */
+.section7{
+    background-color: #00A1E5;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+}
+.section7 h1{
+    color: white;
+    font-family: inherit;
+    margin-top: 50px;
+    text-align: center;
+}
+
+  

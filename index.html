@@ -4,7 +4,8 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1 ">
 <link rel="stylesheet" href="style.css">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
   integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -25,8 +26,9 @@
         <li><a href='#services'>OUR SERVICES</a></li>
         <li class="dropdown">
           <a class="" href="#our-reach">OUR REACH</a>
-          <a class="dropdown-toggle dropdown-toggle-split"  role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false"></a>
-        
+          <a class="dropdown-toggle dropdown-toggle-split" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false"></a>
+
           <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <li><a class="dropdown-item" target="_blank" href="/beatspearhead/imo.html">IMO</a></li>
             <li><a class="dropdown-item" target="_blank" href="/beatspearhead/likee.html">LIKEE</a></li>
@@ -47,7 +49,8 @@
 
   <div id="welcome">
     <img src="asset/welcome-img.png" alt="Welcome">
-    <p data-aos="fade-up">Welcome<br>Started journey in 2016, Bitspearhead Limited was focused to regulate it’s business in
+    <p data-aos="fade-up">Welcome<br>Started journey in 2016, Bitspearhead Limited was focused to regulate it’s business
+      in
       different approach other
       than traditional digital happening in Bangladesh. Bitspearhead wanted to thrive it’s success in other effective
       digital platforms which will not only increase brand’s value in digital approach to end-consumers, but also to
@@ -91,10 +94,18 @@
       <div class="services-swiper-div-center">
         <div class="swiper">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="asset/test.png"></div>
-            <div class="swiper-slide"><img src="asset/test.png"></div>
-            <div class="swiper-slide"><img src="asset/test.png"></div>
+            <div class="swiper-slide">
+              <div class="testvid">
+                <img style="position: relative;" src="asset/test.png">
+                <video style="position: absolute;" width="300" height="500" autoplay="autoplay">
+                  <source src="asset/ad_1.mp4" type="video/mp4">
+                  <!-- <source src="movie.ogg" type="video/ogg"> -->
+                  Your browser does not support the video tag.
+                </video>
 
+              </div>
+
+            </div>
           </div>
         </div>
 
@@ -118,11 +129,16 @@
             <a class="reach-logo-1" href="/beatspearhead/imo.html" target="_blank"><img src="asset/imologo.png"></a>
             <a class="reach-logo-2" href="/beatspearhead/likee.html" target="_blank"><img
                 src="asset/likee-logo.png"></a>
-            <a class="reach-logo-3" href="/beatspearhead/appnext.html" target="_blank"><img src="asset/appnext-logo.png"></a>
-            <a class="reach-logo-4" href="/beatspearhead/mcanvas.html" target="_blank"><img src="asset/mcanvas logo.png"></a>
-            <a class="reach-logo-5" href="#"></a>
-            <a class="reach-logo-6" href="#">f</a>
-            <a class="reach-logo-7" href="#">g</a>
+            <a class="reach-logo-3" href="/beatspearhead/appnext.html" target="_blank"><img
+                src="asset/appnext-logo.png"></a>
+            <a class="reach-logo-4" href="/beatspearhead/mcanvas.html" target="_blank"><img
+                src="asset/mcanvas logo.png"></a>
+            <a class="reach-logo-5"  href="/beatspearhead/yahoo/yahoo.html" target="_blank"><img
+              src="asset/yahoologo.png"></a>
+            <a class="reach-logo-6" href="/beatspearhead/Sizmek/sizmek.html" target="_blank"><img
+              src="asset/sizmeklogo.png"></a>
+            <a class="reach-logo-7" href="/beatspearhead/Influencer Marketing Page/influencer.html" target="_blank"><img
+              src="asset/influencermktlogo.png"></a>
             <a class="reach-logo-8" href="#">h</a>
             <a class="reach-logo-9" href="#">i</a>
             <a class="reach-logo-10" href="#">j</a>
@@ -179,10 +195,10 @@
   <script>
     const swiper2 = new Swiper('.swiper', {
       loop: true,
-      autoplay: {
-        delay: 2600,
-        disableOnInteraction: false,
-      },
+      // autoplay: {
+      //   delay: 2600,
+      //   disableOnInteraction: false,
+      // },
       pagination: {
         el: '.swiper-pagination',
         cliclable: true,
@@ -227,18 +243,19 @@
       theme: 'light',
       interactive: true,
       allowHTML: true,
-      content: 'My tooltip!',
+      content: '<div style="text-align:center;"><h3>Yahoo</h3>A full-stack platform to grow businesses and drive more meaningful connections across advertising, search and media.<br><a style="all: revert; text-decoration: none; color: rgb(12, 114, 113); font-weight: bold;" href="/beatspearhead/yahoo/yahoo.html">Read More</a><div>',
+
     }); tippy('.reach-logo-6', {
       theme: 'light',
       interactive: true,
       allowHTML: true,
-      content: 'My tooltip!',
+      content: '<div style="text-align:center;"><h3>Sizmek</h3>A global, multichannel ad server used to create, distribute, customize, measure,  track and optimize campaigns across a variety of screens<br><a style="all: revert; text-decoration: none; color: rgb(12, 114, 113); font-weight: bold;" href="/beatspearhead/Sizmek/sizmek.html">Read More</a><div>',
     });
     tippy('.reach-logo-7', {
       theme: 'light',
       interactive: true,
       allowHTML: true,
-      content: 'My tooltip!',
+      content: '<div style="text-align:center;"><h3>Influencer Marketing</h3><br><a style="all: revert; text-decoration: none; color: rgb(12, 114, 113); font-weight: bold;" href="//beatspearhead/Influencer Marketing Page/influencer.html">Read More</a><div>',
     }); tippy('.reach-logo-8', {
       theme: 'light',
       interactive: true,
@@ -256,7 +273,9 @@
       content: 'My tooltip!',
     });
   </script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

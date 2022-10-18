@@ -240,8 +240,7 @@ html {
 
 .swiper {
   width: 580px;
-  height: 500px;
-  overflow: hidden;
+  height: 600px;
   text-align: center;
   margin-top: 80px;
 }
@@ -261,10 +260,10 @@ html {
   text-align: center;
 }
 
-.services-right-content img {
+/* .services-right-content img {
   width: 17vw;
   height: 95%;
-}
+} */
 
 .services-swiper-div-center .swiper-button-prev,
 .services-swiper-div-center .swiper-button-next {
@@ -287,17 +286,6 @@ html {
 
 .services-header {
   margin-bottom: 30px;
-}
-
-
-/* services swiperjs */
-
-.swiper {
-  width: 580px;
-  height: 500px;
-  overflow: hidden;
-  text-align: center;
-  margin-top: 80px;
 }
 
 @media only screen and (max-width: 600px) {
@@ -361,7 +349,7 @@ html {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid white;
   left: 270px;
   top: 153px;
   position: relative;
@@ -391,7 +379,7 @@ html {
   width: 350px;
   height: 350px;
   border-radius: 50%;
-  border: 1px solid black;
+  border: 2px solid white;
   position: relative;
   top: 145px;
   left: 457px;
@@ -444,6 +432,7 @@ html {
 
 .reach-circle a:hover {
   color: black;
+  background-color: white;
 }
 
 .reach-logos img {
@@ -646,4 +635,18 @@ html {
 }
 .tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: white;
+}
+.testvid{
+  border: 2px solid red;
+}
+.testvid img {
+  width: 300px;
+  height: 550px;
+  position: absolute;
+}
+
+.testvid video {
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
 }
