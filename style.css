@@ -32,7 +32,7 @@ html {
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start !important;
+  align-items: center ;
   position: sticky !important;
   top: 0;
   background-color: white;
@@ -42,8 +42,9 @@ html {
 .navbar-logo {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   padding-right: 30px;
+  padding-bottom: 1%;
 }
 
 .navbar-logo img {
@@ -336,13 +337,27 @@ html {
   color: white;
   padding: 40px 0 0 60px;
 }
-
+.reach-titile-top{
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 56px;
+  left: 635px;
+}
+.reach-titile-bottom{
+  position: absolute;
+  text-align: center;
+  color: white;
+  top: 464px;
+  left: 633px;
+}
 
 .reach-container {
   display: flex;
   height: auto;
   width: 80vw;
-  transform: translateX(5%);
+  transform: translateX(8%);
+  height: 80vh;
 }
 
 .reach-circle {
@@ -411,6 +426,18 @@ html {
   position: absolute;
   color: #f2f2f2;
   text-align: center;
+}
+.reach-right-points div {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(18, 57, 89);
+  border-radius: 50%;
+  color: #f2f2f2;
+  text-align: center;
+}
+.reach-right-points img {
+  width: 65%;
+  margin-top: 18%;
 }
 
 /* @keyframes glowing {
@@ -637,7 +664,6 @@ html {
   border-top-color: white;
 }
 .testvid{
-  border: 2px solid red;
 }
 .testvid img {
   width: 300px;
@@ -650,3 +676,6 @@ html {
   left: 50%;
   transform:translateX(-50%);
 }
+
+
+
