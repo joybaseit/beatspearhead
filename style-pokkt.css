@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
-
+:root {
+    --blue: rgb(0, 176, 240);
+  }
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +14,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+.color-blue{
+    color: var(--blue);
+}
 nav{
     width: 100vw;
     height: 80px;
@@ -24,15 +28,62 @@ nav img{
 .s1-container{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 60vh;
-    border: 1px solid red;
+    height: 600px;
 }
 .s1-left h2{
-    color: rgb(0, 176, 240);
+    color: var(--blue);
 }
 .s1-left{
-    border: 1px solid red;
+    width: 60%;
+    margin: auto;
 }
 .s1-right{
-    border: 1px solid red;
+    width: 70%;
+    margin: auto;
+}
+.section-2{
+}
+.s2-top{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 3rem;
+    padding: 20px;
+    padding-left: 80px;
+    margin-bottom: 70px;
+}
+.s2-top-card{
+    width: 280px;
+}
+.s2-gif-container{
+    width: 85vw;
+    margin: auto;
+}
+.s2-gif-container img{
+    width: 100%;
+}
+.section-3{
+    padding-top: 100px;
+}
+.s3-top-left{
+    position: relative;
+
+}
+.s3-top-left img:nth-child(1){
+    position: relative;
+}
+.s3-top-left img:nth-child(2){
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.s3-top-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.s3-top-right{
+    width: 90%;
+}
+ol{
+    padding-left: 15px;
 }

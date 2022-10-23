@@ -427,19 +427,37 @@ html {
   color: #f2f2f2;
   text-align: center;
 }
-.reach-right-points div {
+.reach-right-points a {
   height: 40px;
   width: 40px;
   background-color: rgb(18, 57, 89);
   border-radius: 50%;
+  position: absolute;
   color: #f2f2f2;
   text-align: center;
-}
-.reach-right-points img {
-  width: 65%;
-  margin-top: 18%;
+  display: inline;
 }
 
+.reach-circle a:hover {
+  color: black;
+  background-color: white;
+}
+
+.reach-logos img {
+  width: 65%;
+  margin-top: 17%;
+}
+.reach-right-points img {
+  margin-top: 17%;
+  width: 65%;
+}
+.reach-right-points p{
+  display: inline-block;
+  color: white;
+  margin-left: 30px;
+  width: 130px;
+  transform: translateY(-40px);
+}
 /* @keyframes glowing {
   0% {
     background-color: rgb(18, 57, 89);
@@ -457,15 +475,6 @@ html {
   }
 } */
 
-.reach-circle a:hover {
-  color: black;
-  background-color: white;
-}
-
-.reach-logos img {
-  width: 65%;
-  margin-top: 18%;
-}
 
 .reach-logo-1 {
   left: -19px;
@@ -516,6 +525,29 @@ html {
   left: 246px;
   top: 300px;
 }
+
+/* reach right circle points-------------- */
+.reach-right-point-1{
+  top: -3px;
+  right: 74px;
+}
+.reach-right-point-2{
+  top: 53px;
+  right: 11px;
+}
+.reach-right-point-3{
+  top: 139px;
+  right: -18px;
+}
+.reach-right-point-4{
+  top: 237px;
+  right: 5px;
+}
+.reach-right-point-5{
+  top: 305px;
+  right: 76px;
+}
+
 @media only screen and (max-width: 600px) {
   #our-reach {
     height: 1100px;
@@ -666,15 +698,13 @@ html {
 .testvid{
 }
 .testvid img {
-  width: 300px;
-  height: 550px;
-  position: absolute;
+  position: relative;
 }
-
 .testvid video {
   position: absolute;
   left: 50%;
   transform:translateX(-50%);
+  width: 230px;
 }
 
 
