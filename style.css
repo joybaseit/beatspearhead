@@ -116,11 +116,11 @@ html {
           }
         }
 @media only screen and (max-width: 600px) {
-  body {
-    margin-top: 50px;
-  }
   .toggle-button-menu{
     display: flex;
+    color: rgb(12, 114, 113) !important;
+    margin-top: 5px;
+    
   }
   .navbar {
     flex-direction: column;
@@ -145,10 +145,7 @@ html {
 
   .navbar-logo {
     order: 1;
-  }
-  .navbar-logo {
-    padding-right: 5px;
-    padding-top: 5px;
+    transform: translateX(60%);
   }
 }
 
@@ -191,7 +188,7 @@ html {
 
   #welcome p {
     width: 90%;
-    top: 15%;
+    top: 8%;
     left: 5%;
     font-size: 0.8rem;
   }
@@ -288,6 +285,19 @@ html {
 .services-header {
   margin-bottom: 30px;
 }
+.testvid{
+  position: relative;
+}
+.testvid img {
+  position: relative;
+}
+.testvid video {
+  position: absolute;
+  left: 50%;
+  transform:translateX(-50%);
+  width: 230px;
+}
+
 
 @media only screen and (max-width: 600px) {
 
@@ -313,16 +323,20 @@ html {
 
   .swiper {
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     overflow: hidden;
     text-align: center;
     margin-top: 10px;
   }
-
-  .services-right-content img {
-    width: 60%;
-    height: 90%;
+  .testvid img {
+    position: relative;
+    width: 100%;
   }
+  .testvid video {
+    transform:translateX(-50%) translateY(-10%);
+    width: 180px;
+  }
+  
 }
 
 
@@ -639,6 +653,7 @@ html {
   left: 30px;
   color: #f2f2f2;
   font-weight: 400;
+  
 }
 
 .contact-us-div p {
@@ -694,15 +709,6 @@ html {
 }
 .tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: white;
-}
-.testvid img {
-  position: relative;
-}
-.testvid video {
-  position: absolute;
-  left: 50%;
-  transform:translateX(-50%);
-  width: 230px;
 }
 
 
