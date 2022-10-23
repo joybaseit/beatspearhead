@@ -448,7 +448,7 @@ html {
   margin-top: 17%;
 }
 .reach-right-points img {
-  margin-top: 17%;
+  margin-top: 10%;
   width: 65%;
 }
 .reach-right-points p{
@@ -456,7 +456,7 @@ html {
   color: white;
   margin-left: 30px;
   width: 130px;
-  transform: translateY(-40px);
+  transform: translateY(-35px);
 }
 /* @keyframes glowing {
   0% {
@@ -694,8 +694,6 @@ html {
 }
 .tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
   border-top-color: white;
-}
-.testvid{
 }
 .testvid img {
   position: relative;
