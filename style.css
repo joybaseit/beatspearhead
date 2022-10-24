@@ -330,7 +330,7 @@ html {
   }
   .testvid img {
     position: relative;
-    width: 100%;
+    width:400px;
   }
   .testvid video {
     transform:translateX(-50%) translateY(-10%);
@@ -564,13 +564,14 @@ html {
 
 @media only screen and (max-width: 600px) {
   #our-reach {
-    height: 1100px;
+    height: 1200px;
   }
 
   .reach-container {
     display: flex;
     flex-direction: column;
     transform: scale(.95);
+    height: fit-content;
   }
 
   .reach-circle {
@@ -589,6 +590,8 @@ html {
   }
 
   .reach-circle-logo {
+    width: 230px;
+    height: 230px;
     top: 125px;
     left: 22%;
     position: relative;
@@ -600,7 +603,13 @@ html {
     left: 6%;
     order: 3;
   }
+  .reach-titile-top{
+    display: none;
+  }
+  .reach-titile-bottom{
+    display: none;
 
+  }
 }
 
 
