@@ -617,7 +617,7 @@ html {
   }
   .reach-circle-left-img{
     transform-origin: center;
-    transform: rotate(-90deg) translateX(-15%) translateY(65px);
+    transform: rotate(-90deg) translateX(-20%) translateY(-15%) scale(1.2);
   }
   .reach-circle a{
     transform: rotate(-90deg);
