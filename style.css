@@ -302,7 +302,7 @@ html {
   position: relative;
   width: 439px;
   z-index: 5;
-  transform: translateX(-4%);
+  transform: translateX(-4%) translateY(15%);
 }
 .frame-ad-container img:nth-child(2){
   position: absolute;
