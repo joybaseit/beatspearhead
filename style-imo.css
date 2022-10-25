@@ -32,6 +32,7 @@
 
 .capabilities-left-container {
     width: 450px;
+    height: 518px;
     border: 2px solid rgb(32, 131, 132);
     position: relative;
 
@@ -41,6 +42,7 @@
     width: 450px;
     border: 2px solid rgb(36, 63, 118);
     position: relative;
+    height: 518px;
 
 }
 
@@ -250,6 +252,7 @@
 
 .buying-opportunity-left-container {
     width: 450px;
+    height: 518px;
     border: 2px solid rgb(88, 88, 88);
     position: relative;
 
@@ -257,6 +260,7 @@
 
 .buying-opportunity-right-container {
     width: 450px;
+    height: 518px;
     border: 2px solid rgb(98, 167, 213);
     position: relative;
 
