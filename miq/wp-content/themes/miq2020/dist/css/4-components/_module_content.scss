@@ -1,0 +1,16 @@
+.module_content {
+	.heading {
+		@include type-h1;
+	}
+	@include mq($until: desktop) {
+		margin-bottom: ($ss*1);
+	}
+}
+
+
+// testing adding col for this here, rather than on every block...
+.module_content {
+	@include mq($from: desktop) {
+		@include gel-columns(5/12);
+	}
+}

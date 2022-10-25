@@ -1,0 +1,33 @@
+.comments-area {
+    padding: rem(20px);
+    background: darken(white, 2%);
+
+    label {
+        display: block;
+        margin-bottom: rem(10px);
+    }
+    input[type=email],
+    input[type=text],
+    textarea {
+        width: 100%;
+        display: block;
+        margin-bottom: rem(40px);
+        padding: rem(10px);
+        border: 1px solid darken(white, 4%);
+    }
+    input[type=submit] {
+        border: none;
+        background: $gold;
+    }
+
+    .comments {
+        padding: 0;
+        margin-bottom: rem(40px);
+        li {
+            background: white;
+            list-style-type: none;
+            padding: rem(20px);
+            margin-bottom: rem(20px);
+        }
+    }
+}

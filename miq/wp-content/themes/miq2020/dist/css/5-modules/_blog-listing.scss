@@ -1,0 +1,34 @@
+.blog-listing {
+    margin-bottom: rem(40px);
+}
+
+
+.blog-listing__title {
+    a {
+        text-decoration: none;
+        color: $gold;
+    }
+}
+
+.blog-grid {
+	&--inner-wrapper {
+		@include gel-layout;
+		article {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(4/12);
+			}
+		}
+		.card-promo {
+			@include mq($from: desktop) {
+				width: 100%;
+			}
+		}
+		.card.press_release_cpt:not(.card-promo) {
+			@include mq($from: desktop) {
+				@include gel-columns(8/12);
+				margin-right: gel-columns(4/12);
+			}
+		}
+	}
+}

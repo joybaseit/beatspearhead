@@ -1,0 +1,38 @@
+.hero_background,
+.blog_posts_strip--bg-colour,
+.connected_points_container--bg-colour,
+.module_content_container--bg-colour {
+	&__grey { 		background: $grey_l;
+		.tagline {
+		    // background: $white;
+		    // color: $grey_d;
+		}
+	}
+	&__white { 	background: $white; }
+	&__yellow { 	background: $yellow; }
+	&__purple { background: $purple }
+	&__pink {
+		background: $pink;
+		a.button,
+		.button {
+			// background-color: $white;
+			// color: $yellow;
+			&:hover {
+				// background-color: $purple;
+				// color: $white;
+			}
+		}
+	}
+}
+
+.text {
+	&__dark {} // default
+	&__light {
+		h1,h2,h3,h4,h5,h6,p,.entry-content,a,time {
+			color: $white;
+		}
+		// .tagline {
+		// 	color: black;
+		// }
+	}
+}

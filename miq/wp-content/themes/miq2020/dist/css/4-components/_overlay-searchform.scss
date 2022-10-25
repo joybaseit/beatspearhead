@@ -1,0 +1,44 @@
+.overlay-searchform {
+	position: relative;
+	background: $white;
+	padding: ($ss/4) 0 ($ss/4) ($ss/4);
+	width: auto;
+	max-width: 800px;
+	margin: 20px auto;
+
+	.input-group {
+		display: flex;
+		width: 100%;
+		justify-content: space-between;
+	}
+
+
+	input[type="text"] {
+		// outline: 2px solid $grey;
+		padding: ($ss/4) ($ss/4);
+		@include type-meta;
+		// width: 100%;
+		flex: 1 0 65%;
+	}
+
+	input[type="submit"] {
+		color: $black;
+		margin: 0 ($ss/4);
+		padding: ($ss/4) ($ss/2);
+		display: inline-block;
+		min-width: 140px;
+		background-color: $grey_l;
+		&:hover {
+		}
+	}
+
+	
+}
+
+.mfp-inline-holder {
+	button.mfp-close {
+		top: -50px;
+		right: -50px;
+		color: $white;
+	}
+}

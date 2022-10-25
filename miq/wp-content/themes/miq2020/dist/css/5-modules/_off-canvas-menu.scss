@@ -1,0 +1,164 @@
+.off-canvas-menu { 
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 100%;
+	padding-top: 70px;
+	width: 100%;
+	background: $white;
+	z-index: 5;
+	transform: translateX(110%);
+	will-change: transform;
+	transition: transform $globalTween;
+	padding-bottom: ($ss/1);
+
+	overflow-y: scroll;
+
+	@include mq($from: desktop) {
+		display: none;
+	}
+	@include gel-wrap;
+	&--inner-wrap {		
+		@include gel-layout;
+	}
+	&--menu-wrapper {
+		@include gel-layout-item;
+	}
+	.mobile-menu {
+
+	}
+
+	#menu-main-menu {
+		// overflow-y: scroll;
+	}
+
+	.vertical.nested.menu {
+		// display: none;
+	}
+
+	li {
+		color: $purple;
+		background: $white;
+		display: block;
+		// float: left;
+		position: relative;
+		text-decoration: none;
+		transition-duration: 0.5s;
+		&.red {
+			// outline: 3px solid $white;
+			padding: 0.7rem 0.5rem;
+			a {
+				padding: 0.5rem 0.5rem;
+    			background-color: $red;
+    			transition: 0.2s all;
+    			color: $white;
+			}
+			// &:hover {
+			// 	background-color: $white;
+	  //   		cursor: pointer;
+	  //   		color: $purple;
+	  //   		.menu-btn > a {
+		 //    		background: $purple;
+	  //   			color: $white;
+	  //   		}
+	  //   	}
+		}
+	}
+		
+	li a,
+	li .no-button {
+		color: $purple;
+		display: block;
+		padding: 1.0rem 0.8rem;
+		text-decoration: none;
+		// transition: all 0.5s ease;
+	}
+
+	// li:hover {
+
+	// 	cursor: pointer;
+	// 	> *:not(.no-button) {
+ //    		background: $grey_l;
+	// 		color: $red;
+	// 		font-family: $boldBodyFont;
+	// 		> a {
+	// 			color: $red;
+	// 			font-family: $boldBodyFont;
+	// 		}
+	// 	}
+	// }
+
+	.search-toggle {
+		position: relative;
+		a {
+			font-size: 0;
+			// color: transparent;
+		}
+		a::after {
+		  font-size: 0.75rem;
+		  font-family: "Font Awesome 5 Free";
+		  font-weight: 900;
+		  content: "\f002";
+		}
+	}
+
+	// first level links
+	#menu-main-menu > li > a {
+		@include bold;
+		text-transform: uppercase;
+		padding-top: 0.5rem;
+		padding-bottom: 0.5rem;
+		// opacity: 0.5;
+	}
+
+	#menu-main-menu > li > ul {
+		padding-bottom: 2rem;
+	}
+
+	#menu-main-menu > li > ul > li {
+		a {
+			padding: 0.5rem 0.8rem;
+		}
+	}
+
+
+	li.yellow-border {
+		z-index: 0;
+		display: inline-block;
+		margin-left: 0.8rem;
+		// a { color: $yellow !important; }
+		a { color: $red !important; }
+		&:hover {
+			> *,
+			a {
+				// z-index: 0;
+				background-color: transparent !important;
+				
+				
+			}
+			// > * a {
+			// 	color: $purple !important;
+			// }
+		}
+		div { padding: 0.7rem 1rem; }
+		a,
+		a:hover {
+			padding: 0.7rem;
+			@extend .cut-corner;
+			@extend .red_outline;
+			// @extend .yellow_outline;
+
+			&:after,
+			&:before {
+				// z-index: 1;
+			}
+		}
+		a:hover {
+			color: $white !important;
+		}
+	}
+
+
+}

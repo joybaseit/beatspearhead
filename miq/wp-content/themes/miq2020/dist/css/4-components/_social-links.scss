@@ -1,0 +1,34 @@
+.social-links {
+	ul {
+		display: flex;
+		justify-content: flex-start;
+		margin-top: ($ss/1.5);
+		@include mq($from: desktop) {
+			justify-content: flex-end;
+			margin-top: 0;
+		}
+	}
+	li {
+		margin-right: ($ss/1.5);
+		margin-left: 0;
+		@include mq($from: desktop) {
+			margin-right: 0;
+			margin-left: ($ss/1.5);
+		}
+		&:hover {
+			svg {
+				rect, circle, path {
+					// fill: $red;
+					fill: $yellow;
+				}
+			}
+		}
+	}
+	svg {
+		width: 30px;
+		rect, circle, path {
+			transition: 0.2s all;
+			fill: $white;
+		}
+	}
+}

@@ -1,0 +1,143 @@
+.product_overview_module {
+
+	// padding-bottom: 0rem;
+
+	// background-color: $l_grey;
+	background-color: $grey_l2;
+
+	.product_overview_module--intro {
+		margin-bottom: ($ss/1);
+	}
+
+	.product_overview_module--outro {
+		margin: ($ss*1) 0 0;
+		.module_content {
+			display: flex;
+			justify-content: center;
+		}
+	}
+
+	&--background {
+
+
+
+		&__orange_gradient {
+
+			/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ff6c00+1,ff0600+50,ff0074+100 */
+			background: #ff6c00; /* Old browsers */
+			background: -moz-linear-gradient(top,  #ff6c00 1%, #ff0600 50%, #ff0074 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top,  #ff6c00 1%,#ff0600 50%,#ff0074 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom,  #ff6c00 1%,#ff0600 50%,#ff0074 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff6c00', endColorstr='#ff0074',GradientType=0 ); /* IE6-9 */
+
+			.module_content {
+				h1,h2,h3,h4,h5,h6 p, .copy p {
+					color: $white;
+				}
+				.button {
+					background-color: $white;
+					color: $black;
+				}
+			}
+
+		}
+
+	}
+
+	.sub_module_content_container {
+
+        // @include gel-columns(8/12);
+        // margin-left: gel-columns(2/12);
+        position: relative;
+
+     //    .product-overview-row {
+    	// 	display: flex;
+    	// }
+
+  //   	&:nth-child(odd) {
+  //   		.block_content--inner-wrapper {
+	 //    		.product-overview-row {
+		//         	flex-direction: row-reverse;
+	 //    		}
+	 //    		svg {
+	 //    			transform: none;
+	 //    		}
+  //   		}
+		// }
+
+		// padding-bottom: ($ss*2);
+		// margin-bottom: ($ss*2);
+
+		.block_content {
+			// padding-bottom: ($ss*1.5);
+			padding-bottom: 0;
+			// @include gel-layout;
+		}
+
+		// &:after {
+		// 	content: "";
+		// 	width: 100%;
+		// 	height: 1px;
+		// 	background-color: rgba($white,0.5);
+		// 	position: absolute;
+		// }
+		// margin-bottom: ($ss*1);
+
+		svg {
+			padding-left: 0;
+			transform: scaleX(-1);
+			opacity: 0.5;	
+			padding-top: ($ss/2);
+			// padding-top: 1rem;
+		}
+
+        .block_content--inner-wrapper {
+        	@include gel-layout-item;
+        	// @include gel-columns(10/12);
+        	// margin-left: gel-columns(1/12);
+
+        	.product-overview-row--outer-wrapper {
+        		.product-overview-row {
+        			background-color: $white;
+        		}
+        	}
+
+        	.product-overview-row {
+	        	@include gel-layout;
+	        	margin-bottom: ($ss/1);
+	        	@include mq($until: tablet) {
+					display: flex;
+					flex-direction: column-reverse;
+	        	}
+        	}
+
+        	.button {
+        		z-index: 1;
+        	}
+
+
+        	.image_container {
+        		@include gel-layout-item;
+        		@include mq($from: tablet) {
+		        	@include gel-columns(6/12);
+		        	// margin-left: gel-columns(2/12);
+		        }
+        	}
+
+        	.module_content {
+        		@include gel-layout-item;
+        		@include mq($from: tablet) {
+		        	@include gel-columns(6/12);
+		        	// margin-left: gel-columns(2/12);
+		        }
+		        // .heading {
+		        // 	@include type-h3;
+		        // }
+		        padding: $ss;
+        	}
+
+        }
+
+	}
+
+}

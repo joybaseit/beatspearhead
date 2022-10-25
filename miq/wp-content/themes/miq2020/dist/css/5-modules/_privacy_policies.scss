@@ -1,0 +1,273 @@
+// // @include gel-layout;
+// // @include gel-wrap;
+// // @include gel-layout-item;
+// // @include gel-columns(6/12);
+
+
+// /////// TIDY UP ////
+
+// .section-block.privacy_policies {
+// 	// background-color: teal;
+// 	// position: relative;
+// 	// .background_image_container {
+// 	// }
+
+// 	.block_content--inner-wrapper {
+// 		@include gel-layout;
+// 		// .module_content {
+// 		// 	@include gel-layout-item;
+// 		// 	@include gel-columns(6/12);
+// 		// }
+// 		// .foreground_image_container {
+// 		// 	@include gel-layout-item;
+// 		// 	@include gel-columns(6/12);
+// 		// }
+// 	}
+
+// 	.policy-is-open > .policy_section {
+// 		display: block;
+// 	}
+
+// 	.policy_section {
+// 		display: none;
+// 		 a {
+// 			text-decoration: underline;
+// 			color: #ff3366;
+// 		}
+// 	}
+
+// 	// > * {
+// 	// 	outline: none;
+// 	// }
+
+	
+
+// 	// {
+// 	// 	padding: 0 0 4rem;
+// 	// 	outline: 1px solid red;
+// 	// }
+
+// 	a h2 { color: #ff3366; transition: 0.2s all; }
+// 	a:hover h2 { color: #2b0133; transition: 0.2s all; }
+// 	a:hover svg polygon { fill: #2b0133; }
+
+// 	.policy-toggle {
+// 			display: flex;
+// 			justify-content: space-between;
+// 			align-items: center;
+// 			border-bottom: 1px solid black;
+// 		svg {
+// 			flex: 0 0 auto;
+// 			/*padding-left: 5%;*/
+// 			height: 20px;
+// 			width: 30px;
+// 			margin-top: 10px;
+// 		}
+// 		&__sub-policy {
+// 			svg {
+// 				height: 10px;
+// 				width: 20px;
+// 			}
+// 			// h2 {
+// 			// 	// font-size: 1rem;
+// 			// 	/*padding-left: 1rem;*/
+// 			// }
+// 		}
+// 	}
+
+// }
+
+// .privacy_policies {
+
+// }
+
+// .policy_content {
+
+// }
+
+
+
+// .sub-policy {
+// 	/*padding-left: 1rem;*/
+// 	background-color: #f3f3f3;
+// }
+
+// .policy_section
+
+// .sub-policy a {
+// 	padding: 0 1rem;
+// 	text-decoration: none;
+// }
+
+// .sub-policy h2 {
+// 	margin: 1rem 0;
+// }
+
+// .sub-policy .policy_section {
+// 	padding: 0 1rem 1rem;
+// 	margin-bottom: 1rem;
+// }
+
+// .policy_content .policy-toggle svg polygon {
+// 	fill: #ff3366;
+// 	transition: 0.2s all;
+// }
+
+// .policy_section > ul {
+// 	margin-left: 2rem;
+// 	list-style-type: circle;
+// }
+
+// .policy_section ul ul {
+// 	margin-left: 2rem;
+// 	list-style-type: disc;
+// }
+
+
+
+
+
+
+
+
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+
+/////// TIDY UP ////
+
+.section-block.expandable_dropdown_content,
+.section-block.privacy_policies {
+
+	.block_content--inner-wrapper {
+		// @include gel-layout;
+	}
+
+	.policy-is-open > .policy_section {
+		display: block;
+	}
+
+	.policy_section {
+		display: none;
+		 a {
+			text-decoration: underline;
+			color: $pink;
+		}
+
+		&--copy-block {
+
+			padding: $ss 0 ($ss/2);
+
+			h2 { @include type-h4; }
+			h3 { @include type-h5; }
+			h4, h5, h6 { @include type-h6; }
+
+		}
+	
+	}
+
+	a h2 { color: $pink; transition: 0.2s all; }
+	a:hover h2 { color: $purple; transition: 0.2s all; }
+	a:hover svg polygon { fill: $purple; }
+
+	a.policy-toggle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1px solid black;
+		text-decoration: none;
+		svg {
+			flex: 0 0 auto;
+			/*padding-left: 5%;*/
+			height: 10px;
+			width: 20px;
+			margin-top: 10px;
+		}
+		&__sub-policy {
+			
+			svg {
+				height: 10px;
+				width: 20px;
+			}
+			
+			// h2 {
+			// 	// font-size: 1rem;
+			// 	/*padding-left: 1rem;*/
+			// }
+		}
+	}
+
+}
+
+.policy_section__sub-policy {
+	p {
+		padding: $ss 0 0;
+	}
+}
+
+.privacy_policies {
+
+}
+
+.policy_content {
+
+	.policy-toggle svg polygon {
+		fill: $red;
+		transition: 0.2s all;
+	}
+
+}
+
+
+
+.sub-policy {
+	/*padding-left: 1rem;*/
+	background-color: $grey_l;
+
+	a {
+		padding: 0 1rem;
+		text-decoration: none;
+	}
+
+	h2 {
+		margin: 1rem 0;
+	}
+
+	.policy_section {
+		padding: 0 1rem 1rem;
+		margin-bottom: 1rem;
+
+		&--copy-block {
+
+			padding: $ss 0 ($ss/2);
+
+		}
+
+		> ul {
+			margin-left: 2rem;
+			list-style-type: circle;
+		}
+
+		 ul ul {
+			margin-left: 2rem;
+			list-style-type: disc;
+		}
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

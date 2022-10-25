@@ -1,0 +1,30 @@
+.policy_list_strip {
+
+	.policy-sub-heading {
+		text-transform: uppercase;
+	}
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+	}
+
+	.policy_lists_container {
+		@include gel-layout-item;
+		@include mq($from: desktop) {
+			@include gel-columns(8/12);
+		}
+	}
+
+	.policy-sub-heading {
+		@include type-h6;
+	}
+	
+	.policy_list {
+		margin-top: ($ss*1);
+		.card {
+			margin-top: ($ss*1);
+		}
+	}
+
+
+}

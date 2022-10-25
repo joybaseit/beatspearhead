@@ -1,0 +1,41 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.our_values {
+	background-color: $purple;
+	color: $white;
+	h1,h2,h3,h4,h5,h6 {
+		color: $white;
+	}
+
+}
+
+.value-list {
+
+	&--inner-wrapper {
+		@include mq($from: desktop) {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			width: 85%;
+		}
+	}
+
+	h3 {
+		color: $white;
+		@include uppercase;
+		font-family: $tungstenFont;
+		margin-bottom: 0;
+	}
+	.value_card{
+		flex: 0 0 26%;
+		&.yellow { p, h3 {color: $yellow;} }
+		&.orange { p, h3 {color: $orange;} }
+		&.red { p, h3 {color: $red;} }
+		&.pink { p, h3 {color: $pink;} }
+		&.white { p, h3 {color: $white;} }
+	}
+}

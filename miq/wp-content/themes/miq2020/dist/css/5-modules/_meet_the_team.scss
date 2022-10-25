@@ -1,0 +1,64 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+
+.section-block.meet_the_team {
+	.team_members {
+		
+		&--inner-wrapper {
+			@include gel-layout;
+		}
+	}
+
+	.module_content {
+		@include mq($from: desktop) {
+			@include gel-columns(7/12);
+		}
+	}
+
+	.team_member_card {
+		@include gel-layout-item;
+		margin-bottom: ($ss/1);
+		// display: flex;
+		@include mq($from: desktop) {
+			@include gel-columns(3/12);
+		}
+		.image_container {
+			border-bottom: 2px solid $red;
+		}
+		.team_member_name {
+			// @include 
+			@include type-h5;
+		}
+		.team_member_title {
+			@include type-meta-button-tag;
+			text-transform: uppercase;
+		}
+		.team_member_linkedin {
+			width: 30px;
+			height: 30px;
+			display: block;
+			background-color: $black;
+			border-radius: 5px;
+			padding: 4px;
+			// position: relative;
+			// svg {
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// }
+			display: flex;
+			svg {
+				width: 100%;
+				path, rect {
+					fill: $white;
+				}
+			}
+		}
+		.team_member_small_print {
+			@include type-small-print;
+		}
+	}
+}

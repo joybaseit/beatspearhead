@@ -1,0 +1,46 @@
+// .text__dark .tagline,
+// .text__light .tagline,
+.tagline {
+    padding: ($ss/4) calc(#{($ss/1)} + 40px) ($ss/4) ($ss/1); 
+    margin-bottom: ($ss/4);
+    display: inline-block;
+    background: $grey_l;
+    color: $grey_d;
+    position: relative;
+
+    clip-path: polygon(0% 0%, 101% 0%, 101% calc(101% - 50px), calc(101% - 40px) 101%, 0 101%);
+
+    // &:after {
+    //     content: "";
+    //     position: absolute;
+    //     right: 0;
+    //     top: 0;
+    //     width: 0; 
+    //     height: 0; 
+    //     border-top: ($ss) solid transparent;
+    //     border-bottom: ($ss) solid transparent;
+        
+    //     border-left: ($ss) solid $white;
+    // }
+
+    &__light { color: $grey_l; }
+    &__dark { color: $purple; }
+
+    &--bg-colour__pink {  	background: $pink; }
+    &--bg-colour__grey { 	background: $grey_l; }
+    &--bg-colour__yellow { 	background: $yellow; }
+    &--bg-colour__pink {	background: $pink;   }
+
+    &.tagline-as-image {
+        padding: ($ss/6 ) calc(#{($ss/2)} + 40px) ($ss/6 ) ($ss/2); 
+        picture {
+            min-width: 250px;
+        }
+    }
+    
+    &--bg-colour__gradient {    
+        @include linear-gradient(90deg, $pink, $red, $yellow);
+    }
+    
+
+}

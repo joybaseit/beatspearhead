@@ -1,0 +1,17 @@
+.single_post_strip {
+	.card {
+		margin-bottom: 0;
+		a {
+			width: 100%;
+		}
+	}
+	.card-promo--content {
+		.tagline {
+			display: none;
+		}
+		.entry-title {
+			margin-top: 0;
+			// padding-top: 0;
+		}
+	}
+}

@@ -1,0 +1,164 @@
+.search,
+.blog {
+	.main-content {
+		margin-top: $ss;		// here????
+	}
+}
+
+.searchandfilter {
+	margin: $ss 0;
+	ul {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		@include mq($from: desktop) {
+			width: 50%;
+		}
+		// search
+		li:first-of-type {
+			background-color: $grey_l;
+			color: $grey;
+			border-color: $grey_l;
+			margin-bottom: ($ss/4);
+			padding: ($ss/8);
+			display: flex;
+			width: 100%;
+			padding: ($ss/4);
+			flex: 1 0 100%;
+			
+			input {
+				text-transform: uppercase;
+				@include type-meta;
+				width: 100%;
+			}
+		}
+		li:nth-of-type(2) {
+			// border: 10px solid teal;
+			display: flex;
+			// align-items: center;
+			&:before {
+				content: "Select Tag:";
+				display: inline-block;
+				padding-right: 8px;
+				text-transform: uppercase;
+				@include type-meta-grey;
+				padding: ($ss/10) ($ss/6) ($ss/10) 0;
+				align-self: center;
+			}
+			select { padding-right: 20px; }
+			// margin-right: 14px;
+			&:after {
+				content: " ";
+				background-image: url('../../svg/inline-icon-arrow-red-down.svg');
+				background-repeat: no-repeat;
+				// background-size: contain;
+				background-size: 10px;
+				width: 14px;
+				background-position: center;
+				display: inline-block;
+				padding-right: 8px;
+				text-transform: uppercase;
+				@include type-meta-grey;
+				padding: ($ss/10) ($ss/6) ($ss/10) 0;
+				// margin-right: 5px;
+				border-right: 1px solid $red;
+				border-top: 1px solid $red;
+				border-bottom: 1px solid $red;
+				transform: translateX(-20px);
+				pointer-events: none;
+			}
+			margin-right: 0;
+		}
+		li:nth-of-type(3) {
+			display: none;
+		}
+		li:nth-of-type(4) {
+			transform: translateX(-20px);
+		}
+		li {
+			select {
+				border-left: 1px solid $red;
+				border-top: 1px solid $red;
+				border-bottom: 1px solid $red;
+				text-transform: uppercase;
+			}
+			color: $red;
+			margin-right: ($ss/8);
+			input[type="submit"],
+			select {
+				display: flex;
+				padding: ($ss/10);
+				color: $red;
+				@include type-meta;
+				option {}
+			}
+			input[type="submit"] {
+				
+				display: inline-block;
+				border: 1px solid $red;
+				padding: ($ss/10) ($ss/3);
+				transition: 0.2s all;
+				@include type-meta-button-tag;
+				background-color: $red;
+				color: $white;
+				&:hover {
+					background-color: $black;
+					color: $white;
+					border: 1px solid $black;
+				}
+
+				margin-top: 0 !important;
+				margin-left: 10px !important;
+				height: 100%;
+				// -webkit-appearance: button;
+				border-style: none;
+
+				&:hover {
+					border-style: none;
+				}
+
+				// @extend .cut-corner;
+				// @extend .yellow_outline;
+
+			}
+		}
+
+		select#ofcategory {
+			// color: $red;
+		}
+		margin-bottom: ($ss/2);
+	}
+}
+
+
+.archive-with-flex-content {
+	margin-top: ($ss*3);
+}
+
+body.post-type-archive-case_study_cpt {
+	.blog-grid--inner-wrapper article {
+		// width: 100%;
+	}
+}
+
+
+
+
+
+body.tax-video_category {
+	.section-block.module_strip  {
+		.module_content_container {
+	    	padding-top: ($ss/2);
+	    	padding-bottom: ($ss/1);
+		}
+	}
+}
+
+body.post-type-archive-video_cpt {
+	.section-block.product_media_strip .module_content_container,
+	.section-block.video_module_strip .module_content_container,
+	.section-block.module_strip .module_content_container {
+    	padding-top: ($ss/2);
+    	padding-bottom: ($ss/1);
+	}
+}

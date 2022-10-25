@@ -1,0 +1,627 @@
+// https://www.degordian.com/education/blog/best-practice-for-responsive-typography/
+
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+// TO DO.......                                              //////////////
+// FONT LOADING - GOOGLE FONTS:                              ////////////// 
+//https://www.smashingmagazine.com/2019/06/optimizing-google-fonts-performance/
+// // // // // // // // // // // // // // // // // // // // // // // // // // // // 
+
+
+
+
+// unitless function to convert px to em
+@function em($pixels, $context: $browser-context) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($context)) {
+    $context: $context * 1px;
+  }
+  @return $pixels / $context * 1em;
+}
+
+// breakpoint mixin
+@mixin breakpoint($mq01: 0, $mq2: false, $maxmin: max-width) {
+    @if $mq2 == false {
+        @media ($maxmin: $mq01) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: $mq01) and (max-width: $mq2) {
+            @content;
+        }
+    }
+}
+
+// responsive font size mixin
+@mixin font-size-map($font-size-map) {
+    @each $breakpoint, $font-size in $font-size-map {
+        @if $breakpoint == null {
+            font-size: em($font-size);
+        } @else {
+            @include breakpoint($breakpoint) {
+                font-size: em($font-size);
+            }
+        }
+    }
+}
+
+// breakpoint variables
+// (duplicated here from settings) -> $mq-breakpoints: (mobile: 320px, tablet: 740px, desktop: 980px, wide: 1300px) !default;
+$wide:    1170px;
+$desktop: 1024px;
+$tablet:  640px;
+$mobile:  480px;
+
+// //fonts
+// $titleFont: "Montserrat",
+// sans-serif;
+// $bodyFont: "Montserrat",
+// sans-serif;
+
+// //fonts
+$tungstenFont: "Tungsten-semibold",
+sans-serif;
+// $titleFont: "Tungsten-semibold", // "Tungsten",
+// sans-serif;
+
+// $bodyFont: "NiveauGroteskLight",
+// sans-serif;
+// $boldBodyFont: 'NiveauGroteskMedium',
+// sans-serif;
+
+//fonts
+$heavyTitleFont: "NiveauGroteskBold",
+sans-serif;
+$titleFont: "NiveauGroteskBold",
+sans-serif;
+
+$bodyFont: "NiveauGrotesklight",
+sans-serif;
+$boldBodyFont: 'NiveauGroteskMedium',
+sans-serif;
+
+
+
+// body font size
+$browser-context: 16;
+
+// http://www.layoutgridcalculator.com/typographic-scale/
+// typography scale
+
+// $body-font-size:  (null: 21px,   $desktop: 18px,     $tablet: 16px,      $mobile: 15px );
+$body-font-size:  (null: 18px,   $desktop: 18px,     $tablet: 18px,      $mobile: 18px );
+
+$h1-font-size:    (null: 50px,   $desktop: 50px,     $tablet: 50px,      $mobile: 50px );
+$h2-font-size:    (null: 46px,   $desktop: 46px,     $tablet: 40px,      $mobile: 36px );
+$h3-font-size:    (null: 34px,   $desktop: 34px,     $tablet: 34px,      $mobile: 34px );
+$h4-font-size:    (null: 30px,   $desktop: 30px,     $tablet: 30px,      $mobile: 30px );
+$h5-font-size:    (null: 18px,   $desktop: 18px,     $tablet: 18px,      $mobile: 18px );
+$h6-font-size:    (null: 16px,   $desktop: 16px,     $tablet: 14px,      $mobile: 14px );
+
+// $hero-font-size:  (null: 116px,  $desktop: 116px,    $tablet: 80px,      $mobile: 58px );
+$meta-font-size:  (null: 12px,   $desktop: 12px,     $tablet: 12px,      $mobile: 12px );
+$nav-font-size:   (null: 10px,   $desktop: 10px,     $tablet: 10px,      $mobile: 10px );
+
+html {
+    // line-height: 1.2;
+    @include font-size-map($body-font-size);
+}
+
+body {
+    font-family: $bodyFont;
+    letter-spacing: 0.02em;
+    line-height: 1.6em;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: $titleFont;
+    line-height: 1.15;
+    // font-weight: 400;
+    margin: ($sitespacing/2) 0;
+    color: $purple;
+    // text-transform: uppercase;
+}
+
+a {
+  color: $purple;
+  text-decoration: underline;
+}
+
+p {
+  margin-bottom: ($ss/2);
+  // letter-spacing: 0.02em;
+  // line-height: 1.6em;
+}
+
+@mixin bold {
+    // font-family: $sansSerifFont;
+    // font-weight: 700;
+    font-family: $boldBodyFont;
+}
+
+.bold, b, strong { @include bold; }
+
+@mixin uppercase { text-transform: uppercase; }
+
+.bold            { @include bold; }
+.uppercase       { @include uppercase; }
+
+
+
+
+// classic headings...
+@mixin type-h1 {
+    @include font-size-map($h1-font-size);
+    // line-height: 1.1;
+    // @include bold;
+    // font-family: $titleFont;
+}
+
+@mixin type-h2 {
+    @include font-size-map($h2-font-size);
+    // line-height: 1.1;
+    // font-family: $titleFont;
+    // @include bold;
+}
+
+@mixin type-h3 {
+    @include font-size-map($h3-font-size);
+    // line-height: 1.1;
+    // font-family: $titleFont;
+    // @include bold;
+}
+
+@mixin type-h4 {
+    @include font-size-map($h4-font-size);
+    // line-height: 1.1;
+    // font-family: $titleFont;
+    // @include bold;
+}
+
+@mixin type-h5 {
+    @include font-size-map($h5-font-size);
+    // line-height: 1.1;
+    // font-family: $titleFont;
+}
+
+@mixin type-h6 {
+    @include font-size-map($h6-font-size);
+    // line-height: 1.1;
+    // font-family: $titleFont;
+}
+
+// set classses
+// h1, .type-h1 { @include type-h1; }
+// h2, .type-h2 { @include type-h2; }
+// h3, .type-h3 { @include type-h3; }
+// h4, .type-h4 { @include type-h4; }
+// h5, .type-h5 { @include type-h5; }
+// h6, .type-h6 { @include type-h6; }
+
+@mixin type-navigation {
+    @include font-size-map($nav-font-size);
+    // font-size: 14px;
+    line-height: 1.1;
+    // letter-spacing: 0.05rem;
+    letter-spacing: 0.15rem;
+    // @include bold;
+    // font-family: $boldBodyFont;
+    font-family: $bodyFont;
+    text-transform: uppercase;
+    // font-size: .65em;
+}
+
+@mixin type-primary-heading {
+    @include font-size-map($h1-font-size);
+    line-height: 0.9;
+    @include bold;
+    font-family: $titleFont;
+}
+
+@mixin type-meta-button-tag {
+    @include font-size-map($nav-font-size);
+    line-height: 1.1;
+    // letter-spacing: 0.05rem;
+    letter-spacing: 0.15rem;
+    @include bold;
+    font-family: $boldBodyFont;
+    text-transform: uppercase;
+    // font-size: .65em;
+}
+
+@mixin type-meta {
+    @include font-size-map($meta-font-size);
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
+    // @include bold;
+    font-family: $bodyFont;
+    text-transform: uppercase;
+}
+
+@mixin type-meta-grey {
+    @include type-meta;
+    color: $grey;
+}
+
+// @mixin type-small-print {
+//     @include font-size-map($meta-font-size);
+//     line-height: 1.1;
+//     letter-spacing: 0.05rem;
+//     // @include bold;
+//     font-family: $bodyFont;
+//     // text-transform: uppercase;
+//     font-style: italic;
+//     color: $grey_m; 
+// }
+
+@mixin type-small-print {
+    @include font-size-map($meta-font-size);
+    line-height: 1.1;
+    letter-spacing: 0.05rem;
+    // @include bold;
+    font-family: $bodyFont;
+    // text-transform: uppercase;
+    // font-style: italic;
+    // color: $grey_m; 
+}
+
+@mixin type-footer-links {
+    // @include font-size-map($meta-font-size);
+    // line-height: 1.1;
+    // letter-spacing: 0.05rem;
+    // @include bold;
+    font-family: $bodyFont;
+    // text-transform: uppercase;
+    // font-style: italic;
+    // color: $grey_m; 
+    text-decoration: none;
+    font-family: "NiveauGrotesklight", sans-serif;
+
+    font-size: 0.7em;
+
+    @include mq($from: desktop) {
+        font-size: 0.7em;
+    }
+}
+
+    
+
+
+h1, .type-h1 { @include type-primary-heading; }
+h2, .type-h2 { @include type-h2; }
+h3, .type-h3 { @include type-h3; }
+h4, .type-h4 { @include type-h4; }
+h5, .type-h5 { @include type-h5; }
+h6, .type-h6 { @include type-h6; }
+
+.type-primary-heading       { @include type-primary-heading; }
+.type-meta-button-tag       { @include type-meta-button-tag; }
+
+button,
+.button,
+.tagline  { @include type-meta-button-tag; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @mixin type-secondary-heading {
+//     @include font-size-map($h2-font-size);
+//     line-height: 1.1;
+//     @include bold;
+//     font-family: $titleFont;
+// }
+
+// @mixin type-sub-heading {
+//     @include font-size-map($h2-font-size);
+//     line-height: 1.1;
+//     @include bold;
+//     font-family: $titleFont;
+// }
+
+// @mixin type-tertiary-heading {
+//     @include font-size-map($h2-font-size);
+//     line-height: 1.1;
+//     @include bold;
+//     font-family: $titleFont;
+// }
+
+// @mixin type-small-heading {
+//     @include font-size-map($h2-font-size);
+//     line-height: 1.1;
+//     @include bold;
+//     font-family: $titleFont;
+// }
+
+// @mixin type-meta {
+//     @include font-size-map($h6-font-size);
+//     line-height: 1.1;
+//     font-family: $bodyFont;
+// }
+
+// @mixin type-jumbo-paragraph {
+//     @include font-size-map($h4-font-size);
+//     line-height: 1.1;
+//     font-family: $bodyFont;
+// }
+
+// @mixin type-large-paragraph {
+//     @include font-size-map($h5-font-size);
+//     line-height: 1.1;
+//     font-family: $bodyFont;
+// }
+
+// @mixin type-paragraph {
+//     @include font-size-map($h6-font-size);
+//     line-height: 1.1;
+//     font-family: $bodyFont;
+// }
+
+
+// .type-hero-heading          { @include type-hero-heading; }
+// .type-secondary-heading     { @include type-secondary-heading; }
+// .type-sub-heading           { @include type-sub-heading; }
+// .type-tertiary-heading      { @include type-tertiary-heading; }
+// .type-small-heading         { @include type-small-heading; }
+// .type-meta                  { @include type-meta; }
+// .type-jumbo-paragraph       { @include type-jumbo-paragraph; }
+// .type-large-paragraph       { @include type-large-paragraph; }
+// .type-paragraph             { @include type-paragraph; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// 
+
+// FONT 'TYPES' - can define here and @extend in code. OR apply class to element.
+
+// .type-kirk {}
+
+// .type-spock {}
+
+// .type-scotty {}
+
+// .type-bones {}
+
+// .type-sulu {}
+
+// .type-uhura {}
+
+// .type-chekov {}
+
+// .type-redshirt {
+//   font-family: $titleFont;
+//   font-size: rem(18px);
+//   line-height: rem(26px);
+//   margin-bottom: rem(20px);
+// }
+
+// // RHYTHM in Web Typography
+// // https://betterwebtype.com/rhythm-in-web-typography
+
+// // Variables
+// $base-font-size: 112.5; // Gets used as %
+// $line-height: 1.45;
+
+// // Vertical rhythm mixins
+// @mixin line-height($number) {
+//   line-height: #{ $number * $line-height + 'rem'};
+// }
+
+// @mixin margin-top($number) {
+//   margin-top: #{ $number * $line-height + 'rem'};
+// }
+
+// @mixin margin-bottom($number) {
+//   margin-bottom: #{ $number * $line-height + 'rem'};
+// }
+
+// // VERTICAL Rhythm
+// html {
+//   font-size: #{$base-font-size + '%'}; // 112.5% = 18 pixels
+// }
+
+// * {
+//   @include line-height(1);
+// }
+
+// * {
+//   @include line-height(1);
+//   @include margin-bottom(1);
+//   @include margin-top(0);
+// }
+
+// // Headings parameters [ h1: line-height: 2 × 26px, margin-top: 3 × 26px, margin-bottom: 1 × 26px ]
+// $headings: (
+//   h1: (2, 3, 1),
+//   h2: (1.5, 2, 1),
+//   h3: (1.5, 1, 0),
+//   h4: (1, 1, 0),
+//   h5: (1, 1, 0),
+//   h6: (1, 1, 0)
+// );
+
+// // Set line-heights and margins
+// @each $heading, $properties in $headings {
+//   #{$heading} {
+//     @include line-height(nth($properties, 1));
+//     @include margin-top(nth($properties, 2));
+//     @include margin-bottom(nth($properties, 3));
+//   }
+// }
+
+// // HORIZONTAL Rhythm
+
+// // indent all but first para
+// p + p {
+//   text-indent: 1em;
+// }
+
+// // no bottom margin on paras
+// p {
+//   margin: 0 auto;
+// }
+
+// // hanging quote at start of blockquote, offset quotemark so copy lines up
+// blockquote p {
+//   // hanging-punctuation: first;
+//   text-indent: -0.5em;
+// }
+
+// // bullet points are offset from body copy (not sure about this one)
+// ul, ol {
+//   padding-left: 0;
+//   list-style-position: outside;
+// }
+
+
+// // VERTICAL Rhythm
+// // p {
+// //   font-size: rem(20px);
+// //   line-height: rem(30px);
+// //   max-width: 600px;
+// // }
+
+// // // heading example...
+// // h3 {
+// //   font-size: 55px;
+// //   line-height: 60px; // = 2 x 30px (main body text  line-height)
+// //   margin-top: 90px; // = 3 x 30px
+// //   margin-bottom: 30px; // = 1 x 30px
+// // }
+
+// // * {
+// //   line-height: rem(27px);
+// //   margin-top: 0;
+// //   margin-bottom: rem(27px); // = 1 x 27px
+// // }
+
+
+// // p {
+// //     font-size: rem(18px);
+// //     line-height: rem(26px);
+// // }
+
+
+// // h1,
+// // .enquiries {
+// //     opacity: 0;
+// //     transition: all 0.4s;
+// // }
+
+
+// // .wf-inactive,
+// // .wf-active {
+// //     h1,
+// //     .enquiries {
+// //         opacity: 1;
+// //     }
+// // }
+
+
+
+// // body {
+// //     // font-size: 16px;
+// //     // font-size: rem(18px);
+// //     // line-height: rem(26px);
+// //     // margin-bottom: rem(20px);
+// //     @extend .type-scotty;
+// // }
+
+// // p {
+// //     // font-size: rem(16px);
+// //     line-height: rem(26px);
+// //     margin-top: 0;
+// //     @extend .type-scotty;
+// //     // margin-bottom: rem(20px);
+// //     // margin-bottom: rem(16px);
+// // }
+
+// // b, strong {
+// //     // font-weight: 600;
+// //     font-weight: normal;
+// //     @extend .type-scotty;
+// // }

@@ -1,0 +1,122 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.text_boxes {
+	position: relative;
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+		.module_content {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(5/12);
+			}
+		}
+		.text_boxes_container {
+			@include gel-layout-item;
+			.text_boxes_container--inner-wrap {
+				@include gel-layout;
+			}
+			.text_box_wrapper {
+				@include gel-layout-item;
+				@include mq($from: tablet) {
+					// margin-left: gel-columns(1/12);
+					@include gel-columns(6/12);
+				}
+
+				margin-bottom: 2rem;
+				
+
+				.text_box {
+					// display: block;
+					margin: $ss;
+					padding: ($ss*2) $ss ($ss*4) $ss;
+					// background-color: $purple;
+
+					.module_content {
+						width: 100%;
+						padding: 0;
+						color: $white;
+						h2 {
+							color: $white;
+						}
+					}
+				}
+
+				// cut corner
+				.text_box {
+				  position: relative;
+				  // height: 100px;
+				  // width: 200px;
+				  border-left: 2px solid $purple;
+				  overflow: hidden;
+				  color: $purple; 
+				  height: 100%;
+				  // margin-bottom: ($ss/2);
+				  &:before {
+				  	background-color: $purple;
+				  }
+				  &:after {  
+				    background-color: $purple;
+				  }
+				}
+				.text_box:after,
+				.text_box:before {
+				  position: absolute;
+				  content: '';
+				  width: calc(100% - 2px);
+				  left: 0px;
+				  z-index: -1;
+				}
+
+				.text_box:before {
+				  height: calc(90% - 4px);
+				  bottom: 0px;
+				  border: 2px solid $purple;
+				  // border-width: 2px 2px 0px 0px;
+				}
+
+				.text_box:after {
+				  height: 10%;
+				  top: 0px;
+				  border: 2px solid $purple;
+				  border-width: 0px 3px 2px 0px;
+				  transform: skew(45deg);
+				  transform-origin: right bottom;
+				}
+
+				// .text_box:hover {
+				//   color: $purple; 
+				//   border-color: $red;
+				//   &:before,
+				//   &:after {  
+				//     background-color: $red;
+				//     border-color: $red;
+				//   }
+				// }
+				
+
+
+			}
+		}
+		// .connected_points_list {			
+		// 	@include gel-layout-item;
+		// 	margin-left: gel-columns(3/12);
+		// 	@include gel-columns(8/12);
+		// 	@include mq($from: tablet) {
+		// 		margin-left: gel-columns(1/12);
+		// 		@include gel-columns(6/12);
+		// 	}
+		// }
+	}
+
+	.module_content {
+		@include mq($until: tablet) {
+			// padding-top: ($ss);
+		    margin-bottom: ($ss*2);
+		}
+	}
+
+}

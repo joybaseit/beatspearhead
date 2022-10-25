@@ -1,0 +1,52 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.client_strip {
+	// background-color: teal;
+	position: relative;
+
+	// clip-path: polygon(0 15%, 101% 0, 101% 101%, 0% 101%);
+
+ 
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+		.module_content {
+			padding-top: ($ss*3);
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(4/12);
+			}
+		}
+
+		.image_container {			
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(8/12);
+				margin-left: 0;
+			}
+		}
+		
+	}
+
+	.client_logos_container {
+		pointer-events: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: ($ss*1) 0 0;
+		@include mq($from: desktop) {
+			flex-wrap: nowrap;
+			flex-direction: row;
+			// @include gel-columns(6/12);
+		}
+
+		&--logo {
+			width: 200px; // temp
+		}
+		> picture img {
+			// width: 100px;
+		}
+	}
+}

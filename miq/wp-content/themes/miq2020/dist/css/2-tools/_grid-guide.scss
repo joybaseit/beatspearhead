@@ -1,0 +1,127 @@
+// @include gel-wrap;
+// @include gel-layout;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+html.show-grid {
+	
+	background: $white !important;
+
+	body {
+
+		background: transparent !important;
+
+		.gel-grid-overlay {
+			z-index: -1;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			margin: 0 auto;
+			background: rgba(teal,0.2);
+		}
+
+		.gel-grid-overlay__wrap {
+			@include gel-wrap;
+			background: rgba(teal,0.2);
+			height: 100%;
+		}
+
+		.gel-grid-overlay__layout {
+			@include gel-layout;
+			height: 100%;
+		}
+
+		.gel-grid-overlay__column {
+			height: 100%;
+			@include gel-layout-item;
+			@include gel-columns(1/$gel-grid-default-columns);
+		}
+
+		.gel-grid-overlay__column-fill {
+			background: rgba(255,0,0,0.1);
+			height: 100%;
+			padding: 0 ($gel-spacing-unit/2);
+		}
+	
+	}
+
+}
+
+
+
+
+
+// html.show-grid {
+	
+// 	background: $white !important;
+
+// 	body {
+
+// 		background: transparent !important;
+// 		// overlay grid for testing
+// 		.gel-grid-overlay * {
+// 		  -moz-box-sizing: border-box;
+// 		  -webkit-box-sizing: border-box;
+// 		  box-sizing: border-box;
+// 		}
+// 		.gel-grid-overlay {
+// 			// @include gel-layout;
+// 		  z-index: -1;
+// 		  position: fixed;
+// 		  height: 100%;
+// 		  width: 100%;
+// 		  left: 0;
+// 		  top: 0;
+// 		}
+// 		.gel-grid-overlay__grid {
+// 		  position: relative;
+// 		  width: 100%;
+// 		  height: 100%;
+// 		  max-width: 1008px;
+// 		  margin: 0 auto;
+// 		  padding: 0 ($gel-spacing-unit/2);
+// 		}
+// 		.gel-grid-overlay__column {
+// 		  display: inline-block;
+// 		  height: 100%;
+// 		  width: 8.33333%;
+// 		  padding: 0 ($gel-spacing-unit/2);
+// 		}
+// 		.gel-grid-overlay__column-fill {
+// 		  background: rgba(255,0,0,0.1);
+// 		  height: 100%;
+// 		}
+// 		.gel-grid-overlay__margin {
+// 		  display: inline-block;
+// 		  height: 100%;
+// 		  width: $gel-spacing-unit;
+// 		  position: absolute;
+// 		  top: 0;
+// 		  background: rgba(0,255,0,0.1);
+// 		}
+// 		@media screen and (min-width: 400px) {
+// 		  .gel-grid-overlay__grid {
+// 		    padding: 0 12px;
+// 		  }
+// 		  .gel-grid-overlay__margin {
+// 		    width: ($gel-spacing-unit*2);
+// 		  }
+// 		  @media screen and (min-width: 600px) {
+// 		    .gel-grid-overlay__grid {
+// 		      padding: 0 $gel-spacing-unit;
+// 		    }
+// 		    .gel-grid-overlay__column {
+// 		      padding: 0 $gel-spacing-unit;
+// 		    }
+// 		  }
+// 		  @media screen and (min-width: 1280px) {
+// 		    .gel-grid-overlay__grid {
+// 		      max-width: $gel-grid-max-width-1280;
+// 		      // max-width: none !important;
+// 		    }
+// 		  }
+// 		}
+
+// 	}
+
+// }

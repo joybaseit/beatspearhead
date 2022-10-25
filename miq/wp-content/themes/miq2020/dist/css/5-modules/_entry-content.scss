@@ -1,0 +1,38 @@
+.rich_text,
+article .entry-content {
+	ol, ul {
+		margin-left: ($ss/2);
+	}
+	li {
+		margin-bottom: ($ss/2);
+		position: relative;
+		padding: 0 0 0 ($ss/2);
+		&::before {
+			content: "";
+			position: absolute;
+			left: -14px;
+			top: 10px;
+			width: 23px;
+			height: 10px;
+			// background-color: $red;
+			background-image: url('../images/inline-bullet.png');
+			background-size: cover;
+		}
+	}
+}
+
+.module_content_container {
+
+	&.text__light {
+		.rich_text,
+		article .entry-content {
+			li {
+				color: $white;
+				&::before {
+					background-image: url('../images/inline-bullet-white.png');
+				}
+			}
+		}
+	}
+
+}

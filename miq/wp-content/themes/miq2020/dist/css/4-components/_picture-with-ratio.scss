@@ -1,0 +1,24 @@
+.picture-with-ratio:not(.slick-slide) {
+	// background-color: $darkGrey;
+	display: block;
+	position: relative;
+	width: 100%;
+	height: 0;
+	img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.not-key_content-col {
+	.picture-with-ratio:not(.slick-slide) {
+		height: auto;
+		padding-top: 0 !important;
+		img {
+			position: relative;
+		}
+	}
+}

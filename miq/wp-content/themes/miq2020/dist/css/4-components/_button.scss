@@ -1,0 +1,17 @@
+.button,
+a.button {
+    padding: ($ss/4) ($ss/1);
+    display: inline-block;
+    // background: $red;
+    // color: $white;
+    text-decoration: none;
+    
+    &:hover {
+    	// background-color: $black;
+    }
+    padding: ($ss/4) ($ss/2);
+	margin-top: ($ss/2);
+
+
+    @extend .cut-corner;
+}

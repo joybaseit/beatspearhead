@@ -1,0 +1,123 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.image_text_badges {
+	// background-color: teal;
+	position: relative;
+
+	// clip-path: polygon(0 15%, 101% 0, 101% 101%, 0% 101%);
+
+ 	// .text_background_image {
+ 		
+ 	// 	position: absolute;
+ 	// 	width: 100%;
+ 	// 	height: 100%;
+ 	// 	top: 0;
+ 	// 	left: 0;
+ 	// 	z-index: 0;
+
+ 	// 	.featured-image {
+ 	// 		// @include mq($from: tablet) {
+ 	// 			// position: absolute;
+ 	// 			width: 100%;
+ 	// 			height: 100%;
+ 	// 			top: 0;
+ 	// 			left: 0;
+ 	// 			// z-index: 0;
+ 	// 		// }
+ 	// 	}
+ 	// }
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+		// .module_content {
+		// 	// padding-top: ($ss*3);
+		// 	@include gel-layout-item;
+		// 	@include mq($from: tablet) {
+		// 		@include gel-columns(6/12);
+		// 	}
+		// }		
+	}
+
+	.module_content {
+		@include mq($from: tablet) {
+			@include gel-columns(10/12);
+		}
+	}
+	
+	.image_text_badges__clipped_image_container {
+		@include gel-layout-item;
+		margin-bottom: $ss;
+		@include mq($from: tablet) {
+			@include gel-columns(5/12);
+			margin-right: gel-columns(1/12);
+			margin-bottom: 0;
+		}
+	}
+
+	.image_text_badges__content_container {
+		@include gel-layout-item;
+		@include mq($from: tablet) {
+			@include gel-columns(6/12);
+			// margin-right: gel-columns(1/12);
+		}
+	}
+
+	.image_text_badges__clipped_image {
+		width: 100%;
+		// height: 100%;
+		position: relative;
+		@include aspect-ratio(1,1);
+		clip-path: polygon(0% 0%, 80% 0, 100% 20%, 100% 100%, 0% 100%);
+		.featured-image {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			@include full-bg;
+		}
+	}
+
+	// .badges_container {
+	// 	display: flex;
+	// 	img {
+	// 		height: auto;
+	// 		width: auto;
+	// 	}
+	// }
+
+	.badges_container {
+		// pointer-events: none;
+		display: flex;
+		flex-wrap: wrap;
+		margin: ($ss*1) 0 0;
+		@include mq($from: tablet) {
+			flex-wrap: nowrap;
+			flex-direction: row;
+			// @include gel-columns(6/12);
+		}
+
+		// picture {
+		// 	max-width: 150px; // temp
+		// 	// height: auto;
+		// 	// width: auto;
+		// 	// width: 200px; // temp
+		// 	// @include aspect-ratio(1,1);
+		// 	// height: 0;
+		// }
+		// > picture img {
+		// 	// width: 100px;
+		// 	height: auto;
+		// }
+		.featured-image {
+			@include aspect-ratio(1,1);
+			width: 150px;
+			@include full-bg;
+			background-size: contain;
+		}
+	}
+
+}

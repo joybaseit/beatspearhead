@@ -1,0 +1,180 @@
+.greenhouse_careers {
+	// @include gel-layout;
+	.block_content--inner-wrapper > h1 {
+		margin-bottom: ($ss*1);
+	}
+
+	.jobs-searchandfilter {
+		margin-bottom: ($ss/1);
+		ul {
+			display: flex;
+			align-items: center;
+
+			&:before {
+				content: "Filter By:";
+				display: inline-block;
+				padding-right: 8px;
+				text-transform: uppercase;
+				@include type-meta-grey;
+				// padding: ($ss/10) ($ss/6) ($ss/10) 0;
+			}
+
+			li:first-of-type {
+				background-color: transparent;
+				// display: flex;
+				
+			}
+			li:nth-of-type(2) {
+				// border: 10px solid teal;
+				
+			}
+			li {
+				select {
+					border: 1px solid $red;
+					text-transform: uppercase;
+				}
+				color: $red;
+				margin-right: ($ss/8);
+				input[type="submit"],
+				select {
+					display: flex;
+					padding: ($ss/10);
+					color: $red;
+					@include type-meta;
+				}
+				input[type="submit"] {
+					// display: inline-block;
+					border: 1px solid $red;
+					padding: ($ss/10) ($ss/3);
+					transition: 0.2s all;
+					@include type-meta-button-tag;
+					background-color: $red;
+					color: $white;
+					&:hover {
+						background-color: $black;
+						color: $white;
+						border: 1px solid $black;
+					}
+				}
+			}
+			.button {
+				max-width: none;
+				border: 1px solid $red;
+				margin-top: 0;
+				padding: 0;
+				padding: 0.2rem 0.5rem;
+				font-size: 0.75em;
+				line-height: 1.1;
+				display: flex;
+				// padding: ($ss/5) ($ss/2);
+			}
+		}
+	}
+
+
+	.jobs-board {
+		@include gel-layout-item;
+		@include mq($from: desktop) {
+			@include gel-columns(10/12);
+			margin-left: gel-columns(2/12); 
+		}
+		&--inner-wrapper {
+			@include gel-layout;
+			.jobs-card {
+				@include gel-layout-item;
+				@include mq($from: desktop) {
+					margin-left: gel-columns(1/10);
+					@include gel-columns(4/10);
+				}
+			}
+		}
+	}
+	.jobs-card {
+		// margin-top: ($ss/1);
+		// margin-bottom: ($ss/1);
+		padding-bottom: ($ss/1);
+		
+		// display: flex;
+		> * {
+			margin-bottom: 0;
+		}
+		a {
+			text-decoration: none;
+			display: flex;
+			flex-direction: row;
+			// justify-content: center;
+			// align-items: flex-start;
+			// align-items: space-around;
+			> * {
+				margin-bottom: ($ss/3);
+			}
+			height: 100%;
+			padding-bottom: ($ss/2);
+			border-bottom: 1px solid $grey;
+		}
+		.department {
+			@include type-meta-button-tag;
+			@include uppercase;
+			color: $grey;
+		}
+		.title {
+			@include type-h5;
+			// @include uppercase;
+			padding: 0;
+			margin: 0;
+			// margin-bottom: ($ss/4);
+			margin-top: ($ss/8);
+		}
+		.location {
+			@include type-meta-button-tag;
+			@include uppercase;
+			color: $grey;
+		}
+		.button {
+			@include type-meta-button-tag;
+			// display: inline-block;
+			// width: auto;
+			display: none;
+		}
+		.chevron-wrapper {
+			flex-basis: 20%;
+			display: flex;
+			// justify-content: center;
+			justify-content: flex-end;
+			// align-items: center;
+			padding-top: ($ss/2);
+		}
+		svg {
+			// width: 20px;
+			// height: 20px;
+			margin-top: 14px;
+			// margin-left: 7px;
+			// margin-bottom: 2px !important;
+		}
+
+		svg {
+			width: 20px;
+			height: 20px;
+			path {
+				fill: $red;
+				transform: rotate(-90deg);
+				transform-origin: 50% 50%;
+			}
+		}
+
+		&.is-hidden {
+			display: none;
+		}
+
+	}
+}
+
+
+/// single greenhouse job page...
+
+// .page-template-jobs-single-php .grnhse_app {
+// 	background-image: url('../images/loading.gif');
+// 	iframe {
+// 		background-color: $white;
+// 	}
+// }

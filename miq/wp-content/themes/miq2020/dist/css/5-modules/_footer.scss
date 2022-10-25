@@ -1,0 +1,308 @@
+// .footer {
+//   position: fixed;
+//   bottom: 0;
+//   left: 0;
+//   width: 100vw;
+//   text-align: center;
+//   padding-bottom: 20px;
+//   @media only screen and (min-width:768px) {
+//     padding-bottom: 10px;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+//   h1 {
+//     font-size: 1.6rem;
+//     line-height: 1;
+//     @media only screen and (min-width:768px) {
+//       margin: 30px 40px;
+//       font-size: 2.4rem;
+//     }
+//   }
+//   .enquiries {
+//     @extend h1;
+//   }
+// }
+
+.site-footer {
+	background-color: $grey_l;
+}
+
+.footer {
+	
+	// amgled cut
+	&--get-in-touch {
+		// clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%);
+		padding-top: ($ss*1);
+		// padding-bottom: ($ss*4);
+		// @include mq($from: desktop) {
+		//     padding-top: ($ss*4);
+		// }
+	}
+
+	&--signup {
+
+		background-color: $purple_l;
+
+	}
+
+	&--links {
+		// clip-path: polygon(0 5%, 101% 0, 101% 101%, 0% 101%);
+		// padding-top: ($ss*4);
+		// @include mq($from: desktop) {
+		// 	clip-path: polygon(0 15%, 101% 0, 101% 101%, 0% 101%);
+		// }
+		background-color: $purple;
+	}
+
+	&--get-in-touch {
+		// background-color: $grey_l;
+		@include linear-gradient(90deg, $pink, $red, $orange, $yellow);
+
+		.tagline {
+			background-color: $grey_l;			
+			color: $black;
+		}
+		// @include gel-layout;
+		.module_content {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(6/12);
+			}
+			color: $white;
+			h1 { color: $white; }
+		}
+
+		&--form {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(6/12);
+			}
+			// color: $white;
+			// h1 { color: $white; }
+
+			color: $white;
+			
+			select,
+			textarea,
+			input:not([type="checkbox"]):not([type="submit"]) {
+				background-color: rgba($white, 0.2);
+				padding: ($ss/4);
+				color: $white;
+				width: 100% !important;
+				
+				// scott additions
+				font-family: "NiveauGrotesklight", sans-serif;
+				font-size: .8em;
+
+				&::placeholder {
+					color: $white;
+				}
+			}
+
+			input[type="submit"] {
+				@extend .button;
+				background-color: $white;
+				&:hover {
+					background-color: $red;
+				}
+			}
+
+			fieldset {
+				margin-bottom: ($ss/2) !important;
+				max-width: none !important;
+			}
+
+			// ::-webkit-input-placeholder,
+			// ::-moz-placeholder, 
+			// :-ms-input-placeholder, 
+			// :-moz-placeholder { 
+			// 	color: $white;
+			// }
+
+			.legal-consent-container {
+				p {
+					@include type-small-print;
+					color: $white;
+				}
+			}
+		}
+
+		iframe {
+			// width: 50%;
+			max-width: 100%;
+			overflow-x: scroll;
+		}
+
+	}
+
+
+	&--links {
+		// background-color: $purple;
+		color: $white;
+		a { text-decoration: none; }
+		@include type-footer-links;
+		h1,h2,h3,h4,h5,h6,p,a { color: $white; }
+		.block_content--inner-wrapper {
+			@include gel-layout;
+		}
+		&--top-strip {
+			@include gel-layout-item;
+			h2,h3,h4,h5,h6 {
+				color: $white;
+
+			}
+			.footer-logo {
+				max-width: 120px;
+			}
+			&-inner-wrapper {
+				@include gel-layout;
+				display: flex;
+				justify-content: space-between;
+				overflow: hidden;
+				> div {
+					@include gel-layout-item;
+					@include mq($from: desktop) {
+						@include gel-columns(6/12);
+					}
+				}
+			}
+		}
+		&--links-container {
+			// @include gel-layout-item;
+			margin-top: ($ss/2);
+			&-inner-wrapper {
+				@include gel-layout;
+				
+
+				.footer--links--col {
+					@include gel-layout-item;
+					@include mq($from: tablet) {
+						@include gel-columns(6/12);
+					}	
+					@include mq($from: desktop) {
+						@include gel-columns(3/12);
+					}		
+					li {
+						margin-bottom: ($ss/2);
+						opacity: 0.8;
+					}	
+
+					ul {
+						@include mq($until: desktop) {
+							display: none;
+						}
+					}
+					&.is-visible {
+						ul {
+							display: block;
+						}
+					}
+					.footer--links--col--toggle {
+						display: block;
+						text-transform: uppercase;
+						letter-spacing: 0.1rem;
+						letter-spacing: 0.25rem;
+						
+						@include mq($until: desktop) {
+
+							position: relative;
+
+							&:after {
+								content: '';
+								display: inline-block;
+								padding-left: 1rem;
+								position: absolute;
+								right: 0;
+								top: 5px;
+								background-image: url('../../svg/inline-down-chevron.svg');
+								// background-size: 14px 7px;
+								height: 7px;
+								width: 5px;
+								background-repeat: no-repeat;
+								background-position: right;
+							
+							
+							}
+						}
+
+						@include mq($from: desktop) {
+							// cursor: default;
+							pointer-events: none;
+						}
+
+						// outline: solid teal 10px !important;
+					}		
+				}
+				// > div {
+				// }
+			}
+		}
+		&--lower-strip {
+			@include gel-layout-item;
+			&-inner-wrapper {
+				@include gel-layout;
+				> div {
+					@include gel-layout-item;
+					@include mq($from: desktop) {
+						@include gel-columns(6/12);
+					}
+				}
+			}
+		}
+	}
+
+	&-yellow-divider {
+		display: flex;
+		margin: ($ss/2) 0;
+		align-items: center;
+		&--left,
+		&--right {
+			border-bottom: 2px solid $yellow;
+		}
+
+		&--left {
+			// width: 400px;
+			width: 100%;
+		}
+		&--triangle {
+			border-bottom: 2px solid $yellow;
+			border-left: 2px solid $yellow;
+			transform: translateY(1px) rotate(-45deg);
+			background-color: $purple;
+			width: 40px;
+			height: 40px;
+			flex: 0 0 auto;
+			// transform: ;
+		}
+		&--right {
+			width: 100px;
+		}
+	}
+
+	&--privacy-strip {
+		background-color: $red;
+		padding-top: ($ss/2);
+		padding-bottom: ($ss/2);
+		a {
+			    text-decoration: none;
+				color: #FFF;
+				font-family: "NiveauGroteskBold", sans-serif;
+		}
+		.block_content--inner-wrapper {
+			position: relative;
+			&:after {
+				content: "";
+				position: absolute;
+				top: -($ss/2);
+				right: 0;
+				// @include center();
+				// width: 50px; 
+				// height: 50px;
+				border-top: 30px solid $purple;
+				border-left: 24px solid transparent;
+				border-right: 24px solid transparent;
+				// background-color: $purple; 
+			}
+		}
+	}
+}

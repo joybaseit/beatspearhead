@@ -1,0 +1,99 @@
+.cut-corner {
+  position: relative;
+  // height: 100px;
+  // width: 200px;
+  border-left: 2px solid $white;
+  overflow: hidden;
+  color: $purple; 
+  &:before,
+  &:after {  
+    background-color: $white;
+  }
+}
+.cut-corner:after,
+.cut-corner:before {
+  position: absolute;
+  content: '';
+  width: calc(100% - 2px);
+  left: 0px;
+  z-index: -1;
+}
+
+.cut-corner:before {
+  height: calc(80% - 4px);
+  top: 0px;
+  border: 2px solid $white;
+  border-width: 2px 2px 0px 0px;
+}
+
+.cut-corner:after {
+  height: 20%;
+  bottom: 0px;
+  border: 2px solid $white;
+  border-width: 0px 3px 2px 0px;
+  transform: skew(-45deg);
+  transform-origin: right top;
+}
+
+.cut-corner:hover {
+  color: $white; 
+  border-color: $red;
+  &:before,
+  &:after {  
+    background-color: $red;
+    border-color: $red;
+  }
+}
+
+
+.cut-corner.yellow_outline {
+  border-color: $yellow;
+  color: $yellow;
+  &:before,
+  &:after {  
+    background-color: transparent;
+  }
+  &:before {
+    border-color: $yellow;
+  }
+  &:after {
+    border-color: $yellow;
+  }
+  &:hover {
+    color: $white; 
+    &:before,
+    &:after {  
+      background-color: $yellow;
+    }
+  }
+}
+
+.cut-corner.red_outline {
+  border-color: $red;
+  color: $red;
+  &:before,
+  &:after {  
+    background-color: transparent;
+  }
+  &:before {
+    border-color: $red;
+  }
+  &:after {
+    border-color: $red;
+  }
+  &:hover {
+    color: $white; 
+    &:before,
+    &:after {  
+      background-color: $red;
+    }
+  }
+}
+
+.cut-corner {
+  transition: all 0.5s;
+  &:before,
+  &:after {  
+    transition: all 0.5s;
+  }
+}

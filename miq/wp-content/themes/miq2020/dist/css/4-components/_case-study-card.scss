@@ -1,0 +1,17 @@
+.case-study-card {
+	&--inner-wrapper {
+		display: flex;
+		flex-direction: column; 
+		align-items: center;
+		margin: ($ss/2) 0;
+		padding: ($ss/2) ($ss/2) ($ss/2) 0;
+		outline: 2px solid $grey_l;
+		background-color: $off_white;
+
+		@include mq($from: desktop) {
+			flex-direction: row; 
+			margin: ($ss/2) ($ss*2);
+			padding: 0 0 0 ($ss/1);
+		}
+	}
+}

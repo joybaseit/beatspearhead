@@ -1,0 +1,33 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.case_study_strip {
+	// background-color: teal;
+	position: relative;
+ 
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+		.module_content {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(6/12);
+			}
+		}
+		.image_container {			
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(6/12);
+			}
+		}
+		// .foreground_image_container {
+		// }
+	}
+
+	.module_content_container--layout__image_right {
+
+	}
+
+}

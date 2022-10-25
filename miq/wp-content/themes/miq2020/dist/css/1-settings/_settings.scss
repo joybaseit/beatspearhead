@@ -1,0 +1,57 @@
+// // The names applied to each of our breakpoints. We're taking a t-shirt sizing naming convention
+// //
+// // @type Map
+// //
+// $gel-breakpoint-names: (xs, s, m, l, xl, xxl) !default;
+
+// // The widths of our major breakpoints
+// //
+// // @type Map
+// //
+// $gel-breakpoint-sizes: (240px, 400px, 600px, 900px, 1008px, 1280px) !default;
+
+$mq-breakpoints: (mobile: 320px,
+tablet: 740px,
+desktop: 980px,
+wide: 1300px,
+xwide: 1750px) !default;
+
+// sitepadding
+$sitepadding : 2rem;
+$sitePadding : $sitepadding;
+$siteSpacing : $sitepadding;
+$sitespacing : $sitepadding;
+$ss 		 : $sitepadding;
+
+//colours
+$medGrey: 		#ddd;
+$lightGrey: 	#d8d8d8;
+$gold: 			#D7A84E;
+$orange: 		#f3923c;
+$blue: 			#236EA5;
+
+
+$black: 		#000;
+$white: 		#FFF;
+$off_white: 	#fcfcfc;
+$grey_vl: 		#f7f7f7;
+$grey_l2: 		#f1f1f1; // another grey???
+$grey_l: 		#f2f2f2;
+$grey_m_l:		#e5e5e5;
+$grey_m: 		#9f9f9f;
+$grey: 			$grey_m;
+$grey_d: 		#241f20;
+$purple:		#2f0d30;
+// $purple_l:		#4f244d;
+$purple_l:		#3f0045;
+
+$red: 			#ff291c;
+$pink: 			#ff00ad;
+$yellow: 		#ffc800;
+
+$green: 		#03b357;
+
+
+
+// animation vars
+$globalTween : 230ms ease-in-out;

@@ -1,0 +1,288 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.module_strip .miq_shape_container {
+	// @include gel-layout-item;
+	// @include gel-columns(11/12);
+	max-width: 1280px;
+	width: 90%;
+	margin: 0 auto;
+	
+	.module_content_container {
+		clip-path: polygon(0% 0%, 100% 0, 100% 95%, 85% 100%, 0% 100%);
+		@include mq($from: tablet) {
+			clip-path: polygon(0% 0%, 100% 0, 100% 90%, 85% 100%, 0% 100%);
+		}
+		@include mq($from: desktop) {
+			clip-path: polygon(0% 0%, 100% 0, 100% 80%, 87.5% 100%, 0% 100%);
+		}
+		@include mq($from: wide) {
+			clip-path: polygon(0% 0%, 100% 0, 100% 80%, 85% 100%, 0% 100%);
+			// clip-path: polygon(0% 0%, 100% 0, 100% 90%, 93% 100%, 0% 100%);
+		}
+		@include mq($until: tablet) {
+			display: flex;
+			flex-direction: column-reverse;
+			// flex-direction: row-reverse;
+		}
+	}
+
+	.module_content_container__bg {
+		@include mq($until: tablet) {
+			width: 100%;
+			height: 200px;
+		}
+	}
+
+	.block_content--inner-wrapper .image_container {			
+		@include gel-layout-item;
+
+		@include mq($from: tablet) {
+			@include gel-columns(6/12);
+			// margin-left: gel-columns(1/12);
+		}
+	}
+}
+
+.section-block.text_boxes,
+.section-block.client_strip,
+.section-block.video_module_strip,
+.section-block.module_strip {
+	// background-color: teal;
+	position: relative;
+	// .background_image_container {
+	// }
+
+	.copy {
+		margin: ($ss*1) 0;
+	}
+
+	.block_content--inner-wrapper {
+		
+		@include gel-layout;
+		position: relative;
+		z-index: 1;
+
+		.module_content {
+			@include gel-layout-item;
+			@include mq($from: tablet) {
+				@include gel-columns(6/12);
+			}
+		}
+		.image_container {			
+			@include gel-layout-item;
+			@include mq($from: tablet) {
+				@include gel-columns(6/12);
+				// margin-left: gel-columns(1/12);
+			}
+		}
+
+		.video_container {			
+			@include gel-layout-item;
+			@include mq($from: tablet) {
+				@include gel-columns(6/12);
+				// margin-left: gel-columns(1/12);
+			}
+		}
+
+		.slideshow-gallery {
+			.picture-with-ratio {
+				height: auto;
+				padding-top: 0 !important;
+			}
+			img {
+				height: auto;
+			}
+			.slick-dots {
+				// padding-right: gel-columns(1/12);
+			}
+		}
+
+		// .foreground_image_container {
+		// }
+	}
+
+	.module_content_container--layout__image_right {
+
+	}
+
+
+	.module_content_container--layout__image_right_bg,
+	.module_content_container--layout__image_left_bg {
+	 	  @include mq($until: tablet) {
+				.block_content {
+					padding-top: ($ss*1);
+					padding-bottom: ($ss*1); 
+				}
+	 	  } 
+	}
+
+	.module_content_container--layout__image_left_bg,
+	.module_content_container--layout__image_left,
+	.module_content_container--layout__image_left_bg_no_angle {
+		.block_content--inner-wrapper {
+			@include mq($from: tablet) {
+				flex-direction: row-reverse;
+				.image_container {
+					// @include gel-columns(4/12);
+					// margin-right: gel-columns(1/12);
+					// margin-left: gel-columns(1/12);
+					margin-left: 0;
+				}
+			}
+		}
+	}
+
+	// show bg image on mobile
+	.module_content_container--layout__image_full_bg,
+	.module_content_container--layout__image_right_bg,
+	.module_content_container--layout__image_left_bg {
+		.module_content_container__bg .featured-image {
+			// position: absolute;
+			width: 100%;
+			height: 300px;
+			// height: 100%;
+			// top: 0;
+			// left: 0;
+			// z-index: 1;
+			@include mq($from: tablet) {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+		}
+	}
+
+	.module_content_container--layout__image_full_bg,
+	.module_content_container--layout__image_right_bg,
+	.module_content_container--layout__image_left_bg,
+	.module_content_container--layout__image_right_bg_no_angle,
+	.module_content_container--layout__image_left_bg_no_angle {
+
+		position: relative;
+
+		.module_content_container__bg .featured-image {
+			@include mq($from: tablet) {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 1;
+			}
+		}
+
+		.image_container {
+			@include mq($from: tablet) {
+				display: none;
+			}
+		}
+
+	}
+
+	
+
+	.text_background_image {
+		// position: relative;
+		@include mq($until: tablet) {
+			display: none;
+		}
+		.featured-image {
+			// @include mq($from: tablet) {
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				z-index: 0;
+			// }
+		}
+	}
+
+	.module_content_container--layout__image_right_bg_no_angle,
+	.module_content_container--layout__image_right_bg {
+		.module_content_container__bg .featured-image {
+			width: 100%;
+			height: 300px;
+			@include mq($from: tablet) {
+				width: 40%;
+				height: 100%;
+				right: 0;
+				left: auto;
+				// background-position: center center;
+			}
+		}
+	}
+
+	.module_content_container--layout__image_left_bg_no_angle,
+	.module_content_container--layout__image_left_bg {
+		.module_content_container__bg .featured-image {
+			width: 100%;
+			height: 300px;
+			@include mq($from: tablet) {
+				width: 40%;
+				height: 100%;
+				right: auto;
+				left: 0;
+				// background-position: center center;
+			}
+		}
+	}
+
+	.module_content_container--layout__image_right_bg {
+		.module_content_container__bg .featured-image {
+			@include mq($from: tablet) {
+				clip-path: polygon(25% 0, 100% 0, 100% 100%, 0% 100%);
+			}
+		}
+	}
+
+	.module_content_container--layout__image_left_bg {
+		.module_content_container__bg .featured-image {
+			@include mq($from: tablet) {
+				clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+			}
+		}
+	}
+
+	.module_content_container--layout__image_right_bg_no_angle {
+		.module_content_container__bg .featured-image {
+			// background-position: left; 
+			background-position: center center;
+		}
+	}
+
+	.module_content_container--layout__image_left_bg_no_angle {
+		.module_content_container__bg .featured-image {
+			// background-position: right; 
+			background-position: center center;
+		}
+	}
+
+	.module_content_container--layout__no_image {
+		.module_content {
+			@include mq($from: tablet) {
+				width: 100%;
+			}
+		}
+		.image_container {			
+			display: none;
+		}
+	}
+
+}
+
+// Scott request Sep 2020
+.section-block {
+	.miq_shape_container .text_background_image {
+		// position: relative;
+		@include mq($until: tablet) {
+			display: block;
+		}
+	}
+}

@@ -1,0 +1,523 @@
+.lazyload-example {
+	width: 100%;
+	height: 500px;
+	@include full-bg;
+}
+
+img {
+	// max-width: 100%;
+}
+
+
+
+
+/// SCOTT HACKS
+
+/*make home page text boxes same depth*/
+// .section-block.text_boxes .block_content--inner-wrapper .text_boxes_container .text_box_wrapper .text_box {
+//     @include mq($from: desktop) {
+//         // min-height: 100% !important;
+//         // margin-bottom: 30px;
+//         // margin-top: -10px;
+//     }
+// }
+
+
+
+// LAUNCH DAY TEMP HACKS
+
+.page-template-china-page {
+    .wp_content {
+        .module_content {
+            margin-bottom: 20px;
+        }
+        .block_content--inner-wrapper {
+            padding-bottom: 0em !important;
+        }
+        .tagline {
+            margin-bottom: 1rem;
+        }
+    
+    }
+
+    .module_strip:nth-of-type(9) {
+        // * {
+        //     outline: red solid 2px;
+        // }
+        .module_content_container {
+            padding-top: 1rem !important;
+        }
+    }
+
+}
+
+.site-footer .footer-social-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.footer--links--lower-strip {
+    p {
+        margin-bottom: 0;
+    }
+}
+
+
+
+/// SCOTT HACKS JUNE 2020
+
+.module_content .heading {
+    // font-size: 2.2em;
+}
+
+p {
+    // font-size: 0.8em;
+}
+
+
+
+h5, .type-h5 {
+    // font-size: 1em;
+}
+
+.section-block.module_strip .block_content--inner-wrapper .module_content {
+    // width: 45%;
+}
+
+.tagline {
+    padding: 0.5rem calc(0.4rem + 40px) 0.5rem 0.6rem;
+    clip-path: polygon(0% 0%, 101% 0%, 101% calc(101% - 50px), calc(101% - 25px) 101%, 0 101%);
+}
+
+.section-block.module_strip .miq_shape_container .module_content_container {
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 93% 100%, 0% 100%);
+}
+
+
+
+/*WEEKEND STYLES*/
+/*space out search filter*/
+
+.searchandfilter ul li:nth-of-type(2):before {
+    min-width: 90px;
+}
+
+.searchandfilter ul li input[type="submit"] {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.searchandfilter ul li {
+margin-left: 0px;
+}
+
+h3, .type-h3 {
+    font-size: 1.5em;
+}
+
+
+
+
+
+/*PREVIOUS STYLES*/
+
+
+
+/*update header sizing*/
+
+.module_content .heading {
+    font-size: 2.2em;
+}
+
+/*update body copy sizing*/
+p {
+    font-size: 1em;
+}
+
+/*get in touch form text sizing*/
+
+.footer--get-in-touch--form select, .footer--get-in-touch--form textarea, .footer--get-in-touch--form input:not([type="checkbox"]):not([type="submit"]) {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 0.5rem;
+    color: #FFF;
+    width: 100% !important;
+    font-family: "NiveauGrotesklight", sans-serif;
+    font-size: .8em;
+}
+
+/*update sizing*/
+h5, .type-h5 {
+    font-size: 1em;
+}
+
+/*update left text block width*/
+.section-block.module_strip .block_content--inner-wrapper .module_content {
+    // width: 50%;
+}
+
+/*fix miq container shape*/
+
+.section-block.module_strip .miq_shape_container .module_content_container {
+    clip-path: polygon(0% 0%, 100% 0, 100% 90%, 93% 100%, 0% 100%);
+}
+
+/*make hamburger white*/
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    background-color: #fff;
+
+}
+
+/*increase logo size on mobile*/
+
+.site-header--mobile-header .site-header--logo, .site-header--mobile-header svg {
+    width: 150px;
+}
+
+/*reduce width of miq container module to match inner container width*/
+
+.section-block.module_strip .miq_shape_container {
+    max-width: 1220px;
+}
+
+/*reduce height of client strip left text area*/
+.section-block.client_strip .block_content--inner-wrapper .module_content {
+    padding-top: 0rem; 
+}
+
+
+/*reduce width of headed list section*/
+.section-block.text_with_heading_list .block_content--inner-wrapper .headed_list {
+    // margin-left: 8.33333%;
+    // width: 40%;
+}
+
+/*miq cut container module padding etc*/
+
+.section-block.text_boxes .block_content--inner-wrapper .text_boxes_container .text_box_wrapper .text_box {
+        margin: 1rem;
+    padding: 4rem 4rem 3rem 3rem;
+}
+
+
+/*footer links rollover yellow*/
+.footer--links a:hover{
+    color: #ffc800;
+}
+
+/*fix shape and hairline at top
+
+.tagline {
+    margin-top: 1rem;
+    clip-path: polygon(0% 0%, 100% 0%, 100% calc(101% - 30px), calc(101% - 20px) 101%, 0 100%);
+        padding: 0.5rem calc(0.4rem + 20px) 0.5rem 0.6rem;
+}
+*/
+
+.cut-corner, .button, .footer--get-in-touch--form input[type="submit"], a.button, li.yellow-border a, li.yellow-border a:hover {
+    color: #ff291c;
+}
+
+.searchandfilter ul li:first-of-type {
+    background-color: #fff !important;
+}
+
+.blog_posts_container--inner-wrapper {
+    margin-top: 30px;
+}
+
+/*link text colour to yellow*/
+// .card.cpt_office a {
+    // color: #FFC807 !important;
+// }
+
+
+.card.card__hero .hero_background {
+    max-height: 700px;
+}
+
+/*rollover on menu items*/
+// .site-header--desktop-header--right .menu-btn a:hover  {
+//     color: #ff2000 !important;
+// }
+
+/*hairline under nav div fix*/
+.site-header {
+height:62px
+}
+
+/*blog thumb meta move up a touch*/
+.card header {
+flex: 0 0 auto;
+}
+/*media solutions - better connected space below header*/
+.section-block.text_with_heading_list .block_content--inner-wrapper .headed_list--underline {
+    margin-bottom: 20px;
+}
+
+/*media solutions - better connected space below hr*/
+.block_content--inner-wrapper .headed_list--underline {
+    margin-bottom:10px;
+}
+
+/*home page work with us how you want to - decrease padding top*/
+.section-block.client_strip .block_content--inner-wrapper .module_content {
+    padding-top: 0rem !important;
+}
+
+/*heading copy area full width*/
+.copy {
+    width:100% !important;
+}
+
+
+
+/* make hero image not fixed - no parrallax */
+
+.section-block.hero .background_image_container .featured-image {
+background-attachment: scroll;
+}
+
+.card .excerpt {
+    color: #2B0030;
+}
+
+
+/*remove footer subscribe section*/
+.footer--signup {
+    background-color: #3f0045;
+    display: none; 
+}
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    
+
+/*update body copy sizing*/
+p {
+    font-size: 1em;
+}
+    
+    /*update header text block width*/
+.section-block.hero .block_content--inner-wrapper .module_content .copy {
+    width: 100% !important;
+}
+    
+    .section-block.module_strip .block_content--inner-wrapper .module_content {
+    width: 100% !important;
+}
+    
+    button, .button, .footer--get-in-touch--form input[type="submit"], .tagline {
+    font-size: 0.8em;
+}
+    
+    .section-block.connected_points .block_content--inner-wrapper .connected_points_list {
+    width: 100% !important;
+}
+    
+    h3, .type-h3 {
+        font-size: 1.8em;
+    letter-spacing: 0.1px;
+}
+    
+    .section-block.text_boxes .block_content--inner-wrapper .text_boxes_container .text_box_wrapper .text_box {
+    margin: 20px 4px 20px 20px;
+    padding: 20px 20px 20px 20px;
+}
+    
+    .section-block.text_with_heading_list .block_content--inner-wrapper .headed_list {
+    margin-left: 30px;
+    width: 100%;
+}
+    
+    .section-block.connected_points .block_content--inner-wrapper .connected_points_list {
+    width: 100% !important;
+}
+    
+        /*update miq module text block width*/
+    .section-block.module_strip .block_content--inner-wrapper .module_content {
+    width: 100%;
+}
+    
+            /*remove field on subscribe form*/
+        
+    .hs-custom-style fieldset input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]), .hs-custom-style>div input:not([type="image"]):not([type="submit"]):not([type="button"]):not([type="radio"]):not([type="checkbox"]):not([type="file"]) {
+    box-sizing: border-box;
+    padding: 0 15px;
+    min-height: 27px;
+    display: none;
+}
+    
+    
+                /*remove margin top/bottom on connected points*/
+    .section-block.connected_points .connected_points_list {
+    margin: 0rem 0;
+}
+    
+                    /*tagline margin top larger and font smaller*/
+    
+    .tagline {
+    margin-top: 1rem;
+        font-size: .82em;
+}
+    
+                        /*reduce margin top and bottom of all containers*/
+    
+    
+    .section-block.product_media_strip .module_content_container:not(.no_padding_top_and_bottom), .section-block.video_module_strip .module_content_container:not(.no_padding_top_and_bottom), .section-block.image_text_badges .module_content_container:not(.no_padding_top_and_bottom), .section-block.module_strip .module_content_container:not(.no_padding_top_and_bottom) {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+    
+    
+                            /*reduce margins top and bottom on most containers*/
+    
+    .section-block.client_strip .block_content--inner-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+    
+    .section-block.text_boxes .module_content {
+    margin-bottom: 2rem;
+}
+    
+    
+    .section-block.connected_points {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+}
+    
+    .section-block.text_with_heading_list .block_content--inner-wrapper, .section-block.wp_content .block_content--inner-wrapper {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+    
+                            /*reduce left margin of headed list*/
+    
+    .section-block.text_with_heading_list .block_content--inner-wrapper .headed_list {
+    margin-left: 2px;
+}
+    
+    .item_content--item_copy{
+        margin-bottom: 2rem;
+    }
+    
+    .card *:not(.button), .card * > *:not(.button) {
+    margin-bottom: 0.8rem;
+}
+    
+    .module_content {
+    margin-bottom: 0rem;
+}
+        /*make single post module image full width*/
+
+    
+            /*fix open roles header size*/
+    h1, .type-h1 {
+    font-size: 2em;
+}
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+// //// SCOTT HACKS
+
+// .site-header--desktop-header--right .menu-btn a {
+//     letter-spacing: .2em;
+// }
+
+// .blog_posts_container--inner-wrapper {
+//     margin-top: 30px;
+// }
+
+// .product_media_strip .module_content {
+//     width: 100%;
+// }
+
+
+
+// .product_media_strip .media_content_container .image_container {
+//     max-width: 390px;
+// }
+
+// .button, a.button {
+//     max-width: 70%;
+// }
+
+// h1, .type-h1 {
+//     margin-top: 3rem;
+// }
+
+// .archive-with-flex-content {
+//     margin-top: 0rem;
+// }
+
+// .card .entry-title {
+//     text-transform: none;
+// }
+
+// // .card .entry-title, .card time {
+// //      padding-left: 0rem; 
+// // }
+
+// .footer--links a:hover {
+//     text-decoration: underline;
+// 	color: #ff291c;
+// }
+
+// .card-page a {
+//     border-bottom: 2px solid #e2e2e2;
+// }
+
+// .card .excerpt {
+//     // padding-left: 1rem;
+// }
+
+// .section-block.meet_the_team .team_member_card .team_member_title {
+//     padding-right: 1rem;
+//     /* padding-left: 1rem; */
+//     color: #9f9f9f;
+//     font-family: "NiveauGrotesklight", sans-serif;
+//     display: flex;
+//     flex-direction: column;
+//     font-size: 0.8em;
+//     line-height: 1.1em;
+//     font-style: italic;
+// 	text-transform: none;
+// 	letter-spacing:0rem
+// }
+
+// .section-block.meet_the_team .team_member_card .team_member_name {
+//     font-size: 1.5em;
+// 	  line-height: 1em;
+// }
+
+// // .card.cpt_office {
+//     // margin-bottom: 1.4rem;
+// // }
+
+
+
+
+
+
+
+
+
+
+
+

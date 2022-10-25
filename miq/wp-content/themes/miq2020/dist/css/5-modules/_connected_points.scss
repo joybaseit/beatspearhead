@@ -1,0 +1,181 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+$pointsize : 23px;
+
+.section-block.connected_points {
+	// background-color: teal;
+	position: relative;
+ 
+
+	.block_content--inner-wrapper {
+		@include gel-layout;
+		.module_content {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(5/12);
+			}
+		}
+		.connected_points_list {			
+			@include gel-layout-item;
+			margin-left: gel-columns(3/12);
+			@include gel-columns(8/12);
+			@include mq($from: desktop) {
+				margin-left: gel-columns(1/12);
+				@include gel-columns(6/12);
+			}
+		}
+		// .foreground_image_container {
+		// }
+	}
+
+	.module_content {
+		@include mq($until: desktop) {
+			// padding-top: ($ss);
+		    margin-bottom: ($ss*2);
+		}
+	}
+
+	// Colors
+	$bg-color: transparent;
+	$dot-color: $grey_l;
+
+	// Dimensions
+	$dot-size: 52px;
+
+	.connected_points_list {
+		position: relative;
+		&:after {
+			content: "";
+			// height: calc(100% + ($ss*2));
+			// height: 100%;
+			width: 4px;
+			top: -($ss*2);
+			bottom: -($ss*2);
+			left: -45px;
+			// background-color: teal;
+			position: absolute;
+			background-image: linear-gradient(0deg, $bg-color 25%, $dot-color 25%, $dot-color 50%, $bg-color 50%, $bg-color 75%, $dot-color 75%, $dot-color 100%);
+			background-size: $dot-size $dot-size;
+			z-index: -1;
+			// background: linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center, linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center, $dot-color;
+			// background-size: $dot-space $dot-space;
+		}
+
+		@include mq($until: desktop) {
+			// padding-top: ($ss);
+		    margin: ($ss*2) 0;
+		}
+
+	}
+
+	.point_content {
+
+		// $pointsize : 30px;
+		
+
+		position: relative;
+
+		&--point {
+			width: $pointsize;
+			height: $pointsize;
+			border-radius: 50%;
+			position: absolute;
+			// left: -85px;
+			left: -#{($pointsize*3)};
+			top: 0;
+
+			@include mq($from: tablet) {
+				left: -#{($pointsize*3.7)};
+			}
+
+			@include mq($from: desktop) {
+				left: -#{($pointsize*3.7)};
+			}
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+			svg,
+			.featured-image {
+				width: ($pointsize - 10px);
+				height: ($pointsize - 10px);
+				// margin: 10px;
+			}
+
+		}
+
+		&--point-color__red { 
+			// background-color: $red;
+			@include linear-gradient(0deg, $red, $yellow);
+		}
+		&--point-color__yellow { background-color: $yellow; }
+		&--point-color__pink { background-color: $pink; }
+
+	}
+
+	.connected_points_container {
+
+		$dot-color : $red;
+
+		&__styling--alt {
+
+			.heading {
+				@include type-h3;
+			}
+
+			.connected_points_list:after {
+				top: 1rem;
+				left: -57px;
+				// left: -86px;
+				width: 8px;
+				background-image: linear-gradient(0deg, $bg-color 25%, $dot-color 25%, $dot-color 50%, $bg-color 50%, $bg-color 75%, $dot-color 75%, $dot-color 100%);
+			}
+
+			.point_content {
+
+				position: relative;
+
+				&--point {
+					width: $pointsize;
+					height: $pointsize;
+					// width: 30px;
+					// height: 30px;
+					border-radius: 50%;
+					position: absolute;
+					left: -100px;
+					top: 0;
+
+					.featured-image {
+						width: 16px;
+						height: 16px;
+						margin: 7px;
+					}
+
+				}
+
+				&--point_title {
+					@include type-h5;
+					margin-bottom: 0;
+				}
+
+				&--point_copy {
+					margin-bottom: $ss;
+				}
+
+				&--point-color__red {
+					background-color: $red;
+					// @include linear-gradient(0deg, $red, $yellow);
+				}
+				&--point-color__yellow { background-color: $red; }
+				&--point-color__pink { background-color: $red; }
+
+			}
+		}
+
+	}
+
+}

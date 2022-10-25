@@ -1,0 +1,31 @@
+// .publisher-card {
+// 	img {
+// 		width: 100px; // temp
+// 		height: 100px;
+// 		border-radius: 50%;
+// 	}
+// }
+
+.publisher-card {
+	// @include gel-layout-item;
+	// @include gel-columns(6/12);
+	img {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		max-width: none;
+	}
+	&--inner-wrapper {
+		display: flex;
+		.publisher-card--meta {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			@include type-meta-grey;
+			padding-left: ($ss/2);
+			span {
+				margin: ($ss/8) 0;
+			}
+		}
+	}
+}

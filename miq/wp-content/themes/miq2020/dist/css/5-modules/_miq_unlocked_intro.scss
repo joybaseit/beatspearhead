@@ -1,0 +1,29 @@
+// @include gel-layout;
+// @include gel-wrap;
+// @include gel-layout-item;
+// @include gel-columns(6/12);
+
+.section-block.miq_unlocked_intro {
+	// background-color: $purple;
+	// color: $white;
+	// h1,h2,h3,h4,h5,h6 {
+	// 	color: $white;
+	// }
+
+	.intro_logo {
+		margin-bottom: ($ss/2);
+	}
+	
+	.intro_logo,
+	.intro_content {
+		@include gel-layout;
+		// @include gel-layout-item;
+		&--col {
+			@include gel-layout-item;
+			@include mq($from: desktop) {
+				@include gel-columns(3/12);
+			}
+		}
+	}
+
+}

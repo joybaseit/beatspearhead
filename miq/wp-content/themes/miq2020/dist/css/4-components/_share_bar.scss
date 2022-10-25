@@ -1,0 +1,15 @@
+.share_bar {
+	ul {
+		display: flex;
+		justify-content: flex-end;
+	}
+	li {
+		margin-left: ($ss/2);
+	}
+	svg {
+		width: 20px;
+		rect, circle, path {
+			fill: $purple;
+		}
+	}
+}
