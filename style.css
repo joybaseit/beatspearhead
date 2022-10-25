@@ -341,6 +341,7 @@ html {
     overflow: hidden;
     text-align: center;
     margin-top: 10px;
+    height: 550px;
   }
   /* .testvid img {
     position: relative;
