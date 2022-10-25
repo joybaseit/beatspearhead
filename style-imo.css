@@ -20,7 +20,7 @@
 
 .capabilities-container {
     max-width: 1000px;
-    height: 70VH;
+    height: 756px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -225,7 +225,7 @@
 /* --------------------------------------------- */
 .buying-opportunity {
     width: 100vw;
-    height: 92vh;
+    height: 993.6px;
 }
 
 .buying-opportunity h1 {
@@ -238,7 +238,7 @@
 
 .buying-opportunity-container {
     max-width: 1000px;
-    height: 70VH;
+    height: 756px;
     margin: auto;
     display: flex;
     justify-content: space-between;

@@ -13,6 +13,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 .color-blue{
     color: var(--blue);
@@ -120,4 +121,33 @@ ol{
     left: 11px;
     top: 23px;
     width: 163px;
+}
+.section-4{
+    margin-bottom: 50px;
+}
+.s4-contents{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+}
+.section-4 h1{
+    margin-left: 100px;
+    margin-bottom: 20px;
+}
+.s4-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s4-left img{
+    width: 70%;
+}
+.s4-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.s4-right img{
+    width: 60%;
+    transform: translateX(-60px);
 }
