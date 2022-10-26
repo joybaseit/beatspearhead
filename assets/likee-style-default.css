@@ -1745,18 +1745,18 @@ a:-webkit-any-link {
     height: 95vh;
     width: 100vw;
     background-color: rgb(0, 161, 229);
-    margin-top: 100px;
     color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
 
 }
-.ad-gallery h1{
+
+.ad-gallery h1 {
     padding: 30px 0;
 }
 
-.ad-gallery-container{
+.ad-gallery-container {
     display: grid;
     grid-template-columns: 270px 270px 270px;
 }
@@ -1771,16 +1771,17 @@ a:-webkit-any-link {
     transition: all 500ms ease;
 }
 
-.gallery-card p{
+.gallery-card p {
     display: flex;
     align-items: center;
     justify-content: flex-start;
     font-weight: lighter;
     font-size: small;
+    padding-left: 10px;
     height: 35px;
     background-color: white;
     color: black;
-    transform: translateY(-4px);
+    transform: translateY(-7px);
 }
 
 .gallery-card-container:hover .gallery-card {
@@ -1788,7 +1789,7 @@ a:-webkit-any-link {
 }
 
 .gallery-card img {
-    height: 170px;
+    height: 172px;
     width: 270px;
     object-fit: fill;
 }
