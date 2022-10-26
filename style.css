@@ -13,13 +13,16 @@ body {
   font-family: 'Poppins', sans-serif !important;
   overflow-x: hidden;
 }
-body h1{
+
+body h1 {
   font-size: 32px;
 }
-body h2{
+
+body h2 {
   font-size: 24px;
 }
-body h3{
+
+body h3 {
   font-size: 18.72px;
 }
 
@@ -32,7 +35,7 @@ html {
   height: 8vh;
   display: flex;
   justify-content: space-between;
-  align-items: center ;
+  align-items: center;
   position: sticky !important;
   top: 0;
   background-color: white;
@@ -52,7 +55,7 @@ html {
 }
 
 .navbar-links>ul {
-  display: flex ;
+  display: flex;
   justify-content: center;
   align-items: center;
   list-style: none !important;
@@ -71,11 +74,12 @@ html {
 .navbar-links li>a:hover {
   color: red;
 }
+
 /* .navbar-links .link-items{
   display: inline-block;
   padding: 20px 10px;
 } */
-.toggle-button-menu{
+.toggle-button-menu {
   position: absolute;
   top: 8px;
   left: 8px;
@@ -151,7 +155,8 @@ html {
   grid-template-columns: 80px auto;
   row-gap: 40px;
 }
-.service-details ul{
+
+.service-details ul {
   padding-left: 15px;
 }
 
@@ -212,6 +217,7 @@ html {
 .services-header {
   margin-bottom: 30px;
 }
+
 /* .testvid{
   position: relative;
 }
@@ -224,19 +230,21 @@ html {
   transform:translateX(-50%);
   width: 230px;
 } */
-.frame-ad-container{
+.frame-ad-container {
   position: relative;
   width: 70%;
   margin: auto;
 
 }
-.frame-ad-container img:nth-child(1){
+
+.frame-ad-container img:nth-child(1) {
   position: relative;
   width: 439px;
   z-index: 5;
   transform: translateX(-4%) translateY(15%);
 }
-.frame-ad-container img:nth-child(2){
+
+.frame-ad-container img:nth-child(2) {
   position: absolute;
   left: 106px;
   top: 87px;
@@ -251,18 +259,21 @@ html {
   background-color: rgb(91, 145, 121);
 
 }
-.our-reach-header{
+
+.our-reach-header {
   color: white;
   padding: 40px 0 0 60px;
 }
-.reach-titile-top{
+
+.reach-titile-top {
   position: absolute;
   text-align: center;
   color: white;
   top: 56px;
   left: 635px;
 }
-.reach-titile-bottom{
+
+.reach-titile-bottom {
   position: absolute;
   text-align: center;
   color: white;
@@ -286,7 +297,7 @@ html {
   left: 270px;
   top: 153px;
   position: relative;
-  
+
 
 }
 
@@ -345,6 +356,7 @@ html {
   color: #f2f2f2;
   text-align: center;
 }
+
 .reach-right-points a {
   height: 40px;
   width: 40px;
@@ -365,17 +377,20 @@ html {
   width: 65%;
   margin-top: 17%;
 }
+
 .reach-right-points img {
   margin-top: 10%;
   width: 65%;
 }
-.reach-right-points p{
+
+.reach-right-points p {
   display: inline-block;
   color: white;
   margin-left: 30px;
   width: 130px;
   transform: translateY(-35px);
 }
+
 /* @keyframes glowing {
   0% {
     background-color: rgb(18, 57, 89);
@@ -445,23 +460,27 @@ html {
 }
 
 /* reach right circle points-------------- */
-.reach-right-point-1{
+.reach-right-point-1 {
   top: -3px;
   right: 74px;
 }
-.reach-right-point-2{
+
+.reach-right-point-2 {
   top: 53px;
   right: 11px;
 }
-.reach-right-point-3{
+
+.reach-right-point-3 {
   top: 139px;
   right: -18px;
 }
-.reach-right-point-4{
+
+.reach-right-point-4 {
   top: 237px;
   right: 5px;
 }
-.reach-right-point-5{
+
+.reach-right-point-5 {
   top: 305px;
   right: 76px;
 }
@@ -516,7 +535,7 @@ html {
   left: 30px;
   color: #f2f2f2;
   font-weight: 400;
-  
+
 }
 
 .contact-us-div p {
@@ -531,50 +550,58 @@ html {
   background-color: white;
   color: black;
 }
-.tippy-box[data-theme~='light'][data-placement^='top'] > .tippy-arrow::before {
+
+.tippy-box[data-theme~='light'][data-placement^='top']>.tippy-arrow::before {
   border-top-color: white;
 }
-@media screen and (min-width: 993px)
-       {
-        
-          .dropdown .dropdown-menu.show
-          {
-             display: none !important;
-          }
-          .dropdown:hover .dropdown-menu
-          {
-            display: block !important;
-          }
-          .dropdown:focus .dropdown-menu
-          {
-            display: block !important;
-          }
-        }
+
+@media screen and (min-width: 993px) {
+
+  .dropdown .dropdown-menu.show {
+    display: none !important;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block !important;
+  }
+
+  .dropdown:focus .dropdown-menu {
+    display: block !important;
+  }
+  .dropdown-menu{
+    width: auto !important;
+  }
+}
+
 @media only screen and (max-width: 600px) {
-  .toggle-button-menu{
+  .toggle-button-menu {
     display: flex;
     color: rgb(12, 114, 113) !important;
     margin-top: 5px;
-    
   }
+
   .navbar {
     flex-direction: column;
     align-items: flex-end;
     height: auto;
   }
-  .navbar-links{
+
+  .navbar-links {
     display: none;
     order: 2;
     width: 100%;
   }
-  .navbar-links ul{
+
+  .navbar-links ul {
     width: 100%;
     flex-direction: column;
   }
-  .navbar-links li{
+
+  .navbar-links li {
     padding: 10px 0;
   }
-  .navbar-links.active{
+
+  .navbar-links.active {
     display: flex;
   }
 
@@ -582,6 +609,7 @@ html {
     order: 1;
     transform: translateX(60%);
   }
+
   /* welcome--------------------------------------- */
   #welcome {
     height: 100vh;
@@ -601,6 +629,7 @@ html {
     left: 5%;
     font-size: 0.8rem;
   }
+
   /* services------------------------------------ */
   #services {
     height: auto;
@@ -630,6 +659,7 @@ html {
     margin-top: 10px;
     height: 550px;
   }
+
   /* .testvid img {
     position: relative;
     width: 400px;
@@ -638,24 +668,27 @@ html {
     transform:translateX(-50%) translateY(-9%);
     width: 180px;
   } */
-  .frame-ad-container{
+  .frame-ad-container {
     position: relative;
     width: 70%;
     margin: auto;
-  
+
   }
-  .frame-ad-container img:nth-child(1){
+
+  .frame-ad-container img:nth-child(1) {
     position: relative;
     width: 439px;
     z-index: 5;
     transform: translateX(-18%);
   }
-  .frame-ad-container img:nth-child(2){
+
+  .frame-ad-container img:nth-child(2) {
     position: absolute;
     left: 45px;
     top: 50px;
     width: 192px;
   }
+
   /* our reach-------------------------- */
   #our-reach {
     height: 1200px;
@@ -675,11 +708,13 @@ html {
     position: relative;
     order: 1;
   }
-  .reach-circle-left-img{
+
+  .reach-circle-left-img {
     transform-origin: center;
     transform: rotate(-90deg) translateX(-20%) translateY(-15%) scale(1.2);
   }
-  .reach-circle a{
+
+  .reach-circle a {
     transform: rotate(-90deg);
   }
 
@@ -697,13 +732,16 @@ html {
     left: 6%;
     order: 3;
   }
-  .reach-titile-top{
+
+  .reach-titile-top {
     display: none;
   }
-  .reach-titile-bottom{
+
+  .reach-titile-bottom {
     display: none;
 
   }
+
   /* contact us------------------------------------ */
   #contact-us {
     height: auto;
@@ -743,5 +781,3 @@ html {
     color: #f2f2f2;
   }
 }
-
-
