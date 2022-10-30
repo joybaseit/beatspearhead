@@ -366,10 +366,11 @@ blockquote.text-center {
 .ad-opportunity h3::before{
     content: "";
     width: 15px;
-    height: 30px;
+    height: 35px;
     display: inline-block;
     background-color: rgb(126, 31, 255);
     margin-right: 10px;
+    transform: translateY(7.5px);
 }
 .swiper {
     width: 600px;
