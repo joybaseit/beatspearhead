@@ -267,9 +267,10 @@ blockquote.text-center {
     background-size: cover;
     max-width: 900px;
     height: 450px;
-    width: 900vh;
+    width: 100vw;
     position: relative;
     margin-left: 230px;
+    margin-bottom: 50px;
     
 }
 .ad{
@@ -342,3 +343,58 @@ blockquote.text-center {
     width: 270px;
     object-fit: fill;
 }
+
+/* ad container------------------------------------ */
+.ad-opportunity{
+    height: 2100px;
+}
+.native-ad-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+}
+.native-ad-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 20%;
+}
+.ad-opportunity h3{
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+.ad-opportunity h3::before{
+    content: "";
+    width: 15px;
+    height: 30px;
+    display: inline-block;
+    background-color: rgb(126, 31, 255);
+    margin-right: 10px;
+}
+.swiper {
+    width: 600px;
+    height: 500px;
+    text-align: center;
+  }
+  .swiper-slide img{
+    height: 90%;
+  }
+  .display-ad-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 500px;
+    background-color: rgb(245, 248, 250);
+    margin-bottom: 15px;
+  }
+  .display-ad-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  .audio-ad-left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }

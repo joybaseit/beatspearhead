@@ -1220,6 +1220,7 @@ a:-webkit-any-link {
   height: 1000px;
   background: #fff;
   position: relative;
+  transform: scale(.8);
 }
 .product-inner .tab-wrap .s5word1 {
   text-align: center;

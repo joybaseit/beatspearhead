@@ -241,14 +241,14 @@ html {
   position: relative;
   width: 439px;
   z-index: 5;
-  transform: translateX(-4%) translateY(15%);
+  transform: translateX(-4.5%) translateY(15%);
 }
 
 .frame-ad-container img:nth-child(2) {
   position: absolute;
   left: 106px;
   top: 87px;
-  width: 192px;
+  width: 188px;
 }
 
 
@@ -725,6 +725,7 @@ html {
     left: 22%;
     position: relative;
     order: 2;
+    z-index: -1;
   }
 
   .reach-circle2 {
