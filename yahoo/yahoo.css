@@ -408,3 +408,8 @@ blockquote.text-center {
   .swiper .swiper-pagination>.swiper-pagination-bullet-active {
     background-color: rgb(126, 31, 255);
   }
+  body{
+    width: 100vw;
+    border: none !important;
+    overflow-x: hidden;
+  }
