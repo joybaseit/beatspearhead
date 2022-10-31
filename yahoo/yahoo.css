@@ -399,3 +399,12 @@ blockquote.text-center {
     justify-content: center;
     align-items: center;
   }
+  .swiper .swiper-pagination>.swiper-pagination-bullet {
+    opacity: 1;
+    border: rgb(126, 31, 255) solid 1px;
+    background-color: transparent;
+  }
+  
+  .swiper .swiper-pagination>.swiper-pagination-bullet-active {
+    background-color: rgb(126, 31, 255);
+  }
