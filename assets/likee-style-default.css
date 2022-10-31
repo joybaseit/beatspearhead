@@ -1493,9 +1493,10 @@ a:-webkit-any-link {
 
 .first-inner .tab-wrap {
     width: 100%;
-    height: 1017px;
-    background: #fff;
-    position: relative
+  height: 1000px;
+  background: #fff;
+  position: relative;
+  transform: scale(.8);
 }
 
 .first-inner .tab-wrap .s5word1 {
