@@ -133,9 +133,12 @@ html {
 
 /*--------------Services------------- */
 #services {
-  height: 94vh;
+  height: 100vh;
   background-color: rgb(12, 114, 113);
   color: white;
+  
+}
+.services-container{
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
@@ -177,7 +180,6 @@ html {
   width: 580px;
   height: 600px;
   text-align: center;
-  margin-top: 80px;
 }
 
 
@@ -488,8 +490,6 @@ html {
   align-items: center;
   margin: 0 30px;
 }
-
-
 .contact-us-div {
   width: 30vw;
   height: 450px;
@@ -499,7 +499,6 @@ html {
   overflow: hidden;
 
 }
-
 .contact-us-container img {
   width: 32vw;
   height: 450px;
@@ -555,6 +554,24 @@ html {
   }
   .dropdown-menu{
     width: auto !important;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  
+  .our-reach-header {
+  padding: 10px 0 0 60px;
+font-size: 26px;
+  }
+  .reach-container {
+    transform: scale(.8) translateX(-2%) translateY(-10%);
+  }
+  .services-container{
+    transform: scale(.9);
+  }
+  .contact-us-div {
+    width: 30vw;
+    height: 380px;
+  
   }
 }
 
