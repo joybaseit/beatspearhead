@@ -31,11 +31,12 @@ body {
     
 }
 .img{
-    float: right;
-    margin-right: -210px;
-    padding: 30px;
-    
+    display: flex;
+    justify-content: flex-end;
 
+    align-items: center;
+    width: 30%;
+    transform: scale(1.2);
     
 }
 .pm{

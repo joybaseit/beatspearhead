@@ -180,6 +180,7 @@ html {
   width: 580px;
   height: 600px;
   text-align: center;
+  margin-top: 10%;
 }
 
 
@@ -693,20 +694,23 @@ font-size: 26px;
 
   /* our reach-------------------------- */
   #our-reach {
-    height: 1200px;
+    height: 1100px;
+  }
+  .our-reach-header {
+    padding: 10px 0 0 60px;
   }
 
   .reach-container {
     display: flex;
     flex-direction: column;
-    transform: scale(.95);
+    transform: scale(.75) translateY(-10%);
     height: fit-content;
   }
 
   .reach-circle {
-    transform: rotate(90deg);
-    left: 6%;
-    top: 153px;
+    transform: rotate(75deg);
+    left: -7px;
+    top: 0px;
     position: relative;
     order: 1;
   }
