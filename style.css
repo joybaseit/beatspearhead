@@ -694,7 +694,7 @@ font-size: 26px;
 
   /* our reach-------------------------- */
   #our-reach {
-    height: 1100px;
+    height: 115vh;
   }
   .our-reach-header {
     padding: 10px 0 0 60px;
@@ -708,8 +708,8 @@ font-size: 26px;
   }
 
   .reach-circle {
-    transform: rotate(75deg);
-    left: -7px;
+    transform: rotate(84deg);
+    left: -7%;
     top: 0px;
     position: relative;
     order: 1;
@@ -717,26 +717,26 @@ font-size: 26px;
 
   .reach-circle-left-img {
     transform-origin: center;
-    transform: rotate(-90deg) translateX(-20%) translateY(-15%) scale(1.2);
+    transform: rotate(274deg) translateX(-20%) translateY(-15%) scale(1.2);
   }
 
   .reach-circle a {
-    transform: rotate(-90deg);
+    transform: rotate(276deg);
   }
 
   .reach-circle-logo {
     width: 230px;
     height: 230px;
-    top: 125px;
-    left: 22%;
+    top: -60px;
+    left: 102px;
     position: relative;
     order: 2;
     z-index: -1;
   }
 
   .reach-circle2 {
-    top: 90px;
-    left: 6%;
+    top: -84px;
+    left: 25%;
     order: 3;
   }
 
@@ -747,6 +747,21 @@ font-size: 26px;
   .reach-titile-bottom {
     display: none;
 
+  }
+  .reach-right-point-1{
+    top: 314px;
+    right: 218px;
+  }
+  .reach-right-point-2{
+    top: 315px;
+    right: 89px;
+  }
+  .reach-right-points p {
+    display: inline-block;
+    color: white;
+    margin-left: 30px;
+    width: 130px;
+    transform: translateY(10px) translateX(-60%);
   }
 
   /* contact us------------------------------------ */
