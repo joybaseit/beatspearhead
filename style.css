@@ -636,6 +636,8 @@ font-size: 26px;
   /* services------------------------------------ */
   #services {
     height: auto;
+  }
+  .services-container {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
