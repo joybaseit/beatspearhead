@@ -237,6 +237,7 @@ html {
   position: relative;
   width: 70%;
   margin: auto;
+  transform: translateX(7px);
 
 }
 
@@ -254,7 +255,7 @@ html {
   top: 70px;
   border-radius: 25px;
   width: 194px;
-  height: 409px;
+  height: 405px;
 }
 
 
@@ -677,10 +678,8 @@ font-size: 26px;
     width: 180px;
   } */
   .frame-ad-container {
-    position: relative;
-    width: 70%;
-    margin: auto;
-
+    transform: translateX(-5px);
+  
   }
 
   .frame-ad-container img:nth-child(1) {
@@ -694,7 +693,7 @@ font-size: 26px;
   .frame-ad-container img:nth-child(2) {
     position: absolute;
     width: 194px;
-    height: 409px;
+    height: 405px;
     left: 43px;
   }
 

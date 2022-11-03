@@ -1444,6 +1444,39 @@ a:-webkit-any-link {
   width: 100vw;
   height: 666px;
 }
+@media only screen and (max-width: 600px) {
+  .targeting-capabilities {
+    height: auto;
+  }
+  .buying-opportunity {
+    height: auto;
+  }
+  .capabilities-container {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  .buying-opportunity-container {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  /* adgallery mobile responsive-------------------------------------- */
+  .ad-gallery {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .ad-gallery h1 {
+    text-align: center;
+  }
+  
+  .ad-gallery-container {
+    grid-template-columns: 270px;
+  }
+  /* adgallery responsive end--------------------------- */
+}
 
 .targeting-capabilities h1 {
   font-size: 40px;
@@ -1663,6 +1696,7 @@ a:-webkit-any-link {
   width: 100vw;
   height: 666px;
 }
+
 
 .buying-opportunity h1 {
   font-size: 40px;
@@ -1958,4 +1992,45 @@ a:-webkit-any-link {
   height: 172px;
   width: 270px;
   object-fit: fill;
+}
+@media only screen and (max-width: 600px) {
+  .targeting-capabilities {
+    height: auto;
+    transform: scale(.7) translateY(-35%) translateX(-8%);
+  }
+  .buying-opportunity {
+    height: auto;
+    transform: scale(.7)translateY(-75%) translateX(-8%);
+  }
+  .capabilities-container {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  .capabilities-left-container{
+    margin-bottom: 100px;
+  }
+  .buying-opportunity-left-container{
+    margin-bottom: 100px;
+  }
+  .buying-opportunity-container {
+    width: 100vw;
+    height: auto;
+    flex-direction: column;
+  }
+  
+  /* adgallery mobile responsive-------------------------------------- */
+  .ad-gallery {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .ad-gallery h1 {
+    text-align: center;
+  }
+  
+  .ad-gallery-container {
+    grid-template-columns: 270px;
+  }
+  /* adgallery responsive end--------------------------- */
 }
