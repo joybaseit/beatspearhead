@@ -242,16 +242,19 @@ html {
 
 .frame-ad-container img:nth-child(1) {
   position: relative;
-  width: 439px;
   z-index: 5;
   transform: translateX(-4.5%) translateY(15%);
+  width: 213px;
+  height: 420px;
 }
 
 .frame-ad-container img:nth-child(2) {
   position: absolute;
-  left: 106px;
-  top: 87px;
-  width: 188px;
+  left: 97px;
+  top: 70px;
+  border-radius: 25px;
+  width: 194px;
+  height: 409px;
 }
 
 
@@ -682,16 +685,17 @@ font-size: 26px;
 
   .frame-ad-container img:nth-child(1) {
     position: relative;
-    width: 439px;
+    width: 213px;
+    height: 420px;
     z-index: 5;
-    transform: translateX(-18%);
+    left: 13px;
   }
 
   .frame-ad-container img:nth-child(2) {
     position: absolute;
-    left: 45px;
-    top: 50px;
-    width: 192px;
+    width: 194px;
+    height: 409px;
+    left: 42px;
   }
 
   /* our reach-------------------------- */
