@@ -694,7 +694,7 @@ font-size: 26px;
 
   /* our reach-------------------------- */
   #our-reach {
-    height: 115vh;
+    height: 850px;
   }
   .our-reach-header {
     padding: 10px 0 0 60px;
@@ -735,8 +735,8 @@ font-size: 26px;
   }
 
   .reach-circle2 {
-    top: -84px;
-    left: 25%;
+    top: -108px;
+    left: 30%;
     order: 3;
   }
 
