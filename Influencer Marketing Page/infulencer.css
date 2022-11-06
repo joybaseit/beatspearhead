@@ -88,7 +88,7 @@ body {
 }
 /* This is Section 4 */
 .section4{
-    width: 100vw;   
+    width: 100vw; 
 }
 .section4 h1{
     font-style: italic;
@@ -105,6 +105,8 @@ body {
     margin-top: 50px;
     width: 100vw;
     height: 500px;
+    
+    margin-bottom: 150px;  
 }
 .section5 img{
     width: 200px;
@@ -135,6 +137,8 @@ body {
     height: 750px;
     width: 100vw;
     margin-top: 50px;
+    
+    margin-bottom: 50px;  
 }
 .s6-container{
     height: 750px;
