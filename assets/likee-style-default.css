@@ -1794,3 +1794,19 @@ a:-webkit-any-link {
     width: 270px;
     object-fit: fill;
 }
+@media only screen and (max-width: 600px) {
+    /* adgallery mobile responsive-------------------------------------- */
+    .ad-gallery {
+      height: auto;
+      padding-bottom: 50px;
+    }
+    
+    .ad-gallery h1 {
+      text-align: center;
+    }
+    
+    .ad-gallery-container {
+      grid-template-columns: 270px;
+    }
+    /* adgallery responsive end--------------------------- */
+  }
