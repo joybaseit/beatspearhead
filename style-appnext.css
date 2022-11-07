@@ -269,14 +269,33 @@ nav img {
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.s6-div1 img:nth-child(1){
-    width: 45%;
-    transform: translateY(50%);
+    position: relative;
 }
 .s6-div1 img:nth-child(2){
     width: 45%;
-    
+    transform: translateY(-30%);
+}
+.s6-div1 img:nth-child(3){
+    width: 45%;
+    transform: translateY(20%);
+}
+.s6-div1 p{
+    position: absolute;
+    top: 10px;
+    font-weight: bold;
+    background-color: #fff;
+    width: 80%;
+    text-align: center;
+}
+.s6-div1 span:nth-child(4){
+    position: absolute;
+    bottom: 222px;
+    left: 52px;
+}
+.s6-div1 span:nth-child(5){
+    position: absolute;
+    bottom: 35px;
+    left: 236px;
 }
 
 .s6-div2 {
@@ -306,6 +325,34 @@ nav img {
     justify-content: center;
     align-items: flex-end;
     padding-bottom: 70px;
+}
+.s6-div3>div,
+.s6-div4>div,
+.s6-div5>div {
+    position: absolute;
+    top: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 5px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.s6-div2{
+    font-weight: bold;
+}
+.s6-div3>div{
+    background-color: rgb(62, 146, 208);
+}
+.s6-div4>div{
+    background-color: rgb(255, 171, 64);
+}
+.s6-div5>div{
+    background-color: rgb(222, 94, 72);
 }
 
 .s6-div3 img, .s6-div4 img, .s6-div5 img{
