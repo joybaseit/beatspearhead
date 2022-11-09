@@ -6,14 +6,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="fonts/icomoon/style.css">
 
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
   <!-- Style -->
   <link rel="stylesheet" href="css/style.css">
@@ -23,15 +26,15 @@
     }
   </style>
   <script>
-    $(document).ready(function() {
-      $('input[name="contact-reason"]').on('change', function() {
+    $(document).ready(function () {
+      $('input[name="contact-reason"]').on('change', function () {
         if (this.value === "1") {
           $(".partnership").show();
           $(".advertiser").hide();
-        }else if(this.value === "2"){
+        } else if (this.value === "2") {
           $(".partnership").hide();
           $(".advertiser").show();
-        } 
+        }
         else {
           $(".partnership").hide();
           $(".advertiser").hide();
@@ -56,19 +59,22 @@
             <form class="mb-5" method="post" id="contactForm" name="contactForm">
               <div class="row">
                 <div class="col-md-12 form-group mb-3">
-                <label for="reason" class="col-form-label" style="font-size: 18px;">I am contacting Bitspearhead because:</label>
+                  <label for="reason" class="col-form-label" style="font-size: 18px;">I am contacting Bitspearhead
+                    because:</label>
 
                   <div class="frb frb-primary">
                     <input type="radio" id="radio-button-1" name="contact-reason" value="1">
                     <label for="radio-button-1">
-                      <span class="frb-title">I’m interested in partnership opportunities to monetize my platform’s advertising
+                      <span class="frb-title">I’m interested in partnership opportunities to monetize my platform’s
+                        advertising
                         inventory.</span>
                     </label>
                   </div>
                   <div class="frb frb-primary">
                     <input type="radio" id="radio-button-2" name="contact-reason" value="2">
                     <label for="radio-button-2">
-                      <span class="frb-title">I’m an advertiser looking to promote my business on top digital platforms.</span>
+                      <span class="frb-title">I’m an advertiser looking to promote my business on top digital
+                        platforms.</span>
                     </label>
                   </div>
                   <div class="frb frb-primary">
@@ -80,7 +86,7 @@
 
                 </div>
 
-                
+
               </div>
               <div class="row hidden partnership">
                 <div class="col-md-12 form-group mb-3">
@@ -88,19 +94,26 @@
                   <input type="text" class="form-control" name="name" id="name" placeholder="Company name">
                 </div>
               </div>
-              <div class="row hidden advertiser">
-                <div class="col-md-12 form-group mb-3">
-                  <label for="" class="col-form-label">Tell us the name of your Advertiser</label>
-                  <input type="text" class="form-control" name="name" id="name" placeholder="Advertiser name">
+              <div class="hidden advertiser">
+                <div class="row">
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="" class="col-form-label">Tell us the name of your Advertiser</label>
+                    <input type="text" class="form-control" name="name" id="name" placeholder="Advertiser name">
+                  </div>
                 </div>
-                <div class="col-md-12 form-group mb-3">
-                  <label for="reason" class="col-form-label">Which of our products are you inquiring about?<br>(If more then one, choose the first here and tell us about the others in the comments afterwards.) *</label>
-                  <select class="custom-select" id="inquiry" name="inquiry">
-                    <option selected>Select a platform</option>
-                    <option value="1">Imo</option>
-                    <option value="2">Likee</option>
-                    <option value="3">ESPNcricinfo</option>
-                  </select>
+                <div class="row">
+
+                  <div class="col-md-12 form-group mb-3">
+                    <label for="reason" class="col-form-label">Which of our products are you inquiring about?<br>(If
+                      more then one, choose the first here and tell us about the others in the comments afterwards.)
+                      *</label>
+                    <select class="custom-select" id="inquiry" name="inquiry">
+                      <option selected>Select a platform</option>
+                      <option value="1">Imo</option>
+                      <option value="2">Likee</option>
+                      <option value="3">ESPNcricinfo</option>
+                    </select>
+                  </div>
                 </div>
               </div>
               <div class="row">
@@ -128,22 +141,23 @@
               <div class="row">
                 <div class="col-md-6 form-group mb-3">
                   <label for="" class="col-form-label">Corporate email *</label>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Email">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Email">
                 </div>
                 <div class="col-md-6 form-group mb-3">
                   <label for="" class="col-form-label">Company *</label>
-                  <input type="text" class="form-control" name="email" id="email"  placeholder="Company">
+                  <input type="text" class="form-control" name="email" id="email" placeholder="Company">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group mb-3">
                   <label for="" class="col-form-label">Phone *</label>
-                  <input type="tel" class="form-control" name="phone" id="phone"  placeholder="Phone">
+                  <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone">
                 </div>
               </div>
               <div class="row">
                 <div class="col-md-12 form-group mb-3">
-                  <label for="message" class="col-form-label">Please tell us more about your interest in working with Bitspearhead</label>
+                  <label for="message" class="col-form-label">Please tell us more about your interest in working with
+                    Bitspearhead</label>
                   <textarea class="form-control" name="message" id="message" cols="30" rows="4"
                     placeholder="Write your message"></textarea>
                 </div>
