@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+  <!-- Style -->
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  <script>
+    $(document).ready(function() {
+      $('input[name="contact-reason"]').on('change', function() {
+        if (this.value === "1") {
+          $(".partnership").show();
+          $(".advertiser").hide();
+        }else if(this.value === "2"){
+          $(".partnership").hide();
+          $(".advertiser").show();
+        } 
+        else {
+          $(".partnership").hide();
+          $(".advertiser").hide();
+        }
+      });
+    });
+  </script>
+
+  <title>Contact Form #9</title>
+</head>
+
+<body>
+
+
+  <div class="content">
+
+    <div class="container">
+      <div class="row align-items-stretch no-gutters contact-wrap">
+        <div class="col-md-12">
+          <div class="form h-100">
+            <h3>Contact Form</h3>
+            <form class="mb-5" method="post" id="contactForm" name="contactForm">
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                <label for="reason" class="col-form-label">I am contacting Bitspearhead because:</label>
+
+                  <div class="frb frb-primary">
+                    <input type="radio" id="radio-button-1" name="contact-reason" value="1">
+                    <label for="radio-button-1">
+                      <span class="frb-title">I’m interested in partnership opportunities to monetize my platform’s advertising
+                        inventory.</span>
+                    </label>
+                  </div>
+                  <div class="frb frb-primary">
+                    <input type="radio" id="radio-button-2" name="contact-reason" value="2">
+                    <label for="radio-button-2">
+                      <span class="frb-title">I’m an advertiser looking to promote my business on top digital platforms.</span>
+                    </label>
+                  </div>
+                  <div class="frb frb-primary">
+                    <input type="radio" id="radio-button-3" name="contact-reason" value="3" checked>
+                    <label for="radio-button-3">
+                      <span class="frb-title">I have a general inquiry</span>
+                    </label>
+                  </div>
+
+                </div>
+
+                
+              </div>
+              <div class="row hidden partnership">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">Tell us the name of your company please</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Company name">
+                </div>
+              </div>
+              <div class="row hidden advertiser">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="" class="col-form-label">Tell us the name of your Advertiser</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Advertiser name">
+                </div>
+                <div class="col-md-12 form-group mb-3">
+                  <label for="reason" class="col-form-label">Which of our products are you inquiring about?<br>(If more then one, choose the first here and tell us about the others in the comments afterwards.) *</label>
+                  <select class="custom-select" id="inquiry" name="inquiry">
+                    <option selected>Select a platform</option>
+                    <option value="1">Imo</option>
+                    <option value="2">Likee</option>
+                    <option value="3">ESPNcricinfo</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">First Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Your first name">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Last Name</label>
+                  <input type="text" class="form-control" name="name" id="name" placeholder="Your last name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="reason" class="col-form-label">Country*</label>
+                  <select class="custom-select" id="inquiry" name="inquiry">
+                    <option selected>Select country</option>
+                    <option value="1">Bangladesh</option>
+                    <option value="2">India</option>
+                    <option value="3">Pakistan</option>
+                    <option value="3">More will be added later</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Corporate email *</label>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="Email">
+                </div>
+                <div class="col-md-6 form-group mb-3">
+                  <label for="" class="col-form-label">Company *</label>
+                  <input type="text" class="form-control" name="email" id="email"  placeholder="Company">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group mb-3">
+                  <label for="message" class="col-form-label">Please tell us more about your interest in working with Bitspearhead</label>
+                  <textarea class="form-control" name="message" id="message" cols="30" rows="4"
+                    placeholder="Write your message"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <input type="submit" value="Send Message" class="btn btn-primary rounded-0 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+
+            <div id="form-message-warning mt-4"></div>
+            <div id="form-message-success">
+              Your message was sent, thank you!
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+
+</html>
