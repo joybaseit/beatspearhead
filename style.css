@@ -711,13 +711,13 @@ font-size: 26px;
   .reach-container {
     display: flex;
     flex-direction: column;
-    transform: scale(.75) translateY(-10%);
+    transform: scale(.65) translateY(-10%);
     height: fit-content;
   }
 
   .reach-circle {
     transform: rotate(84deg);
-    left: -7%;
+    left: -15%;
     top: 0px;
     position: relative;
     order: 1;
@@ -743,18 +743,27 @@ font-size: 26px;
   }
 
   .reach-circle2 {
-    top: -108px;
-    left: 30%;
+    top: -135px;
+    left: 45%;
     order: 3;
   }
 
   .reach-titile-top {
-    display: none;
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 129px;
+    left: 53px;
+    transform: scale(1.7);
   }
 
   .reach-titile-bottom {
-    display: none;
-
+    position: absolute;
+    text-align: center;
+    color: white;
+    top: 570px;
+    left: 258px;
+    transform: scale(1.6);
   }
   .reach-right-point-1{
     top: 314px;

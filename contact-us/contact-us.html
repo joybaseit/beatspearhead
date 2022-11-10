@@ -41,6 +41,7 @@
         }
       });
     });
+    
   </script>
 
   <title>Contact Form</title>
@@ -149,7 +150,7 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-md-12 form-group mb-3">
+                <div class="col-md-12 form-group mb-3 telep">
                   <label for="" class="col-form-label">Phone *</label>
                   <input type="tel" class="form-control" name="phone" id="phone" placeholder="Phone">
                 </div>
@@ -189,6 +190,11 @@
   <script src="js/bootstrap.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/main.js"></script>
+  <script>
+    $("#phone").intlTelInput({
+  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
+    });
+  </script>
 
 </body>
 
