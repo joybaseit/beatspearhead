@@ -292,7 +292,7 @@ html {
   display: flex;
   height: auto;
   width: 80vw;
-  transform: translateX(6%);
+  transform: translateX(6%) ;
   height: 80vh;
 }
 
@@ -702,7 +702,7 @@ font-size: 26px;
 
   /* our reach-------------------------- */
   #our-reach {
-    height: 850px;
+    height: 670px;
   }
   .our-reach-header {
     padding: 10px 0 0 60px;
@@ -711,7 +711,7 @@ font-size: 26px;
   .reach-container {
     display: flex;
     flex-direction: column;
-    transform: scale(.65) translateY(-10%);
+    transform: scale(.60) translateY(-27%);
     height: fit-content;
   }
 
@@ -780,7 +780,11 @@ font-size: 26px;
     width: 130px;
     transform: translateY(10px) translateX(-60%);
   }
-
+  p{
+    margin-top: 0;
+    margin-bottom: 1rem;
+    width: max-content;
+  }
   /* contact us------------------------------------ */
   #contact-us {
     height: auto;
