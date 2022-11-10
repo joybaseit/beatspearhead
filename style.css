@@ -235,7 +235,7 @@ html {
 } */
 .frame-ad-container {
   position: relative;
-  width: 70%;
+  width: 300px;
   margin: auto;
   transform: translateX(7px);
 
@@ -251,7 +251,7 @@ html {
 
 .frame-ad-container img:nth-child(2) {
   position: absolute;
-  left: 97px;
+  left: 42px;
   top: 70px;
   border-radius: 25px;
   width: 194px;
@@ -694,7 +694,7 @@ font-size: 26px;
     position: absolute;
     width: 194px;
     height: 405px;
-    left: 43px;
+    left: 55px;
   }
 
   /* our reach-------------------------- */
