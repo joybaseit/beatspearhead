@@ -251,7 +251,7 @@ html {
 
 .frame-ad-container img:nth-child(2) {
   position: absolute;
-  left: 42px;
+  left: 43px;
   top: 70px;
   border-radius: 25px;
   width: 194px;
@@ -569,6 +569,9 @@ font-size: 26px;
   }
   .reach-container {
     transform: scale(.8) translateX(-2%) translateY(-10%);
+  }
+  .swiper{
+    transform: translateY(-7%);
   }
   .services-container{
     transform: scale(.9);
