@@ -58,13 +58,105 @@ nav img {
     justify-content: center;
     align-items: center;
 }
-
-.section-3 {
-    transform: translateY(7px);
+.section-3-container{
+    background: rgb(248, 221, 222);
+    background: linear-gradient(90deg, rgba(248, 221, 222, 1) 0%, rgba(229, 221, 255, 1) 100%);
+    
 }
-
-.section-3 img {
-    width: 100%;
+.section-3 {
+    height: 800px;
+    width: 100vw;
+    position: relative;
+    
+}
+.section-3 h1{
+    text-align: center;
+    transform: translateX(8%) translateY(20px);
+    
+}
+.s3-vid-title{
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    top: 222px;
+    left: 49%;
+    width: 185px;
+    text-align: center;
+}
+.s3-content{
+    position: relative;
+}
+.s3-phone{
+    height: 500px;
+    position: absolute;
+    top: 260px;
+    left: 47%;
+}
+.videoplayer{
+    width: 235px;
+    height: 490px;
+    position: absolute;
+    top: 265px;
+    left: 47.5%;
+    z-index: -10;
+    border-radius: 40px;
+}
+button{
+    all: unset;
+    cursor: pointer; 
+}
+button img{
+    width: 90px;
+}
+.btn-smile{
+    position: absolute;
+    top: 201px;
+    left: 34%;
+}
+.btn-game{
+    position: absolute;
+    top: 197px;
+    left: 20%;
+}
+.btn-quiz{
+    position: absolute;
+    top: 590px;
+    left: 25%;
+}
+.btn-scratch{
+    position: absolute;
+    top: 452px;
+    left: 35%;
+}
+.btn-vr{
+    position: absolute;
+    top: 576px;
+    left: 70%;
+}
+.btn-sound{
+    position: absolute;
+    top: 156px;
+    left: 85%;
+}
+.btn-speech_round{
+    position: absolute;
+    top: 383px;
+    left: 82%;
+}
+.btn-step{
+    position: absolute;
+    top: 230px;
+    left: 72%;
+}
+.btn-tilt{
+    position: absolute;
+    top: 125px;
+    left: 52.5%;
+}
+.btn-charge{
+    position: absolute;
+    top: 415px;
+    left: 16%;
 }
 
 .section-4 {

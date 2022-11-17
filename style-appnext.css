@@ -21,13 +21,21 @@ nav img {
 
 .section-1 {
     width: 100vw;
+    position: relative;
+    transform: translateY(-8px);
 }
-
-.section-1 img {
-    width: 100%;
-
+.videoplayer{
+    width: 100vw;
 }
-
+.section-1 h1{
+    position: absolute;
+    text-align: center;
+    font-size: 4.2vw;
+    line-height: 4.8vw;
+    color: #fff;
+    top: 18%;
+    left: 20%;
+}
 .section-1 p {
     font-size: 20px;
     margin-left: 3%;
@@ -42,6 +50,8 @@ nav img {
 }
 
 .section-2 {
+    width: 90vw;
+    margin: auto;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -151,7 +161,7 @@ nav img {
 
 .s3-right-container {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .section-4 {
@@ -167,7 +177,8 @@ nav img {
 
 .s4-right-container {
     font-weight: bold;
-    font-size: 25px;
+    font-size: 20px;
+    margin-right: 20px;
 }
 
 .s4-right-container ul {
@@ -260,7 +271,9 @@ nav img {
     grid-template-rows: 0.06fr 1fr;
     grid-column-gap: 7px;
     grid-row-gap: 7px;
-    margin-bottom: 50px;
+    width: 95vw;
+    margin: auto;
+    margin-bottom: 40px;
 }
 
 .s6-div1 {
@@ -370,6 +383,11 @@ nav img {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 7px;
+    width: 95vw;
+    margin: auto;
+}
+.s5-header-logo-container{
+    margin-right: 30px;
 }
 
 .section-7>div {

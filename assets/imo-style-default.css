@@ -1437,7 +1437,7 @@ a:-webkit-any-link {
 }
 
 .navbar-imo img {
-  padding-left: 30px;
+  padding: 5px 0 0 30px;
 }
 
 .targeting-capabilities {
