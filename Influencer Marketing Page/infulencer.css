@@ -41,20 +41,19 @@ body {
     line-height:30px;
 }
 .s2-img-div{
-    width: 100%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
+    margin: auto;
     text-align: center;
 }
 .s2-img-div img{
-    width: 90%;
-    height: 90%;
-    transform: scale(.8);
+    width: 90%; 
 }
 /* This is Section 3 */
 .section3 {
     height: 670px;
     width: 100vw;
-    margin-top: 30px;
+    margin-top: -30px;
 }  
 .section3 h2{
     color: rgb(0, 129, 179);
@@ -194,7 +193,6 @@ button{
 .big-text{
     font-size: 35px;
     font-weight: bold;
-    line-height: 10px;
 }
 .s7-content{
     display: grid;
