@@ -132,7 +132,8 @@ ol{
 }
 .section-4 h1{
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    font-size: 25px;
 }
 .s4-left{
     display: flex;
@@ -155,10 +156,7 @@ ol{
     margin-bottom: 50px;
 }
 .section-5 h1{
-    color: white;
-    background-color: black;   
-    width: fit-content;
-    padding: 2px 15px;
+    color: rgb(0, 176, 240); 
     margin-left: 100px;
     margin-bottom: 20px;
 }
@@ -185,19 +183,17 @@ ol{
     transform: translateX(-60px);
 }
 .section-6 h1{
-    color: white;
-    background-color: black;   
-    width: fit-content;
-    padding: 2px 15px;
+    color: rgb(0, 176, 240); 
+    
     margin-left: 100px;
 }
 .section-3 h1{
-    color: white;
-    background-color: black;   
+    color: rgb(0, 176, 240);  
     width: fit-content;
     padding: 2px 15px;
-    margin-left: 100px;
+    margin-left: 90px;
     margin-bottom: 70px;
+    
 }
 
 .section-6 h3{  
@@ -225,10 +221,8 @@ ol{
     right:0;
 }
 .section-7 h1{
-    color: white;
-    background-color: black;   
-    width: fit-content;
-    padding: 2px 15px;
+    color: rgb(0, 176, 240); 
+    
     margin-left: 100px;
     margin-bottom: 70px;
     margin-top: 100px;
