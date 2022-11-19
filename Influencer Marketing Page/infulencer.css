@@ -21,6 +21,7 @@ body {
 }
 .s1-left-container img{
     height: 100%;
+    transform: translateY(30px);
 }
 .section1 div:nth-child(2){
     display: flex;
