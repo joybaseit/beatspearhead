@@ -67,11 +67,11 @@ nav img {
     height: 800px;
     width: 100vw;
     position: relative;
-    
+    transform: translateX(-4%)
 }
 .section-3 h1{
     text-align: center;
-    transform: translateX(8%) translateY(20px);
+    transform: translateX(6%) translateY(20px);
     
 }
 .s3-vid-title{
@@ -91,14 +91,15 @@ nav img {
     position: absolute;
     top: 260px;
     left: 47%;
+    z-index: 10;
 }
 .videoplayer{
     width: 235px;
     height: 490px;
     position: absolute;
     top: 265px;
-    left: 47.5%;
-    z-index: -10;
+    left: 47.66%;
+    
     border-radius: 40px;
 }
 button{
@@ -151,7 +152,7 @@ button img{
 .btn-tilt{
     position: absolute;
     top: 125px;
-    left: 52.5%;
+    left: 52%;
 }
 .btn-charge{
     position: absolute;
