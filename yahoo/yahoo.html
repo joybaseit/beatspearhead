@@ -114,7 +114,7 @@
     </div>
 
     <div class="bdmarket">
-        <img style="width: 200%;" src="img/graps.png" alt="cpp">
+        <img style="width: 100%;" src="img/graps.png" alt="cpp">
     </div>
 
     <section class="section position-relative pt-3 bg-transparent-bottom wf-section"><img
@@ -169,7 +169,9 @@
         </div>
     </section>
 
-    <div class="bdmarket2"></div>
+    <div class="bdmarket2">
+        <img src="img/graps1.png">
+    </div>
     <div class="ad-opportunity">
         <h1></h1>
         <div class="native-ad-container">
@@ -297,6 +299,24 @@
             </div>
         </div>
     </div>
+    <div class="trusted-brands-container">
+        <h1>Trusted By <span>Brands</span></h1>
+        <div class="swiper2 mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+                <div class="swiper-slide">Slide 5</div>
+                <div class="swiper-slide">Slide 6</div>
+                <div class="swiper-slide">Slide 7</div>
+                <div class="swiper-slide">Slide 8</div>
+                <div class="swiper-slide">Slide 9</div>
+            </div>
+    
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script>
         const swiper = new Swiper('.swiper', {
@@ -307,6 +327,18 @@
             },
         });
     </script>
+    <script>
+        var swiper2 = new Swiper(".mySwiper", {
+          slidesPerView: 6,
+          loop: true,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 </body>
 
 </html>

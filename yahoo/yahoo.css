@@ -263,16 +263,11 @@ blockquote.text-center {
     height: 500px;
 }
 .bdmarket2{
-    background: url(img/graps1.png);
-    background-position: center;
-    background-size: cover;
-    max-width: 900px;
-    height: 450px;
-    width: 100vw;
-    display: flex;
-    margin: 0 auto;   
-   
-    
+    height: auto;
+    width: 70vw;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
 }
 .ad{
     margin-left: 20px;
@@ -413,4 +408,99 @@ blockquote.text-center {
     width: 100vw;
     border: none !important;
     overflow-x: hidden;
+  }
+  .trusted-brands-container{
+    margin-top: 100px;
+    height: 250px;
+    width: 100vw;
+}
+.trusted-brands-container h1{
+    font-size: 40px;
+    text-align: center;
+}
+.trusted-brands-container span{
+    color: rgb(3, 162, 229);
+}
+.swiper2 {
+    width: 100%;
+    height: 80%;
+  }
+  .swiper2 .swiper-slide {
+    text-align: center;
+    width: 50px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @media only screen and (max-width: 600px) {
+    .ad-opportunity{
+        height: auto;
+    }
+    .flex-container{
+        flex-direction: column;
+    }
+    .bdmarket{
+        height: auto;
+        width: 95vw;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .bdmarket2 img{
+        width: auto;
+    }
+    .bdmarket2{
+        height: auto;
+        width: 95vw;
+        margin: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .native-ad-container{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px 0 20px 0;
+    }
+    .display-ad-container{
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 20px 0 20px 0;
+        
+    }
+    .native-ad-left{
+        padding-left: 10px;
+        width: 99vw;
+    }
+    .display-ad-left{
+        order: 2;
+    }
+    .display-ad-right{
+        padding-left: 10px;
+        width: 99vw;
+        order: 1;
+    }
+    .swiper {
+        width: 100vw;
+        height: auto;
+      }
+    .swiper img{
+        height: 50vh;
+    }
+    .audio-ad-left{
+        order: 2;
+    }
+    /* adgallery mobile responsive-------------------------------------- */
+  .ad-gallery {
+    height: auto;
+    padding-bottom: 50px;
+  }
+  
+  .ad-gallery h1 {
+    text-align: center;
+  }
+  
+  .ad-gallery-container {
+    grid-template-columns: 270px;
+  }
+  /* adgallery responsive end--------------------------- */
   }
