@@ -19,6 +19,7 @@ nav img {
     height: 100px;
 }
 
+
 .section-1 {
     width: 100vw;
     position: relative;
@@ -42,6 +43,7 @@ nav img {
     margin-top: 15px;
 }
 
+
 .s2-h1 {
     margin-left: 3%;
     margin-bottom: 30px;
@@ -56,6 +58,7 @@ nav img {
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
 }
+
 
 .s2-d1 {
     height: 400px;
@@ -141,13 +144,13 @@ nav img {
     margin-bottom: 60px;
 }
 
-.section-2>h1 {
+.appnextreact-h1{
     color: rgb(91, 155, 213);
-    grid-column: 3/span 2;
-    transform: translateX(-30px);
-
+    text-align: center;
 }
-
+@media only screen and (max-width: 600px) {
+    
+}
 .section-3 {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -556,3 +559,53 @@ nav img {
     justify-content: center;
     align-items: center;
   }
+
+  @media only screen and (max-width: 600px) {
+    nav{
+        width: 1700px;
+        overflow: hidden;
+    }
+    nav img {
+        width: 75%;
+        transform: translateX(-20px) translateY(-10px);
+    }
+    .section-1 h1{
+        transform: scale(1.5);
+    }
+    .section-1 p {
+        font-size: 17px;
+    }
+    .section-2 {
+        width: 100vw;
+        margin: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .s2-d1 {
+        width: 80vw;
+        height: auto;
+        margin: auto;
+    }
+    
+    .s2-d1 img {
+        height: 100%;
+        width: 100%;
+    }
+    .s2-d2{
+        width: 90vw;
+        margin: auto;
+    }
+    .s2-d3{
+        width: 90vw;
+        margin: auto;
+    }
+    .s2-d4{
+        width: 90vw;
+        margin: auto;
+    }
+    .s2-h1{
+        font-size: 30px;
+        text-align: center;
+    }   
+}
