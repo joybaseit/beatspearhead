@@ -67,15 +67,7 @@ th {
     text-align: left
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: 100%;
-    font-weight: normal
-}
+
 
 q:before,
 q:after {
@@ -1794,7 +1786,18 @@ a:-webkit-any-link {
     width: 270px;
     object-fit: fill;
 }
+.section-2{
+    height: auto;
+    width: 100%;
+    background: rgb(255,232,238);
+background: linear-gradient(180deg, rgba(255,232,238,1) 0%, rgba(255,255,255,1) 100%);
+}
 @media only screen and (max-width: 600px) {
+    nav img{
+        height: 50px;
+        width: min-content;
+        object-fit: cover;
+    }
     /* adgallery mobile responsive-------------------------------------- */
     .ad-gallery {
       height: auto;
@@ -1809,4 +1812,7 @@ a:-webkit-any-link {
       grid-template-columns: 270px;
     }
     /* adgallery responsive end--------------------------- */
+    .first-inner .tab-wrap {
+        transform: scale(.3) translateX(-95%) translateY(-130%)
+    }
   }
