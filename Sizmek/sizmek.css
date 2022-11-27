@@ -19,11 +19,13 @@ header img{
 }
     /* section 2 */
 .Adstack{
+    width:100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.Adstack h2{
     background-color: #7BAFD3;
     color: #fff;
-    width: 200px;
-    text-align: center;
-    margin: 0 auto 20px;
 }
 /* This is Section 3 */
 .section3{

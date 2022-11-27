@@ -13,7 +13,8 @@ body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
 }
-nav{
+
+nav {
     width: 100vw;
     background: rgb(248, 221, 222);
     background: linear-gradient(90deg, rgba(248, 221, 222, 1) 0%, rgba(229, 221, 255, 1) 100%);
@@ -23,6 +24,7 @@ nav img {
     height: 60px;
     margin-left: 50px;
 }
+
 
 .section-1 {
     text-align: center;
@@ -36,7 +38,6 @@ nav img {
 .section-1 img {
     height: 100%;
 }
-
 .section-2 {
     display: grid;
     grid-template-columns: 1fr .5fr;
@@ -58,23 +59,27 @@ nav img {
     justify-content: center;
     align-items: center;
 }
-.section-3-container{
+
+.section-3-container {
     background: rgb(248, 221, 222);
     background: linear-gradient(90deg, rgba(248, 221, 222, 1) 0%, rgba(229, 221, 255, 1) 100%);
-    
+
 }
+
 .section-3 {
     height: 800px;
     width: 100vw;
     position: relative;
     transform: translateX(-4%)
 }
-.section-3 h1{
+
+.section-3 h1 {
     text-align: center;
     transform: translateX(6%) translateY(20px);
-    
+
 }
-.s3-vid-title{
+
+.s3-vid-title {
     font-weight: bold;
     font-size: 20px;
     position: absolute;
@@ -83,78 +88,93 @@ nav img {
     width: 185px;
     text-align: center;
 }
-.s3-content{
+
+.s3-content {
     position: relative;
 }
-.s3-phone{
+
+.s3-phone {
     height: 500px;
     position: absolute;
     top: 260px;
     left: 47%;
     z-index: 10;
 }
-.videoplayer{
+
+.videoplayer {
     width: 235px;
     height: 490px;
     position: absolute;
     top: 265px;
     left: 47.66%;
-    
+
     border-radius: 40px;
 }
-button{
+
+button {
     all: unset;
-    cursor: pointer; 
+    cursor: pointer;
 }
-button img{
+
+button img {
     width: 90px;
 }
-.btn-smile{
+
+.btn-smile {
     position: absolute;
     top: 201px;
     left: 34%;
 }
-.btn-game{
+
+.btn-game {
     position: absolute;
     top: 197px;
     left: 20%;
 }
-.btn-quiz{
+
+.btn-quiz {
     position: absolute;
     top: 590px;
     left: 25%;
 }
-.btn-scratch{
+
+.btn-scratch {
     position: absolute;
     top: 452px;
     left: 35%;
 }
-.btn-vr{
+
+.btn-vr {
     position: absolute;
     top: 576px;
     left: 70%;
 }
-.btn-sound{
+
+.btn-sound {
     position: absolute;
     top: 156px;
     left: 85%;
 }
-.btn-speech_round{
+
+.btn-speech_round {
     position: absolute;
     top: 383px;
     left: 82%;
 }
-.btn-step{
+
+.btn-step {
     position: absolute;
     top: 230px;
     left: 72%;
 }
-.btn-tilt{
+
+.btn-tilt {
     position: absolute;
     top: 125px;
     left: 52%;
 }
-.btn-charge{
+
+.btn-charge {
     position: absolute;
     top: 415px;
     left: 16%;
@@ -167,7 +187,8 @@ button img{
     height: 110vh;
     width: 100vw;
 }
-.section-4 h1{
+
+.section-4 h1 {
     padding: 40px;
     margin-left: 50px;
 }
@@ -277,6 +298,9 @@ button img{
     padding-top: 10%;
     padding-left: 15%;
 }
+@media only screen and (max-width: 600px) {
+    
+}
 
 /* trusted brands and ad gallery */
 .trusted-brands-container {
@@ -365,46 +389,179 @@ button img{
     width: 270px;
     object-fit: fill;
 }
-.trusted-brands-container{
+
+.trusted-brands-container {
     margin-top: 100px;
     height: 250px;
     width: 100vw;
 }
-.trusted-brands-container h1{
+
+.trusted-brands-container h1 {
     font-size: 40px;
     text-align: center;
 }
-.trusted-brands-container span{
+
+.trusted-brands-container span {
     color: rgb(3, 162, 229);
 }
+
 .swiper2 {
     width: 100%;
     height: 80%;
-  }
-  .swiper2 .swiper-slide {
+}
+
+.swiper2 .swiper-slide {
     text-align: center;
     width: 50px;
     background: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  @media only screen and (max-width: 600px) {
+}
+
+@media only screen and (max-width: 600px) {
 
 
 
     /* adgallery mobile responsive-------------------------------------- */
-  .ad-gallery {
-    height: auto;
-    padding-bottom: 50px;
-  }
-  
-  .ad-gallery h1 {
-    text-align: center;
-  }
-  
-  .ad-gallery-container {
-    grid-template-columns: 270px;
-  }
-  /* adgallery responsive end--------------------------- */
-  }
+    .ad-gallery {
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    .ad-gallery h1 {
+        text-align: center;
+    }
+
+    .ad-gallery-container {
+        grid-template-columns: 270px;
+    }
+
+    /* adgallery responsive end--------------------------- */
+    nav img {
+        height: 60px;
+        margin-left: 10px;
+    }
+
+    .section-1 {
+        padding: 50px 0;
+        height: auto;
+    }
+
+    .section-1 img {
+        height: 300px;
+        width: 100%;
+    }
+    .section-2 {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+    
+    .s2-left-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;  
+    }
+    
+    .s2-right-img-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-4 {
+        height: auto;
+        width: 100vw;
+    }
+    
+    .section-4 h1 {
+        padding: 30px 0;
+        margin: 0px 0 0px 0;
+        text-align: center;
+    }
+    
+    .s4-left-right-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .s4-left {
+        padding: 0 0px;
+        height: auto;
+        width: 90%;
+        background-color: white;
+        border-radius: 40px;
+        margin-bottom: 30px;
+    }
+    
+    .s4-right {
+        padding: 20px 0;
+        height: auto;
+        width: 90%;
+        background-color: white;
+        border-radius: 40px;
+        text-align: center;
+        border-left: 0;
+        margin-bottom: 30px;
+    }
+    
+    .s4-left-content {
+        text-align: center;
+        padding: 20px;
+    } 
+    .section-5 {
+        height: auto;
+    }
+    
+    .section-6 {
+        height: auto;
+    
+    }
+    
+    .section-5-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+    
+    }
+    
+    .s5-left {
+        padding: 0;
+    }
+    
+    .s5-left img {
+        width: 25px;
+    }
+    
+    .s6-right img {
+        width: 25px;
+    }
+    
+    .mobile-wrapper {
+        position: relative;
+        padding-top: 25px;
+        padding-bottom: 67.5%;
+        height: 0;
+    }
+    
+    
+    .section-6-container {
+        height: auto;
+        grid-template-columns: 1fr;
+        margin-bottom: 0px;
+    }
+    
+    .s6-right {
+        padding: 0;
+        order: 1;
+    }
+    .s6-left{
+        order: 2;
+    }
+    .section-3-container{
+        display: none;
+    }
+}
