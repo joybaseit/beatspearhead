@@ -2149,4 +2149,7 @@ a:-webkit-any-link {
   .product-inner .tab-wrap {
     transform: scale(.3) translateX(-95%) translateY(-90%);
   }
+  .move-top-all{
+    transform: translateY(-450px);
+  }
 }
