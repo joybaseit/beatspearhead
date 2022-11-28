@@ -590,19 +590,19 @@ html {
 }
 
 .contact-us-div h3 {
-  position: absolute;
-  top: 30px;
-  left: 30px;
-  color: #f2f2f2;
-  font-weight: 400;
-
+	position: absolute;
+	top: 15px;
+	left: 15px;
+	color: #f2f2f2;
+	font-weight: 400;
 }
 
 .contact-us-div p {
   position: absolute;
   bottom: 20px;
-  left: 20px;
+  left: 15px;
   color: #f2f2f2;
+  font-size: 20px;
 }
 
 
@@ -945,8 +945,8 @@ font-size: 26px;
 
   .contact-us-div p {
     position: absolute;
-    bottom: 5px;
-    left: 5px;
+    bottom: 20px;
+    left: 15px;
     color: #f2f2f2;
   }
 }
