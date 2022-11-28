@@ -7,16 +7,30 @@
 }
 body {
     font-family: 'Poppins', sans-serif;
-    margin: 90vw;
-    margin: auto;
+    overflow-x: hidden !important; 
+}
+.s1-size{
+    height: 70vh;
 }
 /* This is Header  */
+header{
+    height: 50px;
+}
 header img{
     width: 30%;
     margin-left: 20px;
     box-sizing: border-box;
     
 }
+@media only screen and (max-width: 600px) {
+    header img{
+        width: 70%;
+        margin-left: 20px;
+        
+    }
+
+}
+
     /* section 2 */
 .Adstack{
     width:100%;
@@ -30,19 +44,13 @@ header img{
 /* This is Section 3 */
 .section3{
     width: 100%;
-    height: 600px;
+    height: auto;
     background-color: #00A1E5;
     color: #fff;
     
 }
-.section3 img{
-    margin-top: 50px;
-    margin-left: 50px;
-}
 .list-4{
-    font-size: 20px;
-    margin-top: 300px;
-    margin-left: 120px;
+    font-size: 25px;
 }
 
 /* This is Section 4 */
