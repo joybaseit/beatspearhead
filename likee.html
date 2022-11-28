@@ -427,7 +427,14 @@
       },
     });
   </script>
-  
+  <script>
+    $mainGrid = $('.first-inner .tab-wrap')
+    var x = screen.width;
+      console.log($(window).width() <= 520)
+
+    if ($(window).width() <= 520) {
+    $mainGrid.css('height', $mainGrid.height() * .3);}
+    </script>
   <script type="text/javascript" src="assets/likee.013880a2.js?4e42ecefd0c444298bb2"></script>
 </body>
 

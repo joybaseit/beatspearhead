@@ -1813,9 +1813,11 @@ background: linear-gradient(180deg, rgba(255,232,238,1) 0%, rgba(255,255,255,1) 
     }
     /* adgallery responsive end--------------------------- */
     .first-inner .tab-wrap {
-        transform: scale(.3) translateX(-95%) translateY(-130%)
+        transform-origin: top center;
+        --scale: 0.3;
+        transform: scale(var(--scale)) translateX(-95%);
     }
-    .move-top{
+    /* .move-top{
         transform: translateY(-750px);
-    }
+    } */
   }
