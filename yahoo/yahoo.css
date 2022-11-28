@@ -183,7 +183,6 @@ blockquote.text-center {
 
 .responsive-iframe {
     overflow: hidden;
-    padding-top: 56.25%;
     position: relative;
     margin: 20px 0;
 }
