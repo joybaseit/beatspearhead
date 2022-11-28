@@ -641,7 +641,7 @@ nav img {
     .s4-right-container {
         font-weight: bold;
         font-size: 20px;
-        padding-left: 25px;
+        padding-left: 10px;
     }
     
     .s4-right-container ul {
@@ -668,7 +668,7 @@ nav img {
         width: 20em;
         height: 20em;
         
-        transform: translateX(18%);
+        transform: translateX(16%);
         margin-bottom: 50px;
     }
     .s5-right-content{
