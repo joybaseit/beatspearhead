@@ -27,6 +27,7 @@
     <title>Your Programmatic Marketing Partner | MiQ</title>
     <meta name="description" content="The programmatic media partner for marketers and agencies." />
     <link rel="canonical" href="https://www.wearemiq.com/" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
     <meta property="og:locale" content="en_GB" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Your Programmatic Marketing Partner | MiQ" />
@@ -3629,8 +3630,43 @@
                 <div class="section-block--content-wrap">
                     <!-- <pre> -->
                     <!-- </pre> -->
+                </div>
+            </div>
+        </div>
+        <div class="trusted-brands-container">
+            <h1>Trusted By <span>Brands</span></h1>
+            <div class="swiper2 mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    <div class="swiper-slide">Slide 4</div>
+                    <div class="swiper-slide">Slide 5</div>
+                    <div class="swiper-slide">Slide 6</div>
+                    <div class="swiper-slide">Slide 7</div>
+                    <div class="swiper-slide">Slide 8</div>
+                    <div class="swiper-slide">Slide 9</div>
+                </div>
+        
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
-
+<script>
+        var swiper2 = new Swiper(".mySwiper", {
+          slidesPerView: 6,
+          loop: true,
+          spaceBetween: 30,
+          centeredSlides: true,
+          pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+          },
+        });
+      </script>
 
 </body>
 
