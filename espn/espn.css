@@ -221,7 +221,7 @@ h1 {
   .image-2nd img{
     width: 100%;
   }
-  body{
+  html{
     overflow-x: hidden;
 }
 }

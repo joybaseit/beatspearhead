@@ -564,4 +564,7 @@ button img {
     .section-3-container{
         display: none;
     }
+    html{
+        overflow-x: hidden;
+    }
 }

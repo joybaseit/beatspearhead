@@ -1824,4 +1824,7 @@ background: linear-gradient(180deg, rgba(255,232,238,1) 0%, rgba(255,255,255,1) 
     /* .move-top{
         transform: translateY(-750px);
     } */
+    html{
+        overflow-x: hidden;
+    }
   }

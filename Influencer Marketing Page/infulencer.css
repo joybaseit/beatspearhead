@@ -499,7 +499,7 @@ button {
         margin-top: 0px;
 
         margin-bottom: 0px;
-        transform: scale(.3) translateX(-116%);
+        transform: scaleX(.27) scaleY(.3) translateX(-130%);
         transform-origin: top center;
     }
     .s7-content {
@@ -561,7 +561,7 @@ button {
     grid-template-columns: 270px;
   }
   /* adgallery responsive end--------------------------- */
-  body{
+  html{
     overflow-x: hidden;
 }
 }
