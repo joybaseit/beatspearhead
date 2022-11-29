@@ -2055,12 +2055,12 @@ a:-webkit-any-link {
 @media only screen and (max-width: 600px) {
   .targeting-capabilities {
     height: auto;
-    transform: scale(.7);
+    transform: scale(.7) translateX(-6%);
     transform-origin: top center;
   }
   .buying-opportunity {
     height: auto;
-    transform: scale(.7);
+    transform: scale(.7) translateX(-6%);
     transform-origin: top center;
   }
   .capabilities-container {
