@@ -502,4 +502,7 @@ blockquote.text-center {
     grid-template-columns: 270px;
   }
   /* adgallery responsive end--------------------------- */
+  body{
+    overflow-x: hidden;
+}
   }

@@ -22,14 +22,7 @@ header img{
     box-sizing: border-box;
     
 }
-@media only screen and (max-width: 600px) {
-    header img{
-        width: 70%;
-        margin-left: 20px;
-        
-    }
 
-}
 
     /* section 2 */
 .Adstack{
@@ -100,4 +93,14 @@ header img{
     justify-content: center;
     align-items: center;
   }
-  
+  @media only screen and (max-width: 600px) {
+    header img{
+        width: 70%;
+        margin-left: 20px;
+        
+    }
+    body{
+        overflow-x: hidden;
+    }
+
+}

@@ -765,4 +765,7 @@ nav img {
   }
   /* adgallery responsive end--------------------------- */
 
+  body{
+    overflow-x: hidden;
+}
 }
