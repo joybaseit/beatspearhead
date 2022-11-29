@@ -1488,7 +1488,8 @@ a:-webkit-any-link {
   height: 1000px;
   background: #fff;
   position: relative;
-  transform: scale(.8);
+  transform: scale(.7);
+  transform-origin: top center;
 }
 
 .first-inner .tab-wrap .s5word1 {

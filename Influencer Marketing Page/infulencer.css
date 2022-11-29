@@ -499,7 +499,8 @@ button {
         margin-top: 0px;
 
         margin-bottom: 0px;
-        transform: scale(.3) translateX(-118%)translateY(-110%);
+        transform: scale(.3) translateX(-112%);
+        transform-origin: top center;
     }
     .s7-content {
         display: grid;

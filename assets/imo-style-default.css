@@ -1221,7 +1221,8 @@ a:-webkit-any-link {
   height: 1000px;
   background: #fff;
   position: relative;
-  transform: scale(.8);
+  transform: scale(.77);
+  transform-origin: top center;
 }
 .product-inner .tab-wrap .s5word1 {
   text-align: center;
@@ -2054,11 +2055,13 @@ a:-webkit-any-link {
 @media only screen and (max-width: 600px) {
   .targeting-capabilities {
     height: auto;
-    transform: scale(.7) translateY(-35%) translateX(-8%);
+    transform: scale(.7);
+    transform-origin: top center;
   }
   .buying-opportunity {
     height: auto;
-    transform: scale(.7)translateY(-75%) translateX(-8%);
+    transform: scale(.7);
+    transform-origin: top center;
   }
   .capabilities-container {
     width: 100vw;
@@ -2147,9 +2150,9 @@ a:-webkit-any-link {
     margin: auto;
   }  
   .product-inner .tab-wrap {
-    transform: scale(.3) translateX(-95%) translateY(-90%);
-  }
-  .move-top-all{
-    transform: translateY(-450px);
+    margin-top: 50px;
+    transform: scale(.3) translateX(-90%);
+    transform-origin: top center;
+
   }
 }
