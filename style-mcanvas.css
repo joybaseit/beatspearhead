@@ -444,12 +444,12 @@ button img {
     }
 
     .section-1 {
-        padding: 50px 0;
+        padding: 50px 25px 50px 0;
         height: auto;
     }
 
     .section-1 img {
-        height: 300px;
+        height: 260px;
         width: 100%;
     }
     .section-2 {
