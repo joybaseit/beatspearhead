@@ -217,6 +217,67 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide img{
+  
+  width: 120px;
+}
+/* .......Ad Galllary */
+.ad-gallery {
+  height: auto;
+  width: 100vw;
+  background-color: rgb(0, 161, 229);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.ad-gallery h1 {
+  padding: 30px 0;
+}
+
+.ad-gallery-container {
+  display: grid;
+  grid-template-columns: 270px 270px 270px;
+  margin-bottom: 50px;
+}
+
+.gallery-card-container {
+  height: 170px;
+  width: 270px;
+  overflow: hidden;
+}
+
+.gallery-card {
+  transition: all 500ms ease;
+}
+
+.gallery-card p {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: lighter;
+  font-size: small;
+  padding-left: 10px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  transform: translateY(-7px);
+}
+
+.gallery-card-container:hover .gallery-card {
+  transform: translateY(-34px);
+}
+
+.gallery-card img {
+  height: 172px;
+  width: 270px;
+  object-fit: fill;
+}
+
+
+
 
 @media only screen and (max-width: 600px) {
   header img {
