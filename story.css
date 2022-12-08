@@ -121,19 +121,6 @@ background-color:#BBD6EC;
     background: linear-gradient(90deg, rgba(0, 0, 0, 1) 30%, rgba(255, 255, 255, 1) 30%);
     transform: translateX(-11%);
 } 
-.line {
-    margin: 5px 0;
-    height: 5px;
-    background: repeating-linear-gradient(
-      to right,
-      transparent,
-      transparent 10px,
-      black 50px,
-      black 50px
-    );
-    /*10px transparent then 10px black -> repeat this!*/
-  }
-
 @media only screen and (max-width: 600px) {
     .modal-dialog {
         height:380px !important;

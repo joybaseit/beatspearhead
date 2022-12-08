@@ -72,7 +72,7 @@ nav img{
 }
 .s3-top-content{
     display: grid;
-    grid-template-columns: .8fr 1fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
 }
 .s3-top-left{
@@ -92,7 +92,7 @@ nav img{
     width: 316px;
 }
 .s3-top-right{
-    width: 90%;
+    width: 70%;
 }
 
 ol{
@@ -100,11 +100,11 @@ ol{
 }
 .s3-bottom-content{
     display: grid;
-    grid-template-columns: 1fr .8fr;
+    grid-template-columns: 1fr 1fr;
     margin-bottom: 100px;
 }
 .s3-bottom-left{
-    width: 80%;
+    width: 70%;
     margin: auto;
 
 }
@@ -325,7 +325,9 @@ ol{
   
     width: 120px;
   }
-
+.section-3{
+    transform: translateX(4%);
+}
 
 @media only screen and (max-width: 600px) {
     
