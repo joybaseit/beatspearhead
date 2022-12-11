@@ -55,7 +55,7 @@
 .ss-left{
     color: white;
     font-size: 1vw;
-    line-height: .8vw;
+    /* line-height: .8vw; */
     width: 20vw;
     position: absolute;
     top: 50%;
@@ -87,7 +87,7 @@
     text-align: center;
     background-color: black;
     font-size: 1.1vw;
-    line-height: .9vw;
+    /* line-height: .9vw; */
     max-width: 20vw;
     padding: 2% 3% 2% 3%;
     position: absolute;
@@ -112,7 +112,10 @@ height: 70%;
 
 background-color:#BBD6EC;
 
-}    
+}  
+p{
+    margin: 0 !important;
+}  
 .modal-body{
     width: 95vw !important;
     margin: auto !important;
@@ -136,7 +139,7 @@ background-color:#BBD6EC;
     }
     .ss-left{
         font-size: 1.5vw;
-        line-height: 0px;
+        /* line-height: 0px; */
     }
     .ss-center{
         transform: translateX(-50%) scale(1.3);

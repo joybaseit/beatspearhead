@@ -15,8 +15,41 @@
 </head>
 
 <body>
-  <nav>
-    <img src="pokkt-images/pokktlogo.png" alt="pokkt-logo">
+  <!-- Navbar Start -->
+  <nav class='navbar'>
+    <div style="width: 11vw;"></div>
+    <a class="toggle-button-menu"><i class="fa-solid fa-bars fa-2x"></i></a>
+    <div class='navbar-links'>
+      <ul>
+        <li><a href='#welcome'>WELCOME</a></li>
+        <li><a href='#services'>OUR SERVICES</a></li>
+        <li class="dropdown">
+          <a class="" href="#our-reach">OUR REACH</a>
+          <a class="dropdown-toggle dropdown-toggle-split" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown"
+            aria-expanded="false"></a>
+
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item"  href="/beatspearhead/imo.html">IMO</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/likee.html">LIKEE</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/appnext.html">APPNEXT</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/mcanvas.html">MCANVAS</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/yahoo/yahoo.html">YAHOO</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/Sizmek/sizmek.html">SIZMEK</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/pokkt.html">POKKT</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/miq/index.html">MIQ</a></li>
+            <li><a class="dropdown-item"  href="/beatspearhead/espn/espn.html">ESPN CRICINFO</a></li>
+            <li><a class="dropdown-item" 
+                href="/beatspearhead/InfluencerMarketing/influencer.html">INFLUENCER MARKETING</a></li>
+                <li><a class="dropdown-item"  href="/beatspearhead/gupshup.html">GUPSHUP</a></li>
+          </ul>
+        </li>
+        <li><a href='#contact-us'>CONTACT US</a></li>
+        <li><a id="loginbtn" href='https://www.bitsdashboard.com/'>LOGIN</a></li>
+      </ul>
+    </div>
+    <div class='navbar-logo'>
+      <a href="https://bitspearhead.com"><img src="asset/logo.png" alt="Logo"> </a>
+    </div>
   </nav>
   <div class="section-1">
     <div class="s1-container">
@@ -182,6 +215,7 @@
                     <p style="font-weight: bold;">49,846</p>
                     <p>CTR:</p>
                     <p style="font-weight: bold;">3.79%</p>
+                    <p style="font-weight: bold;">null</p>
                   </div>
                 </div>
               </div>
@@ -245,6 +279,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
+    <script>
+      if(document.querySelector("#exampleModal > div > div > div > div > div.ss-right > p:nth-child(9)").innerHTML == "null")
+      {
+        document.querySelector("#exampleModal > div > div > div > div > div.ss-right > p:nth-child(9)").style.display = "none"
+      }
+    </script>
 
 </body>
 
