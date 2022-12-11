@@ -164,7 +164,7 @@ background-color:#BBD6EC;
 }
 @media screen and (min-width: 1200px) and (max-width:1500px) {
     .modal-body{
-        transform: translateX(-3%);
+        transform: translateX(-5%);
     } 
 }
 @media screen and (min-width: 700px) and (max-width:1200px) {
